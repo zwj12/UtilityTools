@@ -1,0 +1,4076 @@
+15:16:25 Control Difference     : 13
+          
+15:16:26 =================== Y-Correction ====================
+15:16:26 Trap on left side
+15:16:26 Number of Measurements : 1
+15:16:26 Calculated correction  : 0.195 mm
+15:16:26 Current on Right (A)   : 108
+15:16:26 Current on Left  (A)   : 121
+15:16:26 Control Difference     : 13
+          
+15:16:26 =================== Y-Correction ====================
+15:16:26 Trap on right side
+15:16:26 Number of Measurements : 1
+15:16:26 Calculated correction  : 0.105 mm
+15:16:26 Current on Right (A)   : 114
+15:16:26 Current on Left  (A)   : 121
+15:16:26 Control Difference     : 7
+          
+15:16:26 =================== Y-Correction ====================
+15:16:26 Trap on left side
+15:16:26 Number of Measurements : 1
+15:16:26 Calculated correction  : 0.135 mm
+15:16:27 Current on Right (A)   : 114
+15:16:27 Current on Left  (A)   : 123
+15:16:27 Control Difference     : 9
+          
+15:16:27 =================== Y-Correction ====================
+15:16:27 Trap on right side
+15:16:27 Number of Measurements : 1
+15:16:27 Calculated correction  : 0.15 mm
+15:16:27 Current on Right (A)   : 113
+15:16:27 Current on Left  (A)   : 123
+15:16:27 Control Difference     : 10
+          
+15:16:28 =================== Y-Correction ====================
+15:16:28 Trap on left side
+15:16:28 Number of Measurements : 1
+15:16:28 Calculated correction  : -0.09 mm
+15:16:28 Current on Right (A)   : 119
+15:16:28 Current on Left  (A)   : 113
+15:16:28 Control Difference     : -6
+          
+15:16:28 =================== Z-Correction ====================
+15:16:28 Number of Measurements : 1
+15:16:28 Calculated  correction : 0.12 mm
+15:16:28 Z-Reference (A)         : 130
+15:16:28 Z-Measured  value      : 122
+15:16:28 Control Difference     : 8
+          
+15:16:29 =================== Z-Correction ====================
+15:16:29 Number of Measurements : 1
+15:16:29 Calculated  correction : 0.165 mm
+15:16:29 Z-Reference (A)         : 130
+15:16:29 Z-Measured  value      : 119
+15:16:29 Control Difference     : 11
+          
+15:16:29 =================== Y-Correction ====================
+15:16:29 Trap on right side
+15:16:29 Number of Measurements : 1
+15:16:29 Calculated correction  : 0.105 mm
+15:16:29 Current on Right (A)   : 108
+15:16:29 Current on Left  (A)   : 115
+15:16:29 Control Difference     : 7
+          
+15:16:30 =================== Y-Correction ====================
+15:16:30 Trap on left side
+15:16:30 Number of Measurements : 1
+15:16:30 Calculated correction  : 0.135 mm
+15:16:30 Current on Right (A)   : 108
+15:16:30 Current on Left  (A)   : 117
+15:16:30 Control Difference     : 9
+          
+15:16:30 =================== Z-Correction ====================
+15:16:30 Number of Measurements : 1
+15:16:30 Calculated  correction : 0.165 mm
+15:16:30 Z-Reference (A)         : 130
+15:16:30 Z-Measured  value      : 119
+15:16:30 Control Difference     : 11
+          
+15:16:30 =================== Y-Correction ====================
+15:16:30 Trap on right side
+15:16:30 Number of Measurements : 1
+15:16:30 Calculated correction  : 0.09 mm
+15:16:30 Current on Right (A)   : 111
+15:16:30 Current on Left  (A)   : 117
+15:16:30 Control Difference     : 6
+          
+15:16:30 =================== Y-Correction ====================
+15:16:30 Trap on left side
+15:16:30 Number of Measurements : 1
+15:16:30 Calculated correction  : 0.12 mm
+15:16:30 Current on Right (A)   : 111
+15:16:30 Current on Left  (A)   : 119
+15:16:30 Control Difference     : 8
+          
+15:16:31 =================== Z-Correction ====================
+15:16:31 Number of Measurements : 1
+15:16:31 Calculated  correction : 0.09 mm
+15:16:31 Z-Reference (A)         : 130
+15:16:31 Z-Measured  value      : 124
+15:16:31 Control Difference     : 6
+          
+15:16:31 =================== Y-Correction ====================
+15:16:31 Trap on right side
+15:16:31 Number of Measurements : 1
+15:16:31 Calculated correction  : 0.09 mm
+15:16:31 Current on Right (A)   : 113
+15:16:31 Current on Left  (A)   : 119
+15:16:31 Control Difference     : 6
+          
+15:16:31 =================== Z-Correction ====================
+15:16:31 Number of Measurements : 1
+15:16:31 Calculated  correction : 0.09 mm
+15:16:31 Z-Reference (A)         : 130
+15:16:31 Z-Measured  value      : 124
+15:16:31 Control Difference     : 6
+          
+15:16:31 =================== Z-Correction ====================
+15:16:31 Number of Measurements : 1
+15:16:31 Calculated  correction : 0.12 mm
+15:16:31 Z-Reference (A)         : 130
+15:16:31 Z-Measured  value      : 122
+15:16:31 Control Difference     : 8
+          
+15:16:32 =================== Z-Correction ====================
+15:16:32 Number of Measurements : 1
+15:16:32 Calculated  correction : 0.12 mm
+15:16:32 Z-Reference (A)         : 130
+15:16:32 Z-Measured  value      : 122
+15:16:32 Control Difference     : 8
+          
+15:16:32 =================== Y-Correction ====================
+15:16:32 Trap on left side
+15:16:32 Number of Measurements : 1
+15:16:32 Calculated correction  : 0.12 mm
+15:16:32 Current on Right (A)   : 110
+15:16:32 Current on Left  (A)   : 118
+15:16:32 Control Difference     : 8
+          
+15:16:32 =================== Z-Correction ====================
+15:16:32 Number of Measurements : 1
+15:16:32 Calculated  correction : 0.12 mm
+15:16:32 Z-Reference (A)         : 130
+15:16:32 Z-Measured  value      : 122
+15:16:32 Control Difference     : 8
+          
+15:16:32 =================== Y-Correction ====================
+15:16:32 Trap on right side
+15:16:32 Number of Measurements : 1
+15:16:32 Calculated correction  : 0.12 mm
+15:16:32 Current on Right (A)   : 110
+15:16:32 Current on Left  (A)   : 118
+15:16:32 Control Difference     : 8
+          
+15:16:32 =================== Z-Correction ====================
+15:16:32 Number of Measurements : 1
+15:16:32 Calculated  correction : 0.105 mm
+15:16:32 Z-Reference (A)         : 130
+15:16:32 Z-Measured  value      : 123
+15:16:32 Control Difference     : 7
+          
+15:16:33 =================== Y-Correction ====================
+15:16:33 Trap on left side
+15:16:33 Number of Measurements : 1
+15:16:33 Calculated correction  : 0.18 mm
+15:16:33 Current on Right (A)   : 110
+15:16:33 Current on Left  (A)   : 122
+15:16:33 Control Difference     : 12
+          
+15:16:33 =================== Z-Correction ====================
+15:16:33 Number of Measurements : 1
+15:16:33 Calculated  correction : 0.225 mm
+15:16:33 Z-Reference (A)         : 130
+15:16:33 Z-Measured  value      : 115
+15:16:33 Control Difference     : 15
+          
+15:16:33 =================== Y-Correction ====================
+15:16:33 Trap on right side
+15:16:33 Number of Measurements : 1
+15:16:33 Calculated correction  : 0.315 mm
+15:16:33 Current on Right (A)   : 101
+15:16:33 Current on Left  (A)   : 122
+15:16:33 Control Difference     : 21
+          
+15:16:33 =================== Y-Correction ====================
+15:16:33 Trap on left side
+15:16:33 Number of Measurements : 1
+15:16:33 Calculated correction  : 0.135 mm
+15:16:33 Current on Right (A)   : 101
+15:16:33 Current on Left  (A)   : 110
+15:16:33 Control Difference     : 9
+          
+15:16:34 =================== Z-Correction ====================
+15:16:34 Number of Measurements : 1
+15:16:34 Calculated  correction : 0.18 mm
+15:16:34 Z-Reference (A)         : 130
+15:16:34 Z-Measured  value      : 118
+15:16:34 Control Difference     : 12
+          
+15:16:34 =================== Z-Correction ====================
+15:16:34 Number of Measurements : 1
+15:16:34 Calculated  correction : 0.18 mm
+15:16:34 Z-Reference (A)         : 130
+15:16:34 Z-Measured  value      : 118
+15:16:34 Control Difference     : 12
+          
+15:16:35 =================== Z-Correction ====================
+15:16:35 Number of Measurements : 1
+15:16:35 Calculated  correction : 0.15 mm
+15:16:35 Z-Reference (A)         : 130
+15:16:35 Z-Measured  value      : 120
+15:16:35 Control Difference     : 10
+          
+15:16:35 =================== Z-Correction ====================
+15:16:35 Number of Measurements : 1
+15:16:35 Calculated  correction : 0.135 mm
+15:16:35 Z-Reference (A)         : 130
+15:16:35 Z-Measured  value      : 121
+15:16:35 Control Difference     : 9
+          
+15:16:35 =================== Z-Correction ====================
+15:16:35 Number of Measurements : 1
+15:16:35 Calculated  correction : 0.09 mm
+15:16:35 Z-Reference (A)         : 130
+15:16:35 Z-Measured  value      : 124
+15:16:35 Control Difference     : 6
+          
+15:16:36 =================== Y-Correction ====================
+15:16:36 Trap on left side
+15:16:36 Number of Measurements : 1
+15:16:36 Calculated correction  : 0.105 mm
+15:16:36 Current on Right (A)   : 113
+15:16:36 Current on Left  (A)   : 120
+15:16:36 Control Difference     : 7
+          
+15:16:36 =================== Z-Correction ====================
+15:16:36 Number of Measurements : 1
+15:16:36 Calculated  correction : 0.135 mm
+15:16:36 Z-Reference (A)         : 130
+15:16:36 Z-Measured  value      : 121
+15:16:36 Control Difference     : 9
+          
+15:16:36 =================== Y-Correction ====================
+15:16:36 Trap on right side
+15:16:36 Number of Measurements : 1
+15:16:36 Calculated correction  : 0.135 mm
+15:16:36 Current on Right (A)   : 111
+15:16:36 Current on Left  (A)   : 120
+15:16:36 Control Difference     : 9
+          
+15:16:36 =================== Z-Correction ====================
+15:16:36 Number of Measurements : 1
+15:16:36 Calculated  correction : 0.18 mm
+15:16:36 Z-Reference (A)         : 130
+15:16:36 Z-Measured  value      : 118
+15:16:36 Control Difference     : 12
+          
+15:16:36 =================== Y-Correction ====================
+15:16:36 Trap on left side
+15:16:36 Number of Measurements : 1
+15:16:36 Calculated correction  : 0.12 mm
+15:16:36 Current on Right (A)   : 111
+15:16:36 Current on Left  (A)   : 119
+15:16:36 Control Difference     : 8
+          
+15:16:37 =================== Z-Correction ====================
+15:16:37 Number of Measurements : 1
+15:16:37 Calculated  correction : 0.09 mm
+15:16:37 Z-Reference (A)         : 130
+15:16:37 Z-Measured  value      : 124
+15:16:37 Control Difference     : 6
+          
+15:16:37 =================== Y-Correction ====================
+15:16:37 Trap on right side
+15:16:37 Number of Measurements : 1
+15:16:37 Calculated correction  : 0.135 mm
+15:16:37 Current on Right (A)   : 110
+15:16:37 Current on Left  (A)   : 119
+15:16:37 Control Difference     : 9
+          
+15:16:37 =================== Z-Correction ====================
+15:16:37 Number of Measurements : 1
+15:16:37 Calculated  correction : 0.105 mm
+15:16:37 Z-Reference (A)         : 130
+15:16:37 Z-Measured  value      : 123
+15:16:37 Control Difference     : 7
+          
+15:16:37 =================== Y-Correction ====================
+15:16:37 Trap on left side
+15:16:37 Number of Measurements : 1
+15:16:37 Calculated correction  : 0.105 mm
+15:16:37 Current on Right (A)   : 110
+15:16:37 Current on Left  (A)   : 117
+15:16:37 Control Difference     : 7
+          
+15:16:37 =================== Z-Correction ====================
+15:16:37 Number of Measurements : 1
+15:16:37 Calculated  correction : 0.09 mm
+15:16:37 Z-Reference (A)         : 130
+15:16:37 Z-Measured  value      : 124
+15:16:37 Control Difference     : 6
+          
+15:16:38 =================== Y-Correction ====================
+15:16:38 Trap on right side
+15:16:38 Number of Measurements : 1
+15:16:38 Calculated correction  : 0.12 mm
+15:16:38 Current on Right (A)   : 111
+15:16:38 Current on Left  (A)   : 119
+15:16:38 Control Difference     : 8
+          
+15:16:39 =================== Z-Correction ====================
+15:16:39 Number of Measurements : 1
+15:16:39 Calculated  correction : 0.21 mm
+15:16:39 Z-Reference (A)         : 130
+15:16:39 Z-Measured  value      : 116
+15:16:39 Control Difference     : 14
+          
+15:16:39 =================== Z-Correction ====================
+15:16:39 Number of Measurements : 1
+15:16:39 Calculated  correction : 0.135 mm
+15:16:39 Z-Reference (A)         : 130
+15:16:39 Z-Measured  value      : 121
+15:16:39 Control Difference     : 9
+          
+15:16:39 =================== Y-Correction ====================
+15:16:39 Trap on left side
+15:16:39 Number of Measurements : 1
+15:16:39 Calculated correction  : 0.18 mm
+15:16:39 Current on Right (A)   : 109
+15:16:39 Current on Left  (A)   : 121
+15:16:39 Control Difference     : 12
+          
+15:16:40 =================== Z-Correction ====================
+15:16:40 Number of Measurements : 1
+15:16:40 Calculated  correction : 0.12 mm
+15:16:40 Z-Reference (A)         : 130
+15:16:40 Z-Measured  value      : 122
+15:16:40 Control Difference     : 8
+          
+15:16:40 =================== Y-Correction ====================
+15:16:40 Trap on right side
+15:16:40 Number of Measurements : 1
+15:16:40 Calculated correction  : 0.105 mm
+15:16:40 Current on Right (A)   : 114
+15:16:40 Current on Left  (A)   : 121
+15:16:40 Control Difference     : 7
+          
+15:16:40 =================== Z-Correction ====================
+15:16:40 Number of Measurements : 1
+15:16:40 Calculated  correction : 0.135 mm
+15:16:40 Z-Reference (A)         : 130
+15:16:40 Z-Measured  value      : 121
+15:16:40 Control Difference     : 9
+          
+15:16:40 =================== Y-Correction ====================
+15:16:40 Trap on right side
+15:16:40 Number of Measurements : 1
+15:16:40 Calculated correction  : 0.135 mm
+15:16:40 Current on Right (A)   : 109
+15:16:40 Current on Left  (A)   : 118
+15:16:40 Control Difference     : 9
+          
+15:16:41 =================== Y-Correction ====================
+15:16:41 Trap on left side
+15:16:41 Number of Measurements : 1
+15:16:41 Calculated correction  : 0.135 mm
+15:16:41 Current on Right (A)   : 109
+15:16:41 Current on Left  (A)   : 118
+15:16:41 Control Difference     : 9
+          
+15:16:41 =================== Z-Correction ====================
+15:16:41 Number of Measurements : 1
+15:16:41 Calculated  correction : 0.18 mm
+15:16:41 Z-Reference (A)         : 130
+15:16:41 Z-Measured  value      : 118
+15:16:41 Control Difference     : 12
+          
+15:16:41 =================== Y-Correction ====================
+15:16:41 Trap on right side
+15:16:41 Number of Measurements : 1
+15:16:41 Calculated correction  : 0.12 mm
+15:16:41 Current on Right (A)   : 110
+15:16:41 Current on Left  (A)   : 118
+15:16:41 Control Difference     : 8
+          
+15:16:42 =================== Y-Correction ====================
+15:16:42 Trap on left side
+15:16:42 Number of Measurements : 1
+15:16:42 Calculated correction  : 0.105 mm
+15:16:42 Current on Right (A)   : 110
+15:16:42 Current on Left  (A)   : 117
+15:16:42 Control Difference     : 7
+          
+15:16:42 =================== Y-Correction ====================
+15:16:42 Trap on right side
+15:16:42 Number of Measurements : 1
+15:16:42 Calculated correction  : 0.09 mm
+15:16:42 Current on Right (A)   : 111
+15:16:42 Current on Left  (A)   : 117
+15:16:42 Control Difference     : 6
+          
+15:16:42 =================== Y-Correction ====================
+15:16:42 Trap on left side
+15:16:42 Number of Measurements : 1
+15:16:42 Calculated correction  : 0.15 mm
+15:16:42 Current on Right (A)   : 111
+15:16:42 Current on Left  (A)   : 121
+15:16:42 Control Difference     : 10
+          
+15:16:43 =================== Z-Correction ====================
+15:16:43 Number of Measurements : 1
+15:16:43 Calculated  correction : 0.15 mm
+15:16:43 Z-Reference (A)         : 130
+15:16:43 Z-Measured  value      : 120
+15:16:43 Control Difference     : 10
+          
+15:16:43 =================== Y-Correction ====================
+15:16:43 Trap on right side
+15:16:43 Number of Measurements : 1
+15:16:43 Calculated correction  : 0.21 mm
+15:16:43 Current on Right (A)   : 107
+15:16:43 Current on Left  (A)   : 121
+15:16:43 Control Difference     : 14
+          
+15:16:43 =================== Z-Correction ====================
+15:16:43 Number of Measurements : 1
+15:16:43 Calculated  correction : 0.09 mm
+15:16:43 Z-Reference (A)         : 130
+15:16:43 Z-Measured  value      : 124
+15:16:43 Control Difference     : 6
+          
+15:16:44 =================== Y-Correction ====================
+15:16:44 Trap on left side
+15:16:44 Number of Measurements : 1
+15:16:44 Calculated correction  : 0.15 mm
+15:16:44 Current on Right (A)   : 108
+15:16:44 Current on Left  (A)   : 118
+15:16:44 Control Difference     : 10
+          
+15:16:44 =================== Z-Correction ====================
+15:16:44 Number of Measurements : 1
+15:16:44 Calculated  correction : 0.225 mm
+15:16:44 Z-Reference (A)         : 130
+15:16:44 Z-Measured  value      : 115
+15:16:44 Control Difference     : 15
+          
+15:16:44 =================== Y-Correction ====================
+15:16:44 Trap on right side
+15:16:44 Number of Measurements : 1
+15:16:44 Calculated correction  : 0.09 mm
+15:16:44 Current on Right (A)   : 112
+15:16:44 Current on Left  (A)   : 118
+15:16:44 Control Difference     : 6
+          
+15:16:45 =================== Z-Correction ====================
+15:16:45 Number of Measurements : 1
+15:16:45 Calculated  correction : 0.195 mm
+15:16:45 Z-Reference (A)         : 130
+15:16:45 Z-Measured  value      : 117
+15:16:45 Control Difference     : 13
+          
+15:16:45 =================== Y-Correction ====================
+15:16:45 Trap on right side
+15:16:45 Number of Measurements : 1
+15:16:45 Calculated correction  : 0.12 mm
+15:16:45 Current on Right (A)   : 107
+15:16:45 Current on Left  (A)   : 115
+15:16:45 Control Difference     : 8
+          
+15:16:45 =================== Z-Correction ====================
+15:16:45 Number of Measurements : 1
+15:16:45 Calculated  correction : 0.105 mm
+15:16:45 Z-Reference (A)         : 130
+15:16:45 Z-Measured  value      : 123
+15:16:45 Control Difference     : 7
+          
+15:16:45 =================== Y-Correction ====================
+15:16:45 Trap on left side
+15:16:45 Number of Measurements : 1
+15:16:45 Calculated correction  : 0.105 mm
+15:16:45 Current on Right (A)   : 107
+15:16:45 Current on Left  (A)   : 114
+15:16:45 Control Difference     : 7
+          
+15:16:46 =================== Z-Correction ====================
+15:16:46 Number of Measurements : 1
+15:16:46 Calculated  correction : 0.195 mm
+15:16:46 Z-Reference (A)         : 130
+15:16:46 Z-Measured  value      : 117
+15:16:46 Control Difference     : 13
+          
+15:16:46 =================== Y-Correction ====================
+15:16:46 Trap on right side
+15:16:46 Number of Measurements : 1
+15:16:46 Calculated correction  : 0.12 mm
+15:16:46 Current on Right (A)   : 106
+15:16:46 Current on Left  (A)   : 114
+15:16:46 Control Difference     : 8
+          
+15:16:46 =================== Y-Correction ====================
+15:16:46 Trap on left side
+15:16:46 Number of Measurements : 1
+15:16:46 Calculated correction  : 0.15 mm
+15:16:46 Current on Right (A)   : 106
+15:16:46 Current on Left  (A)   : 116
+15:16:46 Control Difference     : 10
+          
+15:16:46 =================== Z-Correction ====================
+15:16:46 Number of Measurements : 1
+15:16:46 Calculated  correction : 0.135 mm
+15:16:46 Z-Reference (A)         : 130
+15:16:46 Z-Measured  value      : 121
+15:16:46 Control Difference     : 9
+          
+15:16:46 =================== Y-Correction ====================
+15:16:46 Trap on right side
+15:16:46 Number of Measurements : 1
+15:16:46 Calculated correction  : 0.135 mm
+15:16:46 Current on Right (A)   : 107
+15:16:46 Current on Left  (A)   : 116
+15:16:46 Control Difference     : 9
+          
+15:16:47 =================== Z-Correction ====================
+15:16:47 Number of Measurements : 1
+15:16:47 Calculated  correction : 0.18 mm
+15:16:47 Z-Reference (A)         : 130
+15:16:47 Z-Measured  value      : 118
+15:16:47 Control Difference     : 12
+          
+15:16:47 =================== Y-Correction ====================
+15:16:47 Trap on left side
+15:16:47 Number of Measurements : 1
+15:16:47 Calculated correction  : 0.105 mm
+15:16:47 Current on Right (A)   : 107
+15:16:47 Current on Left  (A)   : 114
+15:16:47 Control Difference     : 7
+          
+15:16:47 =================== Z-Correction ====================
+15:16:47 Number of Measurements : 1
+15:16:47 Calculated  correction : 0.165 mm
+15:16:47 Z-Reference (A)         : 130
+15:16:47 Z-Measured  value      : 119
+15:16:47 Control Difference     : 11
+          
+15:16:47 =================== Y-Correction ====================
+15:16:47 Trap on right side
+15:16:47 Number of Measurements : 1
+15:16:47 Calculated correction  : 0.09 mm
+15:16:47 Current on Right (A)   : 108
+15:16:47 Current on Left  (A)   : 114
+15:16:47 Control Difference     : 6
+          
+15:16:48 =================== Z-Correction ====================
+15:16:48 Number of Measurements : 1
+15:16:48 Calculated  correction : 0.135 mm
+15:16:48 Z-Reference (A)         : 130
+15:16:48 Z-Measured  value      : 121
+15:16:48 Control Difference     : 9
+          
+15:16:48 =================== Y-Correction ====================
+15:16:48 Trap on left side
+15:16:48 Number of Measurements : 1
+15:16:48 Calculated correction  : 0.12 mm
+15:16:48 Current on Right (A)   : 108
+15:16:48 Current on Left  (A)   : 116
+15:16:48 Control Difference     : 8
+          
+15:16:48 ============== Accumulated corrections ==============
+15:16:48 Total Corrections Y: -7.76503
+15:16:48 Total Corrections Z: -7.47
+          
+15:16:48 Calculated Z-Reference value: 124.3629
+15:16:48 Number of Left   trap events: 63
+15:16:48 Number of right  trap events: 62
+15:16:48 Number of Center trap events: 124
+          
+15:41:26 =================== Active trackdata ================
+15:41:26 Tracksystem : 2
+15:41:26 SeamName    : weldTest
+15:41:26 TrackType   : Centerline
+15:41:26 Gain_y      : 30
+15:41:26 Gain_z      : 30
+15:41:26 Bias        : 0
+15:41:26 Z-Reference   : 0
+15:41:26 Weave time  : 0.25 seconds
+          
+          
+15:41:50 =================== Active trackdata ================
+15:41:50 Tracksystem : 2
+15:41:50 SeamName    : weldTest
+15:41:50 TrackType   : Centerline
+15:41:50 Gain_y      : 30
+15:41:50 Gain_z      : 30
+15:41:50 Bias        : 0
+15:41:50 Z-Reference   : 0
+15:41:50 Weave time  : 0.25 seconds
+          
+          
+15:45:10 =================== Active trackdata ================
+15:45:10 Tracksystem : 2
+15:45:10 SeamName    : weldTest
+15:45:10 TrackType   : Centerline
+15:45:10 Gain_y      : 30
+15:45:10 Gain_z      : 30
+15:45:10 Bias        : 0
+15:45:10 Z-Reference   : 0
+15:45:10 Weave time  : 0.25 seconds
+          
+          
+15:45:25 =================== Active trackdata ================
+15:45:25 Tracksystem : 2
+15:45:25 SeamName    : weldTest
+15:45:25 TrackType   : Centerline
+15:45:25 Gain_y      : 30
+15:45:25 Gain_z      : 30
+15:45:25 Bias        : 0
+15:45:25 Z-Reference   : 0
+15:45:25 Weave time  : 0.25 seconds
+          
+15:45:27 =================== Z-Correction ====================
+15:45:27 Number of Measurements : 1
+15:45:27 Calculated  correction : 0.165 mm
+15:45:27 Z-Reference (A)         : 130
+15:45:27 Z-Measured  value      : 119
+15:45:27 Control Difference     : 11
+          
+15:45:27 =================== Y-Correction ====================
+15:45:27 Trap on right side
+15:45:27 Number of Measurements : 1
+15:45:27 Calculated correction  : 0.48 mm
+15:45:27 Current on Right (A)   : 106
+15:45:27 Current on Left  (A)   : 138
+15:45:27 Control Difference     : 32
+          
+15:45:27 =================== Y-Correction ====================
+15:45:27 Trap on left side
+15:45:27 Number of Measurements : 1
+15:45:27 Calculated correction  : 0.315 mm
+15:45:27 Current on Right (A)   : 106
+15:45:27 Current on Left  (A)   : 127
+15:45:27 Control Difference     : 21
+          
+15:45:27 =================== Z-Correction ====================
+15:45:27 Number of Measurements : 1
+15:45:27 Calculated  correction : 0.12 mm
+15:45:27 Z-Reference (A)         : 130
+15:45:27 Z-Measured  value      : 122
+15:45:27 Control Difference     : 8
+          
+15:45:28 =================== Z-Correction ====================
+15:45:28 Number of Measurements : 1
+15:45:28 Calculated  correction : 0.09 mm
+15:45:28 Z-Reference (A)         : 130
+15:45:28 Z-Measured  value      : 124
+15:45:28 Control Difference     : 6
+          
+15:45:28 =================== Z-Correction ====================
+15:45:28 Number of Measurements : 1
+15:45:28 Calculated  correction : -0.09 mm
+15:45:28 Z-Reference (A)         : 130
+15:45:28 Z-Measured  value      : 136
+15:45:28 Control Difference     : -6
+          
+15:45:30 =================== Y-Correction ====================
+15:45:30 Trap on right side
+15:45:30 Number of Measurements : 1
+15:45:30 Calculated correction  : 0.12 mm
+15:45:30 Current on Right (A)   : 120
+15:45:30 Current on Left  (A)   : 128
+15:45:30 Control Difference     : 8
+          
+15:45:30 =================== Y-Correction ====================
+15:45:30 Trap on left side
+15:45:30 Number of Measurements : 1
+15:45:30 Calculated correction  : 0.105 mm
+15:45:30 Current on Right (A)   : 120
+15:45:30 Current on Left  (A)   : 127
+15:45:30 Control Difference     : 7
+          
+15:45:31 =================== Y-Correction ====================
+15:45:31 Trap on right side
+15:45:31 Number of Measurements : 1
+15:45:31 Calculated correction  : 0.15 mm
+15:45:31 Current on Right (A)   : 117
+15:45:31 Current on Left  (A)   : 127
+15:45:31 Control Difference     : 10
+          
+15:45:31 =================== Y-Correction ====================
+15:45:31 Trap on left side
+15:45:31 Number of Measurements : 1
+15:45:31 Calculated correction  : 0.12 mm
+15:45:31 Current on Right (A)   : 117
+15:45:31 Current on Left  (A)   : 125
+15:45:31 Control Difference     : 8
+          
+15:45:31 =================== Y-Correction ====================
+15:45:31 Trap on right side
+15:45:31 Number of Measurements : 1
+15:45:31 Calculated correction  : 0.12 mm
+15:45:31 Current on Right (A)   : 117
+15:45:31 Current on Left  (A)   : 125
+15:45:31 Control Difference     : 8
+          
+15:45:32 =================== Y-Correction ====================
+15:45:32 Trap on left side
+15:45:32 Number of Measurements : 1
+15:45:32 Calculated correction  : 0.195 mm
+15:45:32 Current on Right (A)   : 117
+15:45:32 Current on Left  (A)   : 130
+15:45:32 Control Difference     : 13
+          
+15:45:32 =================== Y-Correction ====================
+15:45:32 Trap on right side
+15:45:32 Number of Measurements : 1
+15:45:32 Calculated correction  : 0.165 mm
+15:45:32 Current on Right (A)   : 119
+15:45:32 Current on Left  (A)   : 130
+15:45:32 Control Difference     : 11
+          
+15:45:32 =================== Y-Correction ====================
+15:45:32 Trap on left side
+15:45:32 Number of Measurements : 1
+15:45:32 Calculated correction  : 0.09 mm
+15:45:32 Current on Right (A)   : 119
+15:45:32 Current on Left  (A)   : 125
+15:45:32 Control Difference     : 6
+          
+15:45:32 =================== Z-Correction ====================
+15:45:32 Number of Measurements : 1
+15:45:32 Calculated  correction : 0.09 mm
+15:45:32 Z-Reference (A)         : 130
+15:45:32 Z-Measured  value      : 124
+15:45:32 Control Difference     : 6
+          
+15:45:34 =================== Y-Correction ====================
+15:45:34 Trap on left side
+15:45:34 Number of Measurements : 1
+15:45:34 Calculated correction  : 0.165 mm
+15:45:34 Current on Right (A)   : 118
+15:45:34 Current on Left  (A)   : 129
+15:45:34 Control Difference     : 11
+          
+15:45:34 =================== Y-Correction ====================
+15:45:34 Trap on right side
+15:45:34 Number of Measurements : 1
+15:45:34 Calculated correction  : 0.18 mm
+15:45:34 Current on Right (A)   : 117
+15:45:34 Current on Left  (A)   : 129
+15:45:34 Control Difference     : 12
+          
+15:45:34 =================== Y-Correction ====================
+15:45:34 Trap on left side
+15:45:34 Number of Measurements : 1
+15:45:34 Calculated correction  : 0.12 mm
+15:45:34 Current on Right (A)   : 117
+15:45:34 Current on Left  (A)   : 125
+15:45:34 Control Difference     : 8
+          
+15:45:34 =================== Y-Correction ====================
+15:45:34 Trap on right side
+15:45:34 Number of Measurements : 1
+15:45:34 Calculated correction  : 0.105 mm
+15:45:34 Current on Right (A)   : 118
+15:45:34 Current on Left  (A)   : 125
+15:45:34 Control Difference     : 7
+          
+15:45:35 =================== Y-Correction ====================
+15:45:35 Trap on left side
+15:45:35 Number of Measurements : 1
+15:45:35 Calculated correction  : 0.12 mm
+15:45:35 Current on Right (A)   : 118
+15:45:35 Current on Left  (A)   : 126
+15:45:35 Control Difference     : 8
+          
+15:45:35 =================== Y-Correction ====================
+15:45:35 Trap on right side
+15:45:35 Number of Measurements : 1
+15:45:35 Calculated correction  : 0.105 mm
+15:45:35 Current on Right (A)   : 119
+15:45:35 Current on Left  (A)   : 126
+15:45:35 Control Difference     : 7
+          
+15:45:38 =================== Z-Correction ====================
+15:45:38 Number of Measurements : 1
+15:45:38 Calculated  correction : 0.09 mm
+15:45:38 Z-Reference (A)         : 130
+15:45:38 Z-Measured  value      : 124
+15:45:38 Control Difference     : 6
+          
+15:45:38 =================== Y-Correction ====================
+15:45:38 Trap on left side
+15:45:38 Number of Measurements : 1
+15:45:38 Calculated correction  : 0.105 mm
+15:45:38 Current on Right (A)   : 121
+15:45:38 Current on Left  (A)   : 128
+15:45:38 Control Difference     : 7
+          
+15:45:38 =================== Y-Correction ====================
+15:45:38 Trap on right side
+15:45:38 Number of Measurements : 1
+15:45:38 Calculated correction  : 0.12 mm
+15:45:38 Current on Right (A)   : 120
+15:45:38 Current on Left  (A)   : 128
+15:45:38 Control Difference     : 8
+          
+15:45:38 =================== Y-Correction ====================
+15:45:38 Trap on left side
+15:45:38 Number of Measurements : 1
+15:45:38 Calculated correction  : 0.18 mm
+15:45:38 Current on Right (A)   : 120
+15:45:38 Current on Left  (A)   : 132
+15:45:38 Control Difference     : 12
+          
+15:45:38 =================== Z-Correction ====================
+15:45:38 Number of Measurements : 1
+15:45:38 Calculated  correction : -0.105 mm
+15:45:38 Z-Reference (A)         : 130
+15:45:38 Z-Measured  value      : 137
+15:45:38 Control Difference     : -7
+          
+15:45:38 =================== Y-Correction ====================
+15:45:38 Trap on right side
+15:45:38 Number of Measurements : 1
+15:45:38 Calculated correction  : 0.225 mm
+15:45:38 Current on Right (A)   : 117
+15:45:38 Current on Left  (A)   : 132
+15:45:38 Control Difference     : 15
+          
+15:45:39 =================== Y-Correction ====================
+15:45:39 Trap on left side
+15:45:39 Number of Measurements : 1
+15:45:39 Calculated correction  : 0.105 mm
+15:45:39 Current on Right (A)   : 117
+15:45:39 Current on Left  (A)   : 124
+15:45:39 Control Difference     : 7
+          
+15:45:39 =================== Z-Correction ====================
+15:45:39 Number of Measurements : 1
+15:45:39 Calculated  correction : 0.09 mm
+15:45:39 Z-Reference (A)         : 130
+15:45:39 Z-Measured  value      : 124
+15:45:39 Control Difference     : 6
+          
+15:45:39 =================== Y-Correction ====================
+15:45:39 Trap on right side
+15:45:39 Number of Measurements : 1
+15:45:39 Calculated correction  : 0.12 mm
+15:45:39 Current on Right (A)   : 116
+15:45:39 Current on Left  (A)   : 124
+15:45:39 Control Difference     : 8
+          
+15:45:40 =================== Y-Correction ====================
+15:45:40 Trap on left side
+15:45:40 Number of Measurements : 1
+15:45:40 Calculated correction  : 0.21 mm
+15:45:40 Current on Right (A)   : 116
+15:45:40 Current on Left  (A)   : 130
+15:45:40 Control Difference     : 14
+          
+15:45:40 =================== Y-Correction ====================
+15:45:40 Trap on right side
+15:45:40 Number of Measurements : 1
+15:45:40 Calculated correction  : 0.12 mm
+15:45:40 Current on Right (A)   : 122
+15:45:40 Current on Left  (A)   : 130
+15:45:40 Control Difference     : 8
+          
+15:45:40 =================== Z-Correction ====================
+15:45:40 Number of Measurements : 1
+15:45:40 Calculated  correction : -0.135 mm
+15:45:40 Z-Reference (A)         : 130
+15:45:40 Z-Measured  value      : 139
+15:45:40 Control Difference     : -9
+          
+15:45:41 =================== Y-Correction ====================
+15:45:41 Trap on right side
+15:45:41 Number of Measurements : 1
+15:45:41 Calculated correction  : 0.09 mm
+15:45:41 Current on Right (A)   : 117
+15:45:41 Current on Left  (A)   : 123
+15:45:41 Control Difference     : 6
+          
+15:45:41 =================== Z-Correction ====================
+15:45:41 Number of Measurements : 1
+15:45:41 Calculated  correction : 0.105 mm
+15:45:41 Z-Reference (A)         : 130
+15:45:41 Z-Measured  value      : 123
+15:45:41 Control Difference     : 7
+          
+15:45:41 =================== Y-Correction ====================
+15:45:41 Trap on left side
+15:45:41 Number of Measurements : 1
+15:45:41 Calculated correction  : 0.105 mm
+15:45:41 Current on Right (A)   : 117
+15:45:41 Current on Left  (A)   : 124
+15:45:41 Control Difference     : 7
+          
+15:45:41 =================== Z-Correction ====================
+15:45:41 Number of Measurements : 1
+15:45:41 Calculated  correction : -0.09 mm
+15:45:41 Z-Reference (A)         : 130
+15:45:41 Z-Measured  value      : 136
+15:45:41 Control Difference     : -6
+          
+15:45:42 =================== Y-Correction ====================
+15:45:42 Trap on right side
+15:45:42 Number of Measurements : 1
+15:45:42 Calculated correction  : 0.225 mm
+15:45:42 Current on Right (A)   : 110
+15:45:42 Current on Left  (A)   : 125
+15:45:42 Control Difference     : 15
+          
+15:45:42 =================== Y-Correction ====================
+15:45:42 Trap on left side
+15:45:42 Number of Measurements : 1
+15:45:42 Calculated correction  : 0.225 mm
+15:45:42 Current on Right (A)   : 110
+15:45:42 Current on Left  (A)   : 125
+15:45:42 Control Difference     : 15
+          
+15:45:43 =================== Y-Correction ====================
+15:45:43 Trap on left side
+15:45:43 Number of Measurements : 1
+15:45:43 Calculated correction  : 0.135 mm
+15:45:43 Current on Right (A)   : 121
+15:45:43 Current on Left  (A)   : 130
+15:45:43 Control Difference     : 9
+          
+15:45:43 =================== Z-Correction ====================
+15:45:43 Number of Measurements : 1
+15:45:43 Calculated  correction : -0.09 mm
+15:45:43 Z-Reference (A)         : 130
+15:45:43 Z-Measured  value      : 136
+15:45:43 Control Difference     : -6
+          
+15:45:43 =================== Y-Correction ====================
+15:45:43 Trap on right side
+15:45:43 Number of Measurements : 1
+15:45:43 Calculated correction  : 0.15 mm
+15:45:43 Current on Right (A)   : 120
+15:45:43 Current on Left  (A)   : 130
+15:45:43 Control Difference     : 10
+          
+15:45:43 =================== Z-Correction ====================
+15:45:43 Number of Measurements : 1
+15:45:43 Calculated  correction : 0.09 mm
+15:45:43 Z-Reference (A)         : 130
+15:45:43 Z-Measured  value      : 124
+15:45:43 Control Difference     : 6
+          
+15:45:44 =================== Z-Correction ====================
+15:45:44 Number of Measurements : 1
+15:45:44 Calculated  correction : 0.09 mm
+15:45:44 Z-Reference (A)         : 130
+15:45:44 Z-Measured  value      : 124
+15:45:44 Control Difference     : 6
+          
+15:45:44 =================== Y-Correction ====================
+15:45:44 Trap on left side
+15:45:44 Number of Measurements : 1
+15:45:44 Calculated correction  : 0.15 mm
+15:45:44 Current on Right (A)   : 119
+15:45:44 Current on Left  (A)   : 129
+15:45:44 Control Difference     : 10
+          
+15:45:44 =================== Y-Correction ====================
+15:45:44 Trap on right side
+15:45:44 Number of Measurements : 1
+15:45:44 Calculated correction  : 0.225 mm
+15:45:44 Current on Right (A)   : 114
+15:45:44 Current on Left  (A)   : 129
+15:45:44 Control Difference     : 15
+          
+15:45:44 =================== Y-Correction ====================
+15:45:44 Trap on left side
+15:45:44 Number of Measurements : 1
+15:45:44 Calculated correction  : 0.21 mm
+15:45:44 Current on Right (A)   : 114
+15:45:44 Current on Left  (A)   : 128
+15:45:44 Control Difference     : 14
+          
+15:45:44 =================== Y-Correction ====================
+15:45:44 Trap on right side
+15:45:44 Number of Measurements : 1
+15:45:44 Calculated correction  : 0.21 mm
+15:45:44 Current on Right (A)   : 114
+15:45:44 Current on Left  (A)   : 128
+15:45:44 Control Difference     : 14
+          
+15:45:45 =================== Y-Correction ====================
+15:45:45 Trap on left side
+15:45:45 Number of Measurements : 1
+15:45:45 Calculated correction  : 0.165 mm
+15:45:45 Current on Right (A)   : 114
+15:45:45 Current on Left  (A)   : 125
+15:45:45 Control Difference     : 11
+          
+15:45:45 =================== Y-Correction ====================
+15:45:45 Trap on right side
+15:45:45 Number of Measurements : 1
+15:45:45 Calculated correction  : 0.195 mm
+15:45:45 Current on Right (A)   : 112
+15:45:45 Current on Left  (A)   : 125
+15:45:45 Control Difference     : 13
+          
+15:45:45 =================== Y-Correction ====================
+15:45:45 Trap on left side
+15:45:45 Number of Measurements : 1
+15:45:45 Calculated correction  : 0.15 mm
+15:45:45 Current on Right (A)   : 112
+15:45:45 Current on Left  (A)   : 122
+15:45:45 Control Difference     : 10
+          
+15:45:45 =================== Z-Correction ====================
+15:45:45 Number of Measurements : 1
+15:45:45 Calculated  correction : -0.12 mm
+15:45:45 Z-Reference (A)         : 130
+15:45:45 Z-Measured  value      : 138
+15:45:45 Control Difference     : -8
+          
+15:45:46 =================== Z-Correction ====================
+15:45:46 Number of Measurements : 1
+15:45:46 Calculated  correction : -0.12 mm
+15:45:46 Z-Reference (A)         : 130
+15:45:46 Z-Measured  value      : 138
+15:45:46 Control Difference     : -8
+          
+15:45:46 =================== Z-Correction ====================
+15:45:46 Number of Measurements : 1
+15:45:46 Calculated  correction : 0.09 mm
+15:45:46 Z-Reference (A)         : 130
+15:45:46 Z-Measured  value      : 124
+15:45:46 Control Difference     : 6
+          
+15:45:47 =================== Z-Correction ====================
+15:45:47 Number of Measurements : 1
+15:45:47 Calculated  correction : 0.165 mm
+15:45:47 Z-Reference (A)         : 130
+15:45:47 Z-Measured  value      : 119
+15:45:47 Control Difference     : 11
+          
+15:45:47 =================== Y-Correction ====================
+15:45:47 Trap on right side
+15:45:47 Number of Measurements : 1
+15:45:47 Calculated correction  : 0.12 mm
+15:45:47 Current on Right (A)   : 114
+15:45:47 Current on Left  (A)   : 122
+15:45:47 Control Difference     : 8
+          
+15:45:47 =================== Z-Correction ====================
+15:45:47 Number of Measurements : 1
+15:45:47 Calculated  correction : 0.105 mm
+15:45:47 Z-Reference (A)         : 130
+15:45:47 Z-Measured  value      : 123
+15:45:47 Control Difference     : 7
+          
+15:45:47 =================== Y-Correction ====================
+15:45:47 Trap on left side
+15:45:47 Number of Measurements : 1
+15:45:47 Calculated correction  : 0.105 mm
+15:45:47 Current on Right (A)   : 114
+15:45:47 Current on Left  (A)   : 121
+15:45:47 Control Difference     : 7
+          
+15:45:47 =================== Y-Correction ====================
+15:45:47 Trap on right side
+15:45:47 Number of Measurements : 1
+15:45:47 Calculated correction  : 0.09 mm
+15:45:47 Current on Right (A)   : 115
+15:45:47 Current on Left  (A)   : 121
+15:45:47 Control Difference     : 6
+          
+15:45:48 =================== Z-Correction ====================
+15:45:48 Number of Measurements : 1
+15:45:48 Calculated  correction : 0.15 mm
+15:45:48 Z-Reference (A)         : 130
+15:45:48 Z-Measured  value      : 120
+15:45:48 Control Difference     : 10
+          
+15:45:48 =================== Y-Correction ====================
+15:45:48 Trap on left side
+15:45:48 Number of Measurements : 1
+15:45:48 Calculated correction  : 0.135 mm
+15:45:48 Current on Right (A)   : 115
+15:45:48 Current on Left  (A)   : 124
+15:45:48 Control Difference     : 9
+          
+15:45:48 =================== Z-Correction ====================
+15:45:48 Number of Measurements : 1
+15:45:48 Calculated  correction : -0.09 mm
+15:45:48 Z-Reference (A)         : 130
+15:45:48 Z-Measured  value      : 136
+15:45:48 Control Difference     : -6
+          
+15:45:48 =================== Z-Correction ====================
+15:45:48 Number of Measurements : 1
+15:45:48 Calculated  correction : 0.105 mm
+15:45:48 Z-Reference (A)         : 130
+15:45:48 Z-Measured  value      : 123
+15:45:48 Control Difference     : 7
+          
+15:45:48 =================== Y-Correction ====================
+15:45:48 Trap on right side
+15:45:48 Number of Measurements : 1
+15:45:48 Calculated correction  : 0.165 mm
+15:45:48 Current on Right (A)   : 114
+15:45:48 Current on Left  (A)   : 125
+15:45:48 Control Difference     : 11
+          
+15:45:49 =================== Z-Correction ====================
+15:45:49 Number of Measurements : 1
+15:45:49 Calculated  correction : 0.18 mm
+15:45:49 Z-Reference (A)         : 130
+15:45:49 Z-Measured  value      : 118
+15:45:49 Control Difference     : 12
+          
+15:45:49 =================== Y-Correction ====================
+15:45:49 Trap on left side
+15:45:49 Number of Measurements : 1
+15:45:49 Calculated correction  : 0.3 mm
+15:45:49 Current on Right (A)   : 114
+15:45:49 Current on Left  (A)   : 134
+15:45:49 Control Difference     : 20
+          
+15:45:49 =================== Y-Correction ====================
+15:45:49 Trap on right side
+15:45:49 Number of Measurements : 1
+15:45:49 Calculated correction  : 0.36 mm
+15:45:49 Current on Right (A)   : 110
+15:45:49 Current on Left  (A)   : 134
+15:45:49 Control Difference     : 24
+          
+15:45:49 =================== Z-Correction ====================
+15:45:49 Number of Measurements : 1
+15:45:49 Calculated  correction : 0.18 mm
+15:45:49 Z-Reference (A)         : 130
+15:45:49 Z-Measured  value      : 118
+15:45:49 Control Difference     : 12
+          
+15:45:49 =================== Y-Correction ====================
+15:45:49 Trap on left side
+15:45:49 Number of Measurements : 1
+15:45:49 Calculated correction  : 0.195 mm
+15:45:49 Current on Right (A)   : 110
+15:45:49 Current on Left  (A)   : 123
+15:45:49 Control Difference     : 13
+          
+15:45:49 =================== Y-Correction ====================
+15:45:49 Trap on right side
+15:45:49 Number of Measurements : 1
+15:45:49 Calculated correction  : 0.15 mm
+15:45:49 Current on Right (A)   : 113
+15:45:49 Current on Left  (A)   : 123
+15:45:49 Control Difference     : 10
+          
+15:45:50 =================== Z-Correction ====================
+15:45:50 Number of Measurements : 1
+15:45:50 Calculated  correction : 0.105 mm
+15:45:50 Z-Reference (A)         : 130
+15:45:50 Z-Measured  value      : 123
+15:45:50 Control Difference     : 7
+          
+15:45:50 =================== Z-Correction ====================
+15:45:50 Number of Measurements : 1
+15:45:50 Calculated  correction : 0.105 mm
+15:45:50 Z-Reference (A)         : 130
+15:45:50 Z-Measured  value      : 123
+15:45:50 Control Difference     : 7
+          
+15:45:50 =================== Y-Correction ====================
+15:45:50 Trap on left side
+15:45:50 Number of Measurements : 1
+15:45:50 Calculated correction  : 0.135 mm
+15:45:50 Current on Right (A)   : 114
+15:45:50 Current on Left  (A)   : 123
+15:45:50 Control Difference     : 9
+          
+15:45:51 =================== Z-Correction ====================
+15:45:51 Number of Measurements : 1
+15:45:51 Calculated  correction : 0.165 mm
+15:45:51 Z-Reference (A)         : 130
+15:45:51 Z-Measured  value      : 119
+15:45:51 Control Difference     : 11
+          
+15:45:51 =================== Z-Correction ====================
+15:45:51 Number of Measurements : 1
+15:45:51 Calculated  correction : 0.165 mm
+15:45:51 Z-Reference (A)         : 130
+15:45:51 Z-Measured  value      : 119
+15:45:51 Control Difference     : 11
+          
+15:45:51 =================== Y-Correction ====================
+15:45:51 Trap on left side
+15:45:51 Number of Measurements : 1
+15:45:51 Calculated correction  : 0.15 mm
+15:45:51 Current on Right (A)   : 119
+15:45:51 Current on Left  (A)   : 129
+15:45:51 Control Difference     : 10
+          
+15:45:51 =================== Y-Correction ====================
+15:45:51 Trap on right side
+15:45:51 Number of Measurements : 1
+15:45:51 Calculated correction  : 0.195 mm
+15:45:51 Current on Right (A)   : 116
+15:45:51 Current on Left  (A)   : 129
+15:45:51 Control Difference     : 13
+          
+15:45:52 =================== Z-Correction ====================
+15:45:52 Number of Measurements : 1
+15:45:52 Calculated  correction : 0.15 mm
+15:45:52 Z-Reference (A)         : 130
+15:45:52 Z-Measured  value      : 120
+15:45:52 Control Difference     : 10
+          
+15:45:52 =================== Y-Correction ====================
+15:45:52 Trap on left side
+15:45:52 Number of Measurements : 1
+15:45:52 Calculated correction  : 0.09 mm
+15:45:52 Current on Right (A)   : 116
+15:45:52 Current on Left  (A)   : 122
+15:45:52 Control Difference     : 6
+          
+15:45:52 =================== Z-Correction ====================
+15:45:52 Number of Measurements : 1
+15:45:52 Calculated  correction : -0.105 mm
+15:45:52 Z-Reference (A)         : 130
+15:45:52 Z-Measured  value      : 137
+15:45:52 Control Difference     : -7
+          
+15:45:52 =================== Y-Correction ====================
+15:45:52 Trap on right side
+15:45:52 Number of Measurements : 1
+15:45:52 Calculated correction  : 0.165 mm
+15:45:52 Current on Right (A)   : 111
+15:45:52 Current on Left  (A)   : 122
+15:45:52 Control Difference     : 11
+          
+15:45:52 =================== Y-Correction ====================
+15:45:52 Trap on left side
+15:45:52 Number of Measurements : 1
+15:45:52 Calculated correction  : 0.195 mm
+15:45:52 Current on Right (A)   : 111
+15:45:52 Current on Left  (A)   : 124
+15:45:52 Control Difference     : 13
+          
+15:45:52 =================== Y-Correction ====================
+15:45:52 Trap on right side
+15:45:52 Number of Measurements : 1
+15:45:52 Calculated correction  : 0.195 mm
+15:45:52 Current on Right (A)   : 111
+15:45:52 Current on Left  (A)   : 124
+15:45:52 Control Difference     : 13
+          
+15:45:53 =================== Z-Correction ====================
+15:45:53 Number of Measurements : 1
+15:45:53 Calculated  correction : 0.135 mm
+15:45:53 Z-Reference (A)         : 130
+15:45:53 Z-Measured  value      : 121
+15:45:53 Control Difference     : 9
+          
+15:45:53 =================== Y-Correction ====================
+15:45:53 Trap on left side
+15:45:53 Number of Measurements : 1
+15:45:53 Calculated correction  : 0.24 mm
+15:45:53 Current on Right (A)   : 111
+15:45:53 Current on Left  (A)   : 127
+15:45:53 Control Difference     : 16
+          
+15:45:53 =================== Y-Correction ====================
+15:45:53 Trap on right side
+15:45:53 Number of Measurements : 1
+15:45:53 Calculated correction  : 0.135 mm
+15:45:53 Current on Right (A)   : 118
+15:45:53 Current on Left  (A)   : 127
+15:45:53 Control Difference     : 9
+          
+15:45:53 =================== Z-Correction ====================
+15:45:53 Number of Measurements : 1
+15:45:53 Calculated  correction : 0.12 mm
+15:45:53 Z-Reference (A)         : 130
+15:45:53 Z-Measured  value      : 122
+15:45:53 Control Difference     : 8
+          
+15:45:53 =================== Z-Correction ====================
+15:45:53 Number of Measurements : 1
+15:45:53 Calculated  correction : -0.09 mm
+15:45:53 Z-Reference (A)         : 130
+15:45:53 Z-Measured  value      : 136
+15:45:53 Control Difference     : -6
+          
+15:45:54 =================== Z-Correction ====================
+15:45:54 Number of Measurements : 1
+15:45:54 Calculated  correction : 0.15 mm
+15:45:54 Z-Reference (A)         : 130
+15:45:54 Z-Measured  value      : 120
+15:45:54 Control Difference     : 10
+          
+15:45:54 =================== Z-Correction ====================
+15:45:54 Number of Measurements : 1
+15:45:54 Calculated  correction : -0.105 mm
+15:45:54 Z-Reference (A)         : 130
+15:45:54 Z-Measured  value      : 137
+15:45:54 Control Difference     : -7
+          
+15:45:54 =================== Y-Correction ====================
+15:45:54 Trap on right side
+15:45:54 Number of Measurements : 1
+15:45:54 Calculated correction  : 0.15 mm
+15:45:54 Current on Right (A)   : 116
+15:45:54 Current on Left  (A)   : 126
+15:45:54 Control Difference     : 10
+          
+15:45:54 =================== Z-Correction ====================
+15:45:54 Number of Measurements : 1
+15:45:54 Calculated  correction : 0.27 mm
+15:45:54 Z-Reference (A)         : 130
+15:45:54 Z-Measured  value      : 112
+15:45:54 Control Difference     : 18
+          
+15:45:54 =================== Y-Correction ====================
+15:45:54 Trap on left side
+15:45:54 Number of Measurements : 1
+15:45:54 Calculated correction  : 0.09 mm
+15:45:54 Current on Right (A)   : 116
+15:45:54 Current on Left  (A)   : 122
+15:45:54 Control Difference     : 6
+          
+15:45:54 =================== Z-Correction ====================
+15:45:54 Number of Measurements : 1
+15:45:54 Calculated  correction : -0.12 mm
+15:45:54 Z-Reference (A)         : 130
+15:45:54 Z-Measured  value      : 138
+15:45:54 Control Difference     : -8
+          
+15:45:54 =================== Y-Correction ====================
+15:45:54 Trap on right side
+15:45:54 Number of Measurements : 1
+15:45:54 Calculated correction  : 0.165 mm
+15:45:54 Current on Right (A)   : 111
+15:45:54 Current on Left  (A)   : 122
+15:45:54 Control Difference     : 11
+          
+15:45:55 =================== Z-Correction ====================
+15:45:55 Number of Measurements : 1
+15:45:55 Calculated  correction : 0.18 mm
+15:45:55 Z-Reference (A)         : 130
+15:45:55 Z-Measured  value      : 118
+15:45:55 Control Difference     : 12
+          
+15:45:55 =================== Y-Correction ====================
+15:45:55 Trap on left side
+15:45:55 Number of Measurements : 1
+15:45:55 Calculated correction  : 0.15 mm
+15:45:55 Current on Right (A)   : 111
+15:45:55 Current on Left  (A)   : 121
+15:45:55 Control Difference     : 10
+          
+15:45:55 =================== Y-Correction ====================
+15:45:55 Trap on right side
+15:45:55 Number of Measurements : 1
+15:45:55 Calculated correction  : 0.135 mm
+15:45:55 Current on Right (A)   : 112
+15:45:55 Current on Left  (A)   : 121
+15:45:55 Control Difference     : 9
+          
+15:45:55 =================== Z-Correction ====================
+15:45:55 Number of Measurements : 1
+15:45:55 Calculated  correction : 0.255 mm
+15:45:55 Z-Reference (A)         : 130
+15:45:55 Z-Measured  value      : 113
+15:45:55 Control Difference     : 17
+          
+15:45:55 =================== Y-Correction ====================
+15:45:55 Trap on left side
+15:45:55 Number of Measurements : 1
+15:45:55 Calculated correction  : 0.12 mm
+15:45:55 Current on Right (A)   : 112
+15:45:55 Current on Left  (A)   : 120
+15:45:55 Control Difference     : 8
+          
+15:45:55 =================== Z-Correction ====================
+15:45:55 Number of Measurements : 1
+15:45:55 Calculated  correction : -0.12 mm
+15:45:55 Z-Reference (A)         : 130
+15:45:55 Z-Measured  value      : 138
+15:45:55 Control Difference     : -8
+          
+15:45:56 =================== Z-Correction ====================
+15:45:56 Number of Measurements : 1
+15:45:56 Calculated  correction : 0.21 mm
+15:45:56 Z-Reference (A)         : 130
+15:45:56 Z-Measured  value      : 116
+15:45:56 Control Difference     : 14
+          
+15:45:56 =================== Y-Correction ====================
+15:45:56 Trap on left side
+15:45:56 Number of Measurements : 1
+15:45:56 Calculated correction  : 0.09 mm
+15:45:56 Current on Right (A)   : 123
+15:45:56 Current on Left  (A)   : 129
+15:45:56 Control Difference     : 6
+          
+15:45:56 =================== Y-Correction ====================
+15:45:56 Trap on right side
+15:45:56 Number of Measurements : 1
+15:45:56 Calculated correction  : 0.18 mm
+15:45:56 Current on Right (A)   : 117
+15:45:56 Current on Left  (A)   : 129
+15:45:56 Control Difference     : 12
+          
+15:45:56 =================== Z-Correction ====================
+15:45:56 Number of Measurements : 1
+15:45:56 Calculated  correction : 0.21 mm
+15:45:56 Z-Reference (A)         : 130
+15:45:56 Z-Measured  value      : 116
+15:45:56 Control Difference     : 14
+          
+15:45:56 =================== Y-Correction ====================
+15:45:56 Trap on left side
+15:45:56 Number of Measurements : 1
+15:45:56 Calculated correction  : 0.21 mm
+15:45:56 Current on Right (A)   : 117
+15:45:56 Current on Left  (A)   : 131
+15:45:56 Control Difference     : 14
+          
+15:45:56 =================== Z-Correction ====================
+15:45:56 Number of Measurements : 1
+15:45:56 Calculated  correction : -0.12 mm
+15:45:56 Z-Reference (A)         : 130
+15:45:56 Z-Measured  value      : 138
+15:45:56 Control Difference     : -8
+          
+15:45:56 =================== Y-Correction ====================
+15:45:56 Trap on right side
+15:45:56 Number of Measurements : 1
+15:45:56 Calculated correction  : 0.3 mm
+15:45:56 Current on Right (A)   : 111
+15:45:56 Current on Left  (A)   : 131
+15:45:56 Control Difference     : 20
+          
+15:45:57 =================== Z-Correction ====================
+15:45:57 Number of Measurements : 1
+15:45:57 Calculated  correction : 0.375 mm
+15:45:57 Z-Reference (A)         : 130
+15:45:57 Z-Measured  value      : 105
+15:45:57 Control Difference     : 25
+          
+15:45:57 =================== Y-Correction ====================
+15:45:57 Trap on left side
+15:45:57 Number of Measurements : 1
+15:45:57 Calculated correction  : 0.15 mm
+15:45:57 Current on Right (A)   : 111
+15:45:57 Current on Left  (A)   : 121
+15:45:57 Control Difference     : 10
+          
+15:45:57 =================== Z-Correction ====================
+15:45:57 Number of Measurements : 1
+15:45:57 Calculated  correction : -0.09 mm
+15:45:57 Z-Reference (A)         : 130
+15:45:57 Z-Measured  value      : 136
+15:45:57 Control Difference     : -6
+          
+15:45:57 =================== Y-Correction ====================
+15:45:57 Trap on right side
+15:45:57 Number of Measurements : 1
+15:45:57 Calculated correction  : 0.12 mm
+15:45:57 Current on Right (A)   : 113
+15:45:57 Current on Left  (A)   : 121
+15:45:57 Control Difference     : 8
+          
+15:45:57 =================== Z-Correction ====================
+15:45:57 Number of Measurements : 1
+15:45:57 Calculated  correction : 0.18 mm
+15:45:57 Z-Reference (A)         : 130
+15:45:57 Z-Measured  value      : 118
+15:45:57 Control Difference     : 12
+          
+15:45:57 =================== Y-Correction ====================
+15:45:57 Trap on left side
+15:45:57 Number of Measurements : 1
+15:45:57 Calculated correction  : 0.225 mm
+15:45:57 Current on Right (A)   : 113
+15:45:57 Current on Left  (A)   : 128
+15:45:57 Control Difference     : 15
+          
+15:45:57 =================== Y-Correction ====================
+15:45:57 Trap on right side
+15:45:57 Number of Measurements : 1
+15:45:57 Calculated correction  : 0.27 mm
+15:45:57 Current on Right (A)   : 110
+15:45:57 Current on Left  (A)   : 128
+15:45:57 Control Difference     : 18
+          
+15:45:58 ============== Accumulated corrections ==============
+15:45:58 Total Corrections Y: -11.01
+15:45:58 Total Corrections Z: -3
+          
+15:45:58 Calculated Z-Reference value: 128.2358
+15:45:58 Number of Left   trap events: 62
+15:45:58 Number of right  trap events: 62
+15:45:58 Number of Center trap events: 123
+          
+15:47:45 =================== Active trackdata ================
+15:47:45 Tracksystem : 2
+15:47:45 SeamName    : weldTest
+15:47:45 TrackType   : Centerline
+15:47:45 Gain_y      : 30
+15:47:45 Gain_z      : 30
+15:47:45 Bias        : 0
+15:47:45 Z-Reference   : 0
+15:47:45 Weave time  : 0.25 seconds
+          
+          
+15:48:16 =================== Active trackdata ================
+15:48:16 Tracksystem : 2
+15:48:16 SeamName    : weldTest
+15:48:16 TrackType   : Centerline
+15:48:16 Gain_y      : 30
+15:48:16 Gain_z      : 30
+15:48:16 Bias        : 0
+15:48:16 Z-Reference   : 0
+15:48:16 Weave time  : 0.208333 seconds
+          
+          
+15:51:17 =================== Active trackdata ================
+15:51:17 Tracksystem : 2
+15:51:17 SeamName    : weldTest
+15:51:17 TrackType   : Centerline
+15:51:17 Gain_y      : 30
+15:51:17 Gain_z      : 30
+15:51:17 Bias        : 0
+15:51:17 Z-Reference   : 0
+15:51:17 Weave time  : 0.208333 seconds
+          
+          
+15:51:33 =================== Active trackdata ================
+15:51:33 Tracksystem : 2
+15:51:34 SeamName    : weldTest
+15:51:34 TrackType   : Centerline
+15:51:34 Gain_y      : 30
+15:51:34 Gain_z      : 30
+15:51:34 Bias        : 0
+15:51:34 Z-Reference   : 0
+15:51:34 Weave time  : 0.208333 seconds
+          
+15:51:35 =================== Z-Correction ====================
+15:51:35 Number of Measurements : 1
+15:51:36 Calculated  correction : 0.12 mm
+15:51:36 Z-Reference (A)         : 130
+15:51:36 Z-Measured  value      : 122
+15:51:36 Control Difference     : 8
+          
+15:51:36 =================== Y-Correction ====================
+15:51:36 Trap on right side
+15:51:36 Number of Measurements : 1
+15:51:36 Calculated correction  : 0.465 mm
+15:51:36 Current on Right (A)   : 117
+15:51:36 Current on Left  (A)   : 148
+15:51:36 Control Difference     : 31
+          
+15:51:36 =================== Z-Correction ====================
+15:51:36 Number of Measurements : 1
+15:51:36 Calculated  correction : -0.09 mm
+15:51:36 Z-Reference (A)         : 130
+15:51:36 Z-Measured  value      : 136
+15:51:36 Control Difference     : -6
+          
+15:51:36 =================== Y-Correction ====================
+15:51:36 Trap on left side
+15:51:36 Number of Measurements : 1
+15:51:36 Calculated correction  : 0.36 mm
+15:51:36 Current on Right (A)   : 117
+15:51:36 Current on Left  (A)   : 141
+15:51:36 Control Difference     : 24
+          
+15:51:36 =================== Y-Correction ====================
+15:51:36 Trap on right side
+15:51:36 Number of Measurements : 1
+15:51:36 Calculated correction  : 0.135 mm
+15:51:36 Current on Right (A)   : 132
+15:51:36 Current on Left  (A)   : 141
+15:51:36 Control Difference     : 9
+          
+15:51:36 =================== Z-Correction ====================
+15:51:36 Number of Measurements : 1
+15:51:36 Calculated  correction : -0.21 mm
+15:51:36 Z-Reference (A)         : 130
+15:51:36 Z-Measured  value      : 144
+15:51:36 Control Difference     : -14
+          
+15:51:36 =================== Y-Correction ====================
+15:51:36 Trap on right side
+15:51:36 Number of Measurements : 1
+15:51:36 Calculated correction  : -0.105 mm
+15:51:36 Current on Right (A)   : 136
+15:51:36 Current on Left  (A)   : 129
+15:51:36 Control Difference     : -7
+          
+15:51:37 =================== Z-Correction ====================
+15:51:37 Number of Measurements : 1
+15:51:37 Calculated  correction : -0.18 mm
+15:51:37 Z-Reference (A)         : 130
+15:51:37 Z-Measured  value      : 142
+15:51:37 Control Difference     : -12
+          
+15:51:37 =================== Y-Correction ====================
+15:51:37 Trap on left side
+15:51:37 Number of Measurements : 1
+15:51:37 Calculated correction  : -0.21 mm
+15:51:37 Current on Right (A)   : 136
+15:51:37 Current on Left  (A)   : 122
+15:51:37 Control Difference     : -14
+          
+15:51:37 =================== Y-Correction ====================
+15:51:37 Trap on right side
+15:51:37 Number of Measurements : 1
+15:51:37 Calculated correction  : -0.165 mm
+15:51:37 Current on Right (A)   : 133
+15:51:37 Current on Left  (A)   : 122
+15:51:37 Control Difference     : -11
+          
+15:51:37 =================== Z-Correction ====================
+15:51:37 Number of Measurements : 1
+15:51:37 Calculated  correction : -0.165 mm
+15:51:37 Z-Reference (A)         : 130
+15:51:37 Z-Measured  value      : 141
+15:51:37 Control Difference     : -11
+          
+15:51:37 =================== Z-Correction ====================
+15:51:37 Number of Measurements : 1
+15:51:37 Calculated  correction : -0.105 mm
+15:51:37 Z-Reference (A)         : 130
+15:51:37 Z-Measured  value      : 137
+15:51:37 Control Difference     : -7
+          
+15:51:38 =================== Z-Correction ====================
+15:51:38 Number of Measurements : 1
+15:51:38 Calculated  correction : -0.12 mm
+15:51:38 Z-Reference (A)         : 130
+15:51:38 Z-Measured  value      : 138
+15:51:38 Control Difference     : -8
+          
+15:51:38 =================== Y-Correction ====================
+15:51:38 Trap on left side
+15:51:38 Number of Measurements : 1
+15:51:38 Calculated correction  : 0.105 mm
+15:51:38 Current on Right (A)   : 126
+15:51:38 Current on Left  (A)   : 133
+15:51:38 Control Difference     : 7
+          
+15:51:38 =================== Z-Correction ====================
+15:51:38 Number of Measurements : 1
+15:51:38 Calculated  correction : -0.21 mm
+15:51:38 Z-Reference (A)         : 130
+15:51:38 Z-Measured  value      : 144
+15:51:38 Control Difference     : -14
+          
+15:51:38 =================== Z-Correction ====================
+15:51:38 Number of Measurements : 1
+15:51:38 Calculated  correction : -0.09 mm
+15:51:38 Z-Reference (A)         : 130
+15:51:38 Z-Measured  value      : 136
+15:51:38 Control Difference     : -6
+          
+15:51:38 =================== Z-Correction ====================
+15:51:38 Number of Measurements : 1
+15:51:38 Calculated  correction : -0.09 mm
+15:51:38 Z-Reference (A)         : 130
+15:51:38 Z-Measured  value      : 136
+15:51:38 Control Difference     : -6
+          
+15:51:39 =================== Z-Correction ====================
+15:51:39 Number of Measurements : 1
+15:51:39 Calculated  correction : -0.15 mm
+15:51:39 Z-Reference (A)         : 130
+15:51:39 Z-Measured  value      : 140
+15:51:39 Control Difference     : -10
+          
+15:51:39 =================== Y-Correction ====================
+15:51:39 Trap on right side
+15:51:39 Number of Measurements : 1
+15:51:39 Calculated correction  : 0.12 mm
+15:51:39 Current on Right (A)   : 127
+15:51:39 Current on Left  (A)   : 135
+15:51:39 Control Difference     : 8
+          
+15:51:39 =================== Z-Correction ====================
+15:51:39 Number of Measurements : 1
+15:51:39 Calculated  correction : -0.195 mm
+15:51:39 Z-Reference (A)         : 130
+15:51:39 Z-Measured  value      : 143
+15:51:39 Control Difference     : -13
+          
+15:51:40 =================== Z-Correction ====================
+15:51:40 Number of Measurements : 1
+15:51:40 Calculated  correction : -0.135 mm
+15:51:40 Z-Reference (A)         : 130
+15:51:40 Z-Measured  value      : 139
+15:51:40 Control Difference     : -9
+          
+15:51:40 =================== Z-Correction ====================
+15:51:40 Number of Measurements : 1
+15:51:40 Calculated  correction : -0.195 mm
+15:51:40 Z-Reference (A)         : 130
+15:51:40 Z-Measured  value      : 143
+15:51:40 Control Difference     : -13
+          
+15:51:41 =================== Z-Correction ====================
+15:51:41 Number of Measurements : 1
+15:51:41 Calculated  correction : -0.195 mm
+15:51:41 Z-Reference (A)         : 130
+15:51:41 Z-Measured  value      : 143
+15:51:41 Control Difference     : -13
+          
+15:51:41 =================== Y-Correction ====================
+15:51:41 Trap on right side
+15:51:41 Number of Measurements : 1
+15:51:41 Calculated correction  : 0.105 mm
+15:51:41 Current on Right (A)   : 125
+15:51:41 Current on Left  (A)   : 132
+15:51:41 Control Difference     : 7
+          
+15:51:41 =================== Z-Correction ====================
+15:51:41 Number of Measurements : 1
+15:51:41 Calculated  correction : 0.165 mm
+15:51:41 Z-Reference (A)         : 130
+15:51:41 Z-Measured  value      : 119
+15:51:41 Control Difference     : 11
+          
+15:51:41 =================== Z-Correction ====================
+15:51:41 Number of Measurements : 1
+15:51:41 Calculated  correction : -0.195 mm
+15:51:41 Z-Reference (A)         : 130
+15:51:41 Z-Measured  value      : 143
+15:51:41 Control Difference     : -13
+          
+15:51:41 =================== Y-Correction ====================
+15:51:41 Trap on left side
+15:51:41 Number of Measurements : 1
+15:51:41 Calculated correction  : 0.18 mm
+15:51:41 Current on Right (A)   : 125
+15:51:41 Current on Left  (A)   : 137
+15:51:41 Control Difference     : 12
+          
+15:51:41 =================== Z-Correction ====================
+15:51:41 Number of Measurements : 1
+15:51:41 Calculated  correction : -0.21 mm
+15:51:41 Z-Reference (A)         : 130
+15:51:41 Z-Measured  value      : 144
+15:51:41 Control Difference     : -14
+          
+15:51:41 =================== Y-Correction ====================
+15:51:41 Trap on right side
+15:51:41 Number of Measurements : 1
+15:51:41 Calculated correction  : 0.18 mm
+15:51:41 Current on Right (A)   : 125
+15:51:41 Current on Left  (A)   : 137
+15:51:41 Control Difference     : 12
+          
+15:51:42 =================== Z-Correction ====================
+15:51:42 Number of Measurements : 1
+15:51:42 Calculated  correction : 0.09 mm
+15:51:42 Z-Reference (A)         : 130
+15:51:42 Z-Measured  value      : 124
+15:51:42 Control Difference     : 6
+          
+15:51:42 =================== Z-Correction ====================
+15:51:42 Number of Measurements : 1
+15:51:42 Calculated  correction : -0.27 mm
+15:51:42 Z-Reference (A)         : 130
+15:51:42 Z-Measured  value      : 148
+15:51:42 Control Difference     : -18
+          
+15:51:42 =================== Z-Correction ====================
+15:51:42 Number of Measurements : 1
+15:51:42 Calculated  correction : -0.12 mm
+15:51:42 Z-Reference (A)         : 130
+15:51:42 Z-Measured  value      : 138
+15:51:42 Control Difference     : -8
+          
+15:51:43 =================== Y-Correction ====================
+15:51:43 Trap on left side
+15:51:43 Number of Measurements : 1
+15:51:43 Calculated correction  : 0.12 mm
+15:51:43 Current on Right (A)   : 125
+15:51:43 Current on Left  (A)   : 133
+15:51:43 Control Difference     : 8
+          
+15:51:43 =================== Z-Correction ====================
+15:51:43 Number of Measurements : 1
+15:51:43 Calculated  correction : -0.12 mm
+15:51:43 Z-Reference (A)         : 130
+15:51:43 Z-Measured  value      : 138
+15:51:43 Control Difference     : -8
+          
+15:51:43 =================== Y-Correction ====================
+15:51:43 Trap on right side
+15:51:43 Number of Measurements : 1
+15:51:43 Calculated correction  : 0.21 mm
+15:51:43 Current on Right (A)   : 119
+15:51:43 Current on Left  (A)   : 133
+15:51:43 Control Difference     : 14
+          
+15:51:43 =================== Z-Correction ====================
+15:51:43 Number of Measurements : 1
+15:51:43 Calculated  correction : 0.18 mm
+15:51:43 Z-Reference (A)         : 130
+15:51:43 Z-Measured  value      : 118
+15:51:43 Control Difference     : 12
+          
+15:51:43 =================== Y-Correction ====================
+15:51:43 Trap on left side
+15:51:43 Number of Measurements : 1
+15:51:43 Calculated correction  : 0.18 mm
+15:51:43 Current on Right (A)   : 119
+15:51:43 Current on Left  (A)   : 131
+15:51:43 Control Difference     : 12
+          
+15:51:43 =================== Z-Correction ====================
+15:51:43 Number of Measurements : 1
+15:51:43 Calculated  correction : -0.12 mm
+15:51:43 Z-Reference (A)         : 130
+15:51:43 Z-Measured  value      : 138
+15:51:43 Control Difference     : -8
+          
+15:51:43 =================== Y-Correction ====================
+15:51:43 Trap on right side
+15:51:43 Number of Measurements : 1
+15:51:43 Calculated correction  : 0.09 mm
+15:51:43 Current on Right (A)   : 125
+15:51:43 Current on Left  (A)   : 131
+15:51:43 Control Difference     : 6
+          
+15:51:43 =================== Z-Correction ====================
+15:51:43 Number of Measurements : 1
+15:51:43 Calculated  correction : -0.135 mm
+15:51:43 Z-Reference (A)         : 130
+15:51:43 Z-Measured  value      : 139
+15:51:43 Control Difference     : -9
+          
+15:51:44 =================== Y-Correction ====================
+15:51:44 Trap on right side
+15:51:44 Number of Measurements : 1
+15:51:44 Calculated correction  : 0.09 mm
+15:51:44 Current on Right (A)   : 124
+15:51:44 Current on Left  (A)   : 130
+15:51:44 Control Difference     : 6
+          
+15:51:44 =================== Z-Correction ====================
+15:51:44 Number of Measurements : 1
+15:51:44 Calculated  correction : 0.09 mm
+15:51:44 Z-Reference (A)         : 130
+15:51:44 Z-Measured  value      : 124
+15:51:44 Control Difference     : 6
+          
+15:51:44 =================== Z-Correction ====================
+15:51:44 Number of Measurements : 1
+15:51:44 Calculated  correction : -0.12 mm
+15:51:44 Z-Reference (A)         : 130
+15:51:44 Z-Measured  value      : 138
+15:51:44 Control Difference     : -8
+          
+15:51:44 =================== Z-Correction ====================
+15:51:44 Number of Measurements : 1
+15:51:44 Calculated  correction : 0.09 mm
+15:51:44 Z-Reference (A)         : 130
+15:51:44 Z-Measured  value      : 124
+15:51:44 Control Difference     : 6
+          
+15:51:44 =================== Y-Correction ====================
+15:51:44 Trap on left side
+15:51:44 Number of Measurements : 1
+15:51:44 Calculated correction  : 0.105 mm
+15:51:44 Current on Right (A)   : 123
+15:51:44 Current on Left  (A)   : 130
+15:51:44 Control Difference     : 7
+          
+15:51:44 =================== Z-Correction ====================
+15:51:44 Number of Measurements : 1
+15:51:44 Calculated  correction : -0.15 mm
+15:51:44 Z-Reference (A)         : 130
+15:51:44 Z-Measured  value      : 140
+15:51:44 Control Difference     : -10
+          
+15:51:44 =================== Y-Correction ====================
+15:51:44 Trap on right side
+15:51:44 Number of Measurements : 1
+15:51:44 Calculated correction  : 0.15 mm
+15:51:44 Current on Right (A)   : 120
+15:51:44 Current on Left  (A)   : 130
+15:51:44 Control Difference     : 10
+          
+15:51:45 =================== Z-Correction ====================
+15:51:45 Number of Measurements : 1
+15:51:45 Calculated  correction : 0.105 mm
+15:51:45 Z-Reference (A)         : 130
+15:51:45 Z-Measured  value      : 123
+15:51:45 Control Difference     : 7
+          
+15:51:45 =================== Y-Correction ====================
+15:51:45 Trap on left side
+15:51:45 Number of Measurements : 1
+15:51:45 Calculated correction  : 0.105 mm
+15:51:45 Current on Right (A)   : 120
+15:51:45 Current on Left  (A)   : 127
+15:51:45 Control Difference     : 7
+          
+15:51:45 =================== Z-Correction ====================
+15:51:45 Number of Measurements : 1
+15:51:45 Calculated  correction : -0.15 mm
+15:51:45 Z-Reference (A)         : 130
+15:51:45 Z-Measured  value      : 140
+15:51:45 Control Difference     : -10
+          
+15:51:45 =================== Z-Correction ====================
+15:51:45 Number of Measurements : 1
+15:51:45 Calculated  correction : 0.15 mm
+15:51:45 Z-Reference (A)         : 130
+15:51:45 Z-Measured  value      : 120
+15:51:45 Control Difference     : 10
+          
+15:51:45 =================== Y-Correction ====================
+15:51:45 Trap on left side
+15:51:45 Number of Measurements : 1
+15:51:45 Calculated correction  : 0.135 mm
+15:51:45 Current on Right (A)   : 122
+15:51:45 Current on Left  (A)   : 131
+15:51:45 Control Difference     : 9
+          
+15:51:45 =================== Z-Correction ====================
+15:51:45 Number of Measurements : 1
+15:51:45 Calculated  correction : -0.09 mm
+15:51:45 Z-Reference (A)         : 130
+15:51:45 Z-Measured  value      : 136
+15:51:45 Control Difference     : -6
+          
+15:51:45 =================== Y-Correction ====================
+15:51:45 Trap on right side
+15:51:45 Number of Measurements : 1
+15:51:45 Calculated correction  : 0.105 mm
+15:51:45 Current on Right (A)   : 124
+15:51:45 Current on Left  (A)   : 131
+15:51:45 Control Difference     : 7
+          
+15:51:46 =================== Z-Correction ====================
+15:51:46 Number of Measurements : 1
+15:51:46 Calculated  correction : -0.09 mm
+15:51:46 Z-Reference (A)         : 130
+15:51:46 Z-Measured  value      : 136
+15:51:46 Control Difference     : -6
+          
+15:51:46 =================== Y-Correction ====================
+15:51:46 Trap on right side
+15:51:46 Number of Measurements : 1
+15:51:46 Calculated correction  : 0.15 mm
+15:51:46 Current on Right (A)   : 118
+15:51:46 Current on Left  (A)   : 128
+15:51:46 Control Difference     : 10
+          
+15:51:46 =================== Y-Correction ====================
+15:51:46 Trap on left side
+15:51:46 Number of Measurements : 1
+15:51:46 Calculated correction  : 0.18 mm
+15:51:46 Current on Right (A)   : 118
+15:51:46 Current on Left  (A)   : 130
+15:51:46 Control Difference     : 12
+          
+15:51:46 =================== Z-Correction ====================
+15:51:46 Number of Measurements : 1
+15:51:46 Calculated  correction : -0.09 mm
+15:51:46 Z-Reference (A)         : 130
+15:51:46 Z-Measured  value      : 136
+15:51:46 Control Difference     : -6
+          
+15:51:46 =================== Y-Correction ====================
+15:51:46 Trap on right side
+15:51:46 Number of Measurements : 1
+15:51:46 Calculated correction  : 0.135 mm
+15:51:46 Current on Right (A)   : 121
+15:51:46 Current on Left  (A)   : 130
+15:51:46 Control Difference     : 9
+          
+15:51:46 =================== Z-Correction ====================
+15:51:46 Number of Measurements : 1
+15:51:46 Calculated  correction : 0.105 mm
+15:51:46 Z-Reference (A)         : 130
+15:51:46 Z-Measured  value      : 123
+15:51:46 Control Difference     : 7
+          
+15:51:46 =================== Z-Correction ====================
+15:51:46 Number of Measurements : 1
+15:51:46 Calculated  correction : -0.135 mm
+15:51:46 Z-Reference (A)         : 130
+15:51:46 Z-Measured  value      : 139
+15:51:46 Control Difference     : -9
+          
+15:51:47 =================== Z-Correction ====================
+15:51:47 Number of Measurements : 1
+15:51:47 Calculated  correction : 0.09 mm
+15:51:47 Z-Reference (A)         : 130
+15:51:47 Z-Measured  value      : 124
+15:51:47 Control Difference     : 6
+          
+15:51:47 =================== Z-Correction ====================
+15:51:47 Number of Measurements : 1
+15:51:47 Calculated  correction : -0.09 mm
+15:51:47 Z-Reference (A)         : 130
+15:51:47 Z-Measured  value      : 136
+15:51:47 Control Difference     : -6
+          
+15:51:47 =================== Z-Correction ====================
+15:51:47 Number of Measurements : 1
+15:51:47 Calculated  correction : 0.105 mm
+15:51:47 Z-Reference (A)         : 130
+15:51:47 Z-Measured  value      : 123
+15:51:47 Control Difference     : 7
+          
+15:51:47 =================== Y-Correction ====================
+15:51:47 Trap on left side
+15:51:47 Number of Measurements : 1
+15:51:47 Calculated correction  : 0.18 mm
+15:51:47 Current on Right (A)   : 121
+15:51:47 Current on Left  (A)   : 133
+15:51:47 Control Difference     : 12
+          
+15:51:47 =================== Y-Correction ====================
+15:51:47 Trap on right side
+15:51:47 Number of Measurements : 1
+15:51:47 Calculated correction  : 0.195 mm
+15:51:47 Current on Right (A)   : 120
+15:51:47 Current on Left  (A)   : 133
+15:51:47 Control Difference     : 13
+          
+15:51:48 =================== Y-Correction ====================
+15:51:48 Trap on left side
+15:51:48 Number of Measurements : 1
+15:51:48 Calculated correction  : 0.09 mm
+15:51:48 Current on Right (A)   : 120
+15:51:48 Current on Left  (A)   : 126
+15:51:48 Control Difference     : 6
+          
+15:51:48 =================== Z-Correction ====================
+15:51:48 Number of Measurements : 1
+15:51:48 Calculated  correction : -0.12 mm
+15:51:48 Z-Reference (A)         : 130
+15:51:48 Z-Measured  value      : 138
+15:51:48 Control Difference     : -8
+          
+15:51:48 =================== Z-Correction ====================
+15:51:48 Number of Measurements : 1
+15:51:48 Calculated  correction : 0.09 mm
+15:51:48 Z-Reference (A)         : 130
+15:51:48 Z-Measured  value      : 124
+15:51:48 Control Difference     : 6
+          
+15:51:49 =================== Y-Correction ====================
+15:51:49 Trap on right side
+15:51:49 Number of Measurements : 1
+15:51:49 Calculated correction  : 0.09 mm
+15:51:49 Current on Right (A)   : 120
+15:51:49 Current on Left  (A)   : 126
+15:51:49 Control Difference     : 6
+          
+15:51:49 =================== Z-Correction ====================
+15:51:49 Number of Measurements : 1
+15:51:49 Calculated  correction : 0.09 mm
+15:51:49 Z-Reference (A)         : 130
+15:51:49 Z-Measured  value      : 124
+15:51:49 Control Difference     : 6
+          
+15:51:49 =================== Y-Correction ====================
+15:51:49 Trap on left side
+15:51:49 Number of Measurements : 1
+15:51:49 Calculated correction  : 0.15 mm
+15:51:49 Current on Right (A)   : 120
+15:51:49 Current on Left  (A)   : 130
+15:51:49 Control Difference     : 10
+          
+15:51:49 =================== Y-Correction ====================
+15:51:49 Trap on right side
+15:51:49 Number of Measurements : 1
+15:51:49 Calculated correction  : 0.18 mm
+15:51:49 Current on Right (A)   : 118
+15:51:49 Current on Left  (A)   : 130
+15:51:49 Control Difference     : 12
+          
+15:51:49 =================== Z-Correction ====================
+15:51:49 Number of Measurements : 1
+15:51:49 Calculated  correction : 0.135 mm
+15:51:49 Z-Reference (A)         : 130
+15:51:49 Z-Measured  value      : 121
+15:51:49 Control Difference     : 9
+          
+15:51:49 =================== Y-Correction ====================
+15:51:49 Trap on left side
+15:51:49 Number of Measurements : 1
+15:51:49 Calculated correction  : 0.15 mm
+15:51:49 Current on Right (A)   : 118
+15:51:49 Current on Left  (A)   : 128
+15:51:49 Control Difference     : 10
+          
+15:51:50 =================== Z-Correction ====================
+15:51:50 Number of Measurements : 1
+15:51:50 Calculated  correction : 0.135 mm
+15:51:50 Z-Reference (A)         : 130
+15:51:50 Z-Measured  value      : 121
+15:51:50 Control Difference     : 9
+          
+15:51:50 =================== Z-Correction ====================
+15:51:50 Number of Measurements : 1
+15:51:50 Calculated  correction : -0.09 mm
+15:51:50 Z-Reference (A)         : 130
+15:51:50 Z-Measured  value      : 136
+15:51:50 Control Difference     : -6
+          
+15:51:50 =================== Z-Correction ====================
+15:51:50 Number of Measurements : 1
+15:51:50 Calculated  correction : 0.09 mm
+15:51:50 Z-Reference (A)         : 130
+15:51:50 Z-Measured  value      : 124
+15:51:50 Control Difference     : 6
+          
+15:51:50 =================== Z-Correction ====================
+15:51:50 Number of Measurements : 1
+15:51:50 Calculated  correction : -0.12 mm
+15:51:50 Z-Reference (A)         : 130
+15:51:50 Z-Measured  value      : 138
+15:51:50 Control Difference     : -8
+          
+15:51:50 =================== Z-Correction ====================
+15:51:50 Number of Measurements : 1
+15:51:50 Calculated  correction : 0.105 mm
+15:51:50 Z-Reference (A)         : 130
+15:51:50 Z-Measured  value      : 123
+15:51:50 Control Difference     : 7
+          
+15:51:51 =================== Z-Correction ====================
+15:51:51 Number of Measurements : 1
+15:51:51 Calculated  correction : -0.09 mm
+15:51:51 Z-Reference (A)         : 130
+15:51:51 Z-Measured  value      : 136
+15:51:51 Control Difference     : -6
+          
+15:51:51 =================== Z-Correction ====================
+15:51:51 Number of Measurements : 1
+15:51:51 Calculated  correction : 0.12 mm
+15:51:51 Z-Reference (A)         : 130
+15:51:51 Z-Measured  value      : 122
+15:51:51 Control Difference     : 8
+          
+15:51:51 =================== Z-Correction ====================
+15:51:51 Number of Measurements : 1
+15:51:51 Calculated  correction : 0.15 mm
+15:51:51 Z-Reference (A)         : 130
+15:51:51 Z-Measured  value      : 120
+15:51:51 Control Difference     : 10
+          
+15:51:52 =================== Y-Correction ====================
+15:51:52 Trap on right side
+15:51:52 Number of Measurements : 1
+15:51:52 Calculated correction  : 0.09 mm
+15:51:52 Current on Right (A)   : 120
+15:51:52 Current on Left  (A)   : 126
+15:51:52 Control Difference     : 6
+          
+15:51:52 =================== Z-Correction ====================
+15:51:52 Number of Measurements : 1
+15:51:52 Calculated  correction : 0.15 mm
+15:51:52 Z-Reference (A)         : 130
+15:51:52 Z-Measured  value      : 120
+15:51:52 Control Difference     : 10
+          
+15:51:52 =================== Y-Correction ====================
+15:51:52 Trap on left side
+15:51:52 Number of Measurements : 1
+15:51:52 Calculated correction  : 0.15 mm
+15:51:52 Current on Right (A)   : 120
+15:51:52 Current on Left  (A)   : 130
+15:51:52 Control Difference     : 10
+          
+15:51:52 =================== Z-Correction ====================
+15:51:52 Number of Measurements : 1
+15:51:52 Calculated  correction : -0.105 mm
+15:51:52 Z-Reference (A)         : 130
+15:51:52 Z-Measured  value      : 137
+15:51:52 Control Difference     : -7
+          
+15:51:52 =================== Y-Correction ====================
+15:51:52 Trap on right side
+15:51:52 Number of Measurements : 1
+15:51:52 Calculated correction  : 0.135 mm
+15:51:52 Current on Right (A)   : 121
+15:51:52 Current on Left  (A)   : 130
+15:51:52 Control Difference     : 9
+          
+15:51:52 =================== Z-Correction ====================
+15:51:52 Number of Measurements : 1
+15:51:52 Calculated  correction : 0.135 mm
+15:51:52 Z-Reference (A)         : 130
+15:51:52 Z-Measured  value      : 121
+15:51:52 Control Difference     : 9
+          
+15:51:52 =================== Y-Correction ====================
+15:51:52 Trap on left side
+15:51:52 Number of Measurements : 1
+15:51:52 Calculated correction  : 0.12 mm
+15:51:52 Current on Right (A)   : 121
+15:51:52 Current on Left  (A)   : 129
+15:51:52 Control Difference     : 8
+          
+15:51:52 =================== Y-Correction ====================
+15:51:52 Trap on right side
+15:51:52 Number of Measurements : 1
+15:51:52 Calculated correction  : 0.135 mm
+15:51:52 Current on Right (A)   : 120
+15:51:52 Current on Left  (A)   : 129
+15:51:52 Control Difference     : 9
+          
+15:51:52 =================== Z-Correction ====================
+15:51:52 Number of Measurements : 1
+15:51:52 Calculated  correction : 0.135 mm
+15:51:52 Z-Reference (A)         : 130
+15:51:52 Z-Measured  value      : 121
+15:51:52 Control Difference     : 9
+          
+15:51:53 =================== Y-Correction ====================
+15:51:53 Trap on left side
+15:51:53 Number of Measurements : 1
+15:51:53 Calculated correction  : 0.135 mm
+15:51:53 Current on Right (A)   : 120
+15:51:53 Current on Left  (A)   : 129
+15:51:53 Control Difference     : 9
+          
+15:51:53 =================== Y-Correction ====================
+15:51:53 Trap on right side
+15:51:53 Number of Measurements : 1
+15:51:53 Calculated correction  : 0.15 mm
+15:51:53 Current on Right (A)   : 119
+15:51:53 Current on Left  (A)   : 129
+15:51:53 Control Difference     : 10
+          
+15:51:53 =================== Z-Correction ====================
+15:51:53 Number of Measurements : 1
+15:51:53 Calculated  correction : 0.12 mm
+15:51:53 Z-Reference (A)         : 130
+15:51:53 Z-Measured  value      : 122
+15:51:53 Control Difference     : 8
+          
+15:51:53 =================== Y-Correction ====================
+15:51:53 Trap on left side
+15:51:53 Number of Measurements : 1
+15:51:53 Calculated correction  : 0.165 mm
+15:51:53 Current on Right (A)   : 119
+15:51:53 Current on Left  (A)   : 130
+15:51:53 Control Difference     : 11
+          
+15:51:53 =================== Y-Correction ====================
+15:51:53 Trap on right side
+15:51:53 Number of Measurements : 1
+15:51:53 Calculated correction  : 0.135 mm
+15:51:53 Current on Right (A)   : 121
+15:51:53 Current on Left  (A)   : 130
+15:51:53 Control Difference     : 9
+          
+15:51:53 =================== Z-Correction ====================
+15:51:53 Number of Measurements : 1
+15:51:53 Calculated  correction : 0.15 mm
+15:51:53 Z-Reference (A)         : 130
+15:51:53 Z-Measured  value      : 120
+15:51:53 Control Difference     : 10
+          
+15:51:53 =================== Y-Correction ====================
+15:51:53 Trap on left side
+15:51:53 Number of Measurements : 1
+15:51:53 Calculated correction  : 0.09 mm
+15:51:53 Current on Right (A)   : 121
+15:51:53 Current on Left  (A)   : 127
+15:51:53 Control Difference     : 6
+          
+15:51:54 =================== Z-Correction ====================
+15:51:54 Number of Measurements : 1
+15:51:54 Calculated  correction : 0.105 mm
+15:51:54 Z-Reference (A)         : 130
+15:51:54 Z-Measured  value      : 123
+15:51:54 Control Difference     : 7
+          
+15:51:54 =================== Z-Correction ====================
+15:51:54 Number of Measurements : 1
+15:51:54 Calculated  correction : -0.105 mm
+15:51:54 Z-Reference (A)         : 130
+15:51:54 Z-Measured  value      : 137
+15:51:54 Control Difference     : -7
+          
+15:51:54 =================== Z-Correction ====================
+15:51:54 Number of Measurements : 1
+15:51:54 Calculated  correction : 0.15 mm
+15:51:54 Z-Reference (A)         : 130
+15:51:54 Z-Measured  value      : 120
+15:51:54 Control Difference     : 10
+          
+15:51:54 =================== Y-Correction ====================
+15:51:54 Trap on left side
+15:51:54 Number of Measurements : 1
+15:51:54 Calculated correction  : 0.12 mm
+15:51:54 Current on Right (A)   : 121
+15:51:54 Current on Left  (A)   : 129
+15:51:54 Control Difference     : 8
+          
+15:51:54 =================== Z-Correction ====================
+15:51:54 Number of Measurements : 1
+15:51:54 Calculated  correction : -0.105 mm
+15:51:54 Z-Reference (A)         : 130
+15:51:54 Z-Measured  value      : 137
+15:51:54 Control Difference     : -7
+          
+15:51:54 =================== Y-Correction ====================
+15:51:54 Trap on right side
+15:51:54 Number of Measurements : 1
+15:51:54 Calculated correction  : 0.105 mm
+15:51:54 Current on Right (A)   : 122
+15:51:54 Current on Left  (A)   : 129
+15:51:54 Control Difference     : 7
+          
+15:51:55 =================== Z-Correction ====================
+15:51:55 Number of Measurements : 1
+15:51:55 Calculated  correction : 0.135 mm
+15:51:55 Z-Reference (A)         : 130
+15:51:55 Z-Measured  value      : 121
+15:51:55 Control Difference     : 9
+          
+15:51:55 =================== Z-Correction ====================
+15:51:55 Number of Measurements : 1
+15:51:55 Calculated  correction : -0.105 mm
+15:51:55 Z-Reference (A)         : 130
+15:51:55 Z-Measured  value      : 137
+15:51:55 Control Difference     : -7
+          
+15:51:55 =================== Y-Correction ====================
+15:51:55 Trap on right side
+15:51:55 Number of Measurements : 1
+15:51:55 Calculated correction  : 0.135 mm
+15:51:55 Current on Right (A)   : 115
+15:51:55 Current on Left  (A)   : 124
+15:51:55 Control Difference     : 9
+          
+15:51:55 =================== Z-Correction ====================
+15:51:55 Number of Measurements : 1
+15:51:55 Calculated  correction : 0.195 mm
+15:51:55 Z-Reference (A)         : 130
+15:51:55 Z-Measured  value      : 117
+15:51:55 Control Difference     : 13
+          
+15:51:55 =================== Y-Correction ====================
+15:51:55 Trap on left side
+15:51:55 Number of Measurements : 1
+15:51:55 Calculated correction  : 0.195 mm
+15:51:55 Current on Right (A)   : 115
+15:51:55 Current on Left  (A)   : 128
+15:51:55 Control Difference     : 13
+          
+15:51:55 =================== Z-Correction ====================
+15:51:55 Number of Measurements : 1
+15:51:55 Calculated  correction : -0.09 mm
+15:51:55 Z-Reference (A)         : 130
+15:51:55 Z-Measured  value      : 136
+15:51:55 Control Difference     : -6
+          
+15:51:55 =================== Y-Correction ====================
+15:51:55 Trap on right side
+15:51:55 Number of Measurements : 1
+15:51:55 Calculated correction  : 0.12 mm
+15:51:55 Current on Right (A)   : 120
+15:51:55 Current on Left  (A)   : 128
+15:51:55 Control Difference     : 8
+          
+15:51:55 =================== Z-Correction ====================
+15:51:55 Number of Measurements : 1
+15:51:55 Calculated  correction : 0.135 mm
+15:51:55 Z-Reference (A)         : 130
+15:51:55 Z-Measured  value      : 121
+15:51:55 Control Difference     : 9
+          
+15:51:56 =================== Y-Correction ====================
+15:51:56 Trap on left side
+15:51:56 Number of Measurements : 1
+15:51:56 Calculated correction  : 0.135 mm
+15:51:56 Current on Right (A)   : 120
+15:51:56 Current on Left  (A)   : 129
+15:51:56 Control Difference     : 9
+          
+15:51:56 =================== Y-Correction ====================
+15:51:56 Trap on right side
+15:51:56 Number of Measurements : 1
+15:51:56 Calculated correction  : 0.15 mm
+15:51:56 Current on Right (A)   : 119
+15:51:56 Current on Left  (A)   : 129
+15:51:56 Control Difference     : 10
+          
+15:51:56 =================== Z-Correction ====================
+15:51:56 Number of Measurements : 1
+15:51:56 Calculated  correction : -0.105 mm
+15:51:56 Z-Reference (A)         : 130
+15:51:56 Z-Measured  value      : 137
+15:51:56 Control Difference     : -7
+          
+15:51:56 =================== Z-Correction ====================
+15:51:56 Number of Measurements : 1
+15:51:56 Calculated  correction : 0.165 mm
+15:51:56 Z-Reference (A)         : 130
+15:51:56 Z-Measured  value      : 119
+15:51:56 Control Difference     : 11
+          
+15:51:56 =================== Z-Correction ====================
+15:51:56 Number of Measurements : 1
+15:51:56 Calculated  correction : -0.09 mm
+15:51:56 Z-Reference (A)         : 130
+15:51:56 Z-Measured  value      : 136
+15:51:56 Control Difference     : -6
+          
+15:51:57 =================== Z-Correction ====================
+15:51:57 Number of Measurements : 1
+15:51:57 Calculated  correction : 0.15 mm
+15:51:57 Z-Reference (A)         : 130
+15:51:57 Z-Measured  value      : 120
+15:51:57 Control Difference     : 10
+          
+15:51:57 =================== Z-Correction ====================
+15:51:57 Number of Measurements : 1
+15:51:57 Calculated  correction : 0.09 mm
+15:51:57 Z-Reference (A)         : 130
+15:51:57 Z-Measured  value      : 124
+15:51:57 Control Difference     : 6
+          
+15:51:57 =================== Y-Correction ====================
+15:51:57 Trap on left side
+15:51:57 Number of Measurements : 1
+15:51:57 Calculated correction  : 0.165 mm
+15:51:57 Current on Right (A)   : 120
+15:51:57 Current on Left  (A)   : 131
+15:51:57 Control Difference     : 11
+          
+15:51:57 =================== Y-Correction ====================
+15:51:57 Trap on right side
+15:51:57 Number of Measurements : 1
+15:51:57 Calculated correction  : 0.255 mm
+15:51:57 Current on Right (A)   : 114
+15:51:57 Current on Left  (A)   : 131
+15:51:57 Control Difference     : 17
+          
+15:51:58 =================== Z-Correction ====================
+15:51:58 Number of Measurements : 1
+15:51:58 Calculated  correction : 0.195 mm
+15:51:58 Z-Reference (A)         : 130
+15:51:58 Z-Measured  value      : 117
+15:51:58 Control Difference     : 13
+          
+15:51:58 =================== Y-Correction ====================
+15:51:58 Trap on left side
+15:51:58 Number of Measurements : 1
+15:51:58 Calculated correction  : 0.225 mm
+15:51:58 Current on Right (A)   : 114
+15:51:58 Current on Left  (A)   : 129
+15:51:58 Control Difference     : 15
+          
+15:51:58 =================== Z-Correction ====================
+15:51:58 Number of Measurements : 1
+15:51:58 Calculated  correction : -0.105 mm
+15:51:58 Z-Reference (A)         : 130
+15:51:58 Z-Measured  value      : 137
+15:51:58 Control Difference     : -7
+          
+15:51:58 =================== Z-Correction ====================
+15:51:58 Number of Measurements : 1
+15:51:58 Calculated  correction : 0.195 mm
+15:51:58 Z-Reference (A)         : 130
+15:51:58 Z-Measured  value      : 117
+15:51:58 Control Difference     : 13
+          
+15:51:58 =================== Y-Correction ====================
+15:51:58 Trap on right side
+15:51:58 Number of Measurements : 1
+15:51:58 Calculated correction  : 0.09 mm
+15:51:58 Current on Right (A)   : 120
+15:51:58 Current on Left  (A)   : 126
+15:51:58 Control Difference     : 6
+          
+15:51:58 =================== Z-Correction ====================
+15:51:58 Number of Measurements : 1
+15:51:58 Calculated  correction : 0.15 mm
+15:51:58 Z-Reference (A)         : 130
+15:51:58 Z-Measured  value      : 120
+15:51:58 Control Difference     : 10
+          
+15:51:59 =================== Z-Correction ====================
+15:51:59 Number of Measurements : 1
+15:51:59 Calculated  correction : 0.165 mm
+15:51:59 Z-Reference (A)         : 130
+15:51:59 Z-Measured  value      : 119
+15:51:59 Control Difference     : 11
+          
+15:51:59 =================== Z-Correction ====================
+15:51:59 Number of Measurements : 1
+15:51:59 Calculated  correction : 0.15 mm
+15:51:59 Z-Reference (A)         : 130
+15:51:59 Z-Measured  value      : 120
+15:51:59 Control Difference     : 10
+          
+15:51:59 =================== Y-Correction ====================
+15:51:59 Trap on left side
+15:51:59 Number of Measurements : 1
+15:51:59 Calculated correction  : 0.09 mm
+15:51:59 Current on Right (A)   : 120
+15:51:59 Current on Left  (A)   : 126
+15:51:59 Control Difference     : 6
+          
+15:51:59 =================== Y-Correction ====================
+15:51:59 Trap on right side
+15:51:59 Number of Measurements : 1
+15:51:59 Calculated correction  : 0.12 mm
+15:52:00 Current on Right (A)   : 118
+15:52:00 Current on Left  (A)   : 126
+15:52:00 Control Difference     : 8
+          
+15:52:00 =================== Z-Correction ====================
+15:52:00 Number of Measurements : 1
+15:52:00 Calculated  correction : 0.195 mm
+15:52:00 Z-Reference (A)         : 130
+15:52:00 Z-Measured  value      : 117
+15:52:00 Control Difference     : 13
+          
+15:52:00 =================== Y-Correction ====================
+15:52:00 Trap on left side
+15:52:00 Number of Measurements : 1
+15:52:00 Calculated correction  : 0.18 mm
+15:52:00 Current on Right (A)   : 118
+15:52:00 Current on Left  (A)   : 130
+15:52:00 Control Difference     : 12
+          
+15:52:00 =================== Y-Correction ====================
+15:52:00 Trap on right side
+15:52:00 Number of Measurements : 1
+15:52:00 Calculated correction  : 0.12 mm
+15:52:00 Current on Right (A)   : 122
+15:52:00 Current on Left  (A)   : 130
+15:52:00 Control Difference     : 8
+          
+15:52:00 =================== Z-Correction ====================
+15:52:00 Number of Measurements : 1
+15:52:00 Calculated  correction : 0.18 mm
+15:52:00 Z-Reference (A)         : 130
+15:52:00 Z-Measured  value      : 118
+15:52:00 Control Difference     : 12
+          
+15:52:00 =================== Z-Correction ====================
+15:52:00 Number of Measurements : 1
+15:52:00 Calculated  correction : -0.105 mm
+15:52:00 Z-Reference (A)         : 130
+15:52:00 Z-Measured  value      : 137
+15:52:00 Control Difference     : -7
+          
+15:52:00 =================== Y-Correction ====================
+15:52:00 Trap on right side
+15:52:00 Number of Measurements : 1
+15:52:00 Calculated correction  : 0.165 mm
+15:52:00 Current on Right (A)   : 116
+15:52:00 Current on Left  (A)   : 127
+15:52:00 Control Difference     : 11
+          
+15:52:00 =================== Z-Correction ====================
+15:52:00 Number of Measurements : 1
+15:52:00 Calculated  correction : 0.21 mm
+15:52:00 Z-Reference (A)         : 130
+15:52:00 Z-Measured  value      : 116
+15:52:00 Control Difference     : 14
+          
+15:52:01 =================== Y-Correction ====================
+15:52:01 Trap on left side
+15:52:01 Number of Measurements : 1
+15:52:01 Calculated correction  : 0.12 mm
+15:52:01 Current on Right (A)   : 116
+15:52:01 Current on Left  (A)   : 124
+15:52:01 Control Difference     : 8
+          
+15:52:01 =================== Y-Correction ====================
+15:52:01 Trap on right side
+15:52:01 Number of Measurements : 1
+15:52:01 Calculated correction  : 0.135 mm
+15:52:01 Current on Right (A)   : 115
+15:52:01 Current on Left  (A)   : 124
+15:52:01 Control Difference     : 9
+          
+15:52:01 =================== Z-Correction ====================
+15:52:01 Number of Measurements : 1
+15:52:01 Calculated  correction : 0.195 mm
+15:52:01 Z-Reference (A)         : 130
+15:52:01 Z-Measured  value      : 117
+15:52:01 Control Difference     : 13
+          
+15:52:01 =================== Y-Correction ====================
+15:52:01 Trap on left side
+15:52:01 Number of Measurements : 1
+15:52:01 Calculated correction  : 0.21 mm
+15:52:01 Current on Right (A)   : 115
+15:52:01 Current on Left  (A)   : 129
+15:52:01 Control Difference     : 14
+          
+15:52:01 =================== Y-Correction ====================
+15:52:01 Trap on right side
+15:52:01 Number of Measurements : 1
+15:52:01 Calculated correction  : 0.12 mm
+15:52:01 Current on Right (A)   : 121
+15:52:01 Current on Left  (A)   : 129
+15:52:01 Control Difference     : 8
+          
+15:52:01 =================== Z-Correction ====================
+15:52:01 Number of Measurements : 1
+15:52:01 Calculated  correction : 0.195 mm
+15:52:01 Z-Reference (A)         : 130
+15:52:01 Z-Measured  value      : 117
+15:52:01 Control Difference     : 13
+          
+15:52:02 =================== Y-Correction ====================
+15:52:02 Trap on right side
+15:52:02 Number of Measurements : 1
+15:52:02 Calculated correction  : 0.09 mm
+15:52:02 Current on Right (A)   : 119
+15:52:02 Current on Left  (A)   : 125
+15:52:02 Control Difference     : 6
+          
+15:52:02 =================== Z-Correction ====================
+15:52:02 Number of Measurements : 1
+15:52:02 Calculated  correction : 0.135 mm
+15:52:02 Z-Reference (A)         : 130
+15:52:02 Z-Measured  value      : 121
+15:52:02 Control Difference     : 9
+          
+15:52:02 =================== Z-Correction ====================
+15:52:02 Number of Measurements : 1
+15:52:02 Calculated  correction : -0.105 mm
+15:52:02 Z-Reference (A)         : 130
+15:52:02 Z-Measured  value      : 137
+15:52:02 Control Difference     : -7
+          
+15:52:02 =================== Y-Correction ====================
+15:52:02 Trap on right side
+15:52:02 Number of Measurements : 1
+15:52:02 Calculated correction  : 0.09 mm
+15:52:02 Current on Right (A)   : 117
+15:52:02 Current on Left  (A)   : 123
+15:52:02 Control Difference     : 6
+          
+15:52:02 =================== Z-Correction ====================
+15:52:02 Number of Measurements : 1
+15:52:02 Calculated  correction : 0.15 mm
+15:52:02 Z-Reference (A)         : 130
+15:52:02 Z-Measured  value      : 120
+15:52:02 Control Difference     : 10
+          
+15:52:02 =================== Y-Correction ====================
+15:52:02 Trap on left side
+15:52:02 Number of Measurements : 1
+15:52:02 Calculated correction  : 0.09 mm
+15:52:02 Current on Right (A)   : 117
+15:52:02 Current on Left  (A)   : 123
+15:52:02 Control Difference     : 6
+          
+15:52:03 =================== Z-Correction ====================
+15:52:03 Number of Measurements : 1
+15:52:03 Calculated  correction : 0.225 mm
+15:52:03 Z-Reference (A)         : 130
+15:52:03 Z-Measured  value      : 115
+15:52:03 Control Difference     : 15
+          
+15:52:03 =================== Y-Correction ====================
+15:52:03 Trap on left side
+15:52:03 Number of Measurements : 1
+15:52:03 Calculated correction  : 0.12 mm
+15:52:03 Current on Right (A)   : 119
+15:52:03 Current on Left  (A)   : 127
+15:52:03 Control Difference     : 8
+          
+15:52:03 =================== Y-Correction ====================
+15:52:03 Trap on right side
+15:52:03 Number of Measurements : 1
+15:52:03 Calculated correction  : 0.225 mm
+15:52:03 Current on Right (A)   : 112
+15:52:03 Current on Left  (A)   : 127
+15:52:03 Control Difference     : 15
+          
+15:52:03 =================== Z-Correction ====================
+15:52:03 Number of Measurements : 1
+15:52:03 Calculated  correction : 0.21 mm
+15:52:03 Z-Reference (A)         : 130
+15:52:03 Z-Measured  value      : 116
+15:52:03 Control Difference     : 14
+          
+15:52:03 =================== Y-Correction ====================
+15:52:03 Trap on left side
+15:52:03 Number of Measurements : 1
+15:52:03 Calculated correction  : 0.255 mm
+15:52:03 Current on Right (A)   : 112
+15:52:03 Current on Left  (A)   : 129
+15:52:03 Control Difference     : 17
+          
+15:52:03 =================== Y-Correction ====================
+15:52:03 Trap on right side
+15:52:03 Number of Measurements : 1
+15:52:03 Calculated correction  : 0.24 mm
+15:52:03 Current on Right (A)   : 113
+15:52:03 Current on Left  (A)   : 129
+15:52:03 Control Difference     : 16
+          
+15:52:03 =================== Z-Correction ====================
+15:52:03 Number of Measurements : 1
+15:52:03 Calculated  correction : 0.105 mm
+15:52:03 Z-Reference (A)         : 130
+15:52:03 Z-Measured  value      : 123
+15:52:03 Control Difference     : 7
+          
+15:52:03 =================== Y-Correction ====================
+15:52:03 Trap on left side
+15:52:03 Number of Measurements : 1
+15:52:03 Calculated correction  : 0.195 mm
+15:52:03 Current on Right (A)   : 113
+15:52:03 Current on Left  (A)   : 126
+15:52:03 Control Difference     : 13
+          
+15:52:04 =================== Y-Correction ====================
+15:52:04 Trap on right side
+15:52:04 Number of Measurements : 1
+15:52:04 Calculated correction  : 0.195 mm
+15:52:04 Current on Right (A)   : 113
+15:52:04 Current on Left  (A)   : 126
+15:52:04 Control Difference     : 13
+          
+15:52:04 =================== Z-Correction ====================
+15:52:04 Number of Measurements : 1
+15:52:04 Calculated  correction : 0.12 mm
+15:52:04 Z-Reference (A)         : 130
+15:52:04 Z-Measured  value      : 122
+15:52:04 Control Difference     : 8
+          
+15:52:04 =================== Y-Correction ====================
+15:52:04 Trap on left side
+15:52:04 Number of Measurements : 1
+15:52:04 Calculated correction  : 0.195 mm
+15:52:04 Current on Right (A)   : 113
+15:52:04 Current on Left  (A)   : 126
+15:52:04 Control Difference     : 13
+          
+15:52:04 =================== Z-Correction ====================
+15:52:04 Number of Measurements : 1
+15:52:04 Calculated  correction : 0.09 mm
+15:52:04 Z-Reference (A)         : 130
+15:52:04 Z-Measured  value      : 124
+15:52:04 Control Difference     : 6
+          
+15:52:04 =================== Y-Correction ====================
+15:52:04 Trap on left side
+15:52:04 Number of Measurements : 1
+15:52:04 Calculated correction  : -0.09 mm
+15:52:04 Current on Right (A)   : 122
+15:52:04 Current on Left  (A)   : 116
+15:52:04 Control Difference     : -6
+          
+15:52:05 =================== Y-Correction ====================
+15:52:05 Trap on right side
+15:52:05 Number of Measurements : 1
+15:52:05 Calculated correction  : -0.09 mm
+15:52:05 Current on Right (A)   : 122
+15:52:05 Current on Left  (A)   : 116
+15:52:05 Control Difference     : -6
+          
+15:52:05 =================== Z-Correction ====================
+15:52:05 Number of Measurements : 1
+15:52:05 Calculated  correction : 0.135 mm
+15:52:05 Z-Reference (A)         : 130
+15:52:05 Z-Measured  value      : 121
+15:52:05 Control Difference     : 9
+          
+15:52:05 =================== Z-Correction ====================
+15:52:05 Number of Measurements : 1
+15:52:05 Calculated  correction : 0.12 mm
+15:52:05 Z-Reference (A)         : 130
+15:52:05 Z-Measured  value      : 122
+15:52:05 Control Difference     : 8
+          
+15:52:05 =================== Y-Correction ====================
+15:52:05 Trap on left side
+15:52:05 Number of Measurements : 1
+15:52:05 Calculated correction  : 0.12 mm
+15:52:05 Current on Right (A)   : 115
+15:52:05 Current on Left  (A)   : 123
+15:52:05 Control Difference     : 8
+          
+15:52:05 =================== Y-Correction ====================
+15:52:05 Trap on right side
+15:52:05 Number of Measurements : 1
+15:52:05 Calculated correction  : 0.09 mm
+15:52:05 Current on Right (A)   : 117
+15:52:05 Current on Left  (A)   : 123
+15:52:05 Control Difference     : 6
+          
+15:52:05 =================== Z-Correction ====================
+15:52:05 Number of Measurements : 1
+15:52:05 Calculated  correction : 0.15 mm
+15:52:05 Z-Reference (A)         : 130
+15:52:05 Z-Measured  value      : 120
+15:52:05 Control Difference     : 10
+          
+15:52:06 =================== Y-Correction ====================
+15:52:06 Trap on left side
+15:52:06 Number of Measurements : 1
+15:52:06 Calculated correction  : 0.15 mm
+15:52:06 Current on Right (A)   : 117
+15:52:06 Current on Left  (A)   : 127
+15:52:06 Control Difference     : 10
+          
+15:52:06 =================== Z-Correction ====================
+15:52:06 Number of Measurements : 1
+15:52:06 Calculated  correction : -0.09 mm
+15:52:06 Z-Reference (A)         : 130
+15:52:06 Z-Measured  value      : 136
+15:52:06 Control Difference     : -6
+          
+15:52:06 =================== Y-Correction ====================
+15:52:06 Trap on right side
+15:52:06 Number of Measurements : 1
+15:52:06 Calculated correction  : 0.225 mm
+15:52:06 Current on Right (A)   : 112
+15:52:06 Current on Left  (A)   : 127
+15:52:06 Control Difference     : 15
+          
+15:52:06 =================== Z-Correction ====================
+15:52:06 Number of Measurements : 1
+15:52:06 Calculated  correction : 0.21 mm
+15:52:06 Z-Reference (A)         : 130
+15:52:06 Z-Measured  value      : 116
+15:52:06 Control Difference     : 14
+          
+15:52:06 =================== Y-Correction ====================
+15:52:06 Trap on left side
+15:52:06 Number of Measurements : 1
+15:52:06 Calculated correction  : 0.18 mm
+15:52:06 Current on Right (A)   : 112
+15:52:06 Current on Left  (A)   : 124
+15:52:06 Control Difference     : 12
+          
+15:52:07 =================== Y-Correction ====================
+15:52:07 Trap on right side
+15:52:07 Number of Measurements : 1
+15:52:07 Calculated correction  : 0.105 mm
+15:52:07 Current on Right (A)   : 116
+15:52:07 Current on Left  (A)   : 123
+15:52:07 Control Difference     : 7
+          
+15:52:07 =================== Z-Correction ====================
+15:52:07 Number of Measurements : 1
+15:52:07 Calculated  correction : 0.24 mm
+15:52:07 Z-Reference (A)         : 130
+15:52:07 Z-Measured  value      : 114
+15:52:07 Control Difference     : 16
+          
+15:52:07 ============== Accumulated corrections ==============
+15:52:07 Total Corrections Y: -9.705
+15:52:07 Total Corrections Z: -2.265
+          
+15:52:07 Calculated Z-Reference value: 129.4933
+15:52:07 Number of Left   trap events: 75
+15:52:07 Number of right  trap events: 75
+15:52:07 Number of Center trap events: 150
+          
+16:29:35 =================== Active trackdata ================
+16:29:35 Tracksystem : 2
+16:29:35 SeamName    : weldTest
+16:29:35 TrackType   : Centerline
+16:29:35 Gain_y      : 30
+16:29:35 Gain_z      : 30
+16:29:35 Bias        : 0
+16:29:35 Z-Reference   : 0
+16:29:35 Weave time  : 0.3 seconds
+          
+16:29:37 ======== Y-Correction positive Limit reached ========
+16:29:37 Trap on left side
+16:29:37 Number of Measurements      : 1
+16:29:37 Calculated correction       : 1.32 mm
+16:29:37 Limit correction to         : -0.484975 mm
+16:29:37 Control Difference          : 88
+16:29:37 Current on Right (A)   : 116
+16:29:37 Current on Left  (A)   : 204
+          
+16:29:37 ======== Z-Correction negative Limit reached ========
+16:29:37 Number of Measurements  : 1
+16:29:37 Calculated correction   : -1.545 mm
+16:29:37 Limit correction to     : 0.484975 mm
+16:29:37 Z-Reference (A)         : 140
+16:29:37 Z-Measured  value      : 243
+16:29:37 Control Difference     : -103
+          
+16:29:37 =================== Y-Correction ====================
+16:29:37 Trap on right side
+16:29:37 Number of Measurements : 1
+16:29:37 Calculated correction  : -0.465 mm
+16:29:37 Current on Right (A)   : 235
+16:29:37 Current on Left  (A)   : 204
+16:29:37 Control Difference     : -31
+          
+16:29:37 ======== Z-Correction negative Limit reached ========
+16:29:37 Number of Measurements  : 1
+16:29:37 Calculated correction   : -1.335 mm
+16:29:37 Limit correction to     : 0.484975 mm
+16:29:37 Z-Reference (A)         : 140
+16:29:37 Z-Measured  value      : 229
+16:29:37 Control Difference     : -89
+          
+16:29:37 =================== Y-Correction ====================
+16:29:37 Trap on left side
+16:29:37 Number of Measurements : 1
+16:29:37 Calculated correction  : 0.09 mm
+16:29:37 Current on Right (A)   : 235
+16:29:37 Current on Left  (A)   : 241
+16:29:37 Control Difference     : 6
+          
+16:29:37 ======== Z-Correction negative Limit reached ========
+16:29:37 Number of Measurements  : 1
+16:29:37 Calculated correction   : -1.515 mm
+16:29:37 Limit correction to     : 0.484975 mm
+16:29:37 Z-Reference (A)         : 140
+16:29:37 Z-Measured  value      : 241
+16:29:37 Control Difference     : -101
+          
+16:29:38 =================== Y-Correction ====================
+16:29:38 Trap on right side
+16:29:38 Number of Measurements : 1
+16:29:38 Calculated correction  : 0.12 mm
+16:29:38 Current on Right (A)   : 233
+16:29:38 Current on Left  (A)   : 241
+16:29:38 Control Difference     : 8
+          
+16:29:38 ======== Z-Correction negative Limit reached ========
+16:29:38 Number of Measurements  : 1
+16:29:38 Calculated correction   : -1.38 mm
+16:29:38 Limit correction to     : 0.484975 mm
+16:29:38 Z-Reference (A)         : 140
+16:29:38 Z-Measured  value      : 232
+16:29:38 Control Difference     : -92
+          
+16:29:38 =================== Y-Correction ====================
+16:29:38 Trap on left side
+16:29:38 Number of Measurements : 1
+16:29:38 Calculated correction  : 0.12 mm
+16:29:38 Current on Right (A)   : 233
+16:29:38 Current on Left  (A)   : 241
+16:29:38 Control Difference     : 8
+          
+16:29:38 ======== Z-Correction negative Limit reached ========
+16:29:38 Number of Measurements  : 1
+16:29:38 Calculated correction   : -1.29 mm
+16:29:38 Limit correction to     : 0.484975 mm
+16:29:38 Z-Reference (A)         : 140
+16:29:38 Z-Measured  value      : 226
+16:29:38 Control Difference     : -86
+          
+16:29:38 =================== Y-Correction ====================
+16:29:38 Trap on right side
+16:29:38 Number of Measurements : 1
+16:29:38 Calculated correction  : 0.255 mm
+16:29:38 Current on Right (A)   : 224
+16:29:38 Current on Left  (A)   : 241
+16:29:38 Control Difference     : 17
+          
+16:29:38 ======== Z-Correction negative Limit reached ========
+16:29:38 Number of Measurements  : 1
+16:29:38 Calculated correction   : -1.23 mm
+16:29:38 Limit correction to     : 0.484975 mm
+16:29:38 Z-Reference (A)         : 140
+16:29:38 Z-Measured  value      : 222
+16:29:38 Control Difference     : -82
+          
+16:29:38 =================== Y-Correction ====================
+16:29:38 Trap on left side
+16:29:38 Number of Measurements : 1
+16:29:38 Calculated correction  : 0.12 mm
+16:29:38 Current on Right (A)   : 224
+16:29:38 Current on Left  (A)   : 232
+16:29:38 Control Difference     : 8
+          
+16:29:39 ======== Z-Correction negative Limit reached ========
+16:29:39 Number of Measurements  : 1
+16:29:39 Calculated correction   : -1.215 mm
+16:29:39 Limit correction to     : 0.484975 mm
+16:29:39 Z-Reference (A)         : 140
+16:29:39 Z-Measured  value      : 221
+16:29:39 Control Difference     : -81
+          
+16:29:39 ======== Z-Correction negative Limit reached ========
+16:29:39 Number of Measurements  : 1
+16:29:39 Calculated correction   : -1.095 mm
+16:29:39 Limit correction to     : 0.484975 mm
+16:29:39 Z-Reference (A)         : 140
+16:29:39 Z-Measured  value      : 213
+16:29:39 Control Difference     : -73
+          
+16:29:39 =================== Y-Correction ====================
+16:29:39 Trap on left side
+16:29:39 Number of Measurements : 1
+16:29:39 Calculated correction  : -0.12 mm
+16:29:39 Current on Right (A)   : 231
+16:29:39 Current on Left  (A)   : 223
+16:29:39 Control Difference     : -8
+          
+16:29:39 ======== Z-Correction negative Limit reached ========
+16:29:39 Number of Measurements  : 1
+16:29:39 Calculated correction   : -1.14 mm
+16:29:39 Limit correction to     : 0.484975 mm
+16:29:39 Z-Reference (A)         : 140
+16:29:39 Z-Measured  value      : 216
+16:29:39 Control Difference     : -76
+          
+16:29:39 =================== Y-Correction ====================
+16:29:39 Trap on right side
+16:29:39 Number of Measurements : 1
+16:29:39 Calculated correction  : -0.105 mm
+16:29:39 Current on Right (A)   : 230
+16:29:39 Current on Left  (A)   : 223
+16:29:39 Control Difference     : -7
+          
+16:29:40 ======== Z-Correction negative Limit reached ========
+16:29:40 Number of Measurements  : 1
+16:29:40 Calculated correction   : -1.11 mm
+16:29:40 Limit correction to     : 0.484975 mm
+16:29:40 Z-Reference (A)         : 140
+16:29:40 Z-Measured  value      : 214
+16:29:40 Control Difference     : -74
+          
+16:29:40 =================== Y-Correction ====================
+16:29:40 Trap on left side
+16:29:40 Number of Measurements : 1
+16:29:40 Calculated correction  : -0.105 mm
+16:29:40 Current on Right (A)   : 230
+16:29:40 Current on Left  (A)   : 223
+16:29:40 Control Difference     : -7
+          
+16:29:40 ======== Z-Correction negative Limit reached ========
+16:29:40 Number of Measurements  : 1
+16:29:40 Calculated correction   : -1.005 mm
+16:29:40 Limit correction to     : 0.484975 mm
+16:29:40 Z-Reference (A)         : 140
+16:29:40 Z-Measured  value      : 207
+16:29:40 Control Difference     : -67
+          
+16:29:40 ======== Z-Correction negative Limit reached ========
+16:29:40 Number of Measurements  : 1
+16:29:40 Calculated correction   : -1.08 mm
+16:29:40 Limit correction to     : 0.484975 mm
+16:29:40 Z-Reference (A)         : 140
+16:29:40 Z-Measured  value      : 212
+16:29:40 Control Difference     : -72
+          
+16:29:40 ======== Z-Correction negative Limit reached ========
+16:29:40 Number of Measurements  : 1
+16:29:40 Calculated correction   : -1.08 mm
+16:29:40 Limit correction to     : 0.484975 mm
+16:29:40 Z-Reference (A)         : 140
+16:29:40 Z-Measured  value      : 212
+16:29:40 Control Difference     : -72
+          
+16:29:41 =================== Y-Correction ====================
+16:29:41 Trap on right side
+16:29:41 Number of Measurements : 1
+16:29:41 Calculated correction  : 0.465 mm
+16:29:41 Current on Right (A)   : 195
+16:29:41 Current on Left  (A)   : 226
+16:29:41 Control Difference     : 31
+          
+16:29:41 ======== Z-Correction negative Limit reached ========
+16:29:41 Number of Measurements  : 1
+16:29:41 Calculated correction   : -1.17 mm
+16:29:41 Limit correction to     : 0.484975 mm
+16:29:41 Z-Reference (A)         : 140
+16:29:41 Z-Measured  value      : 218
+16:29:41 Control Difference     : -78
+          
+16:29:41 =================== Y-Correction ====================
+16:29:41 Trap on left side
+16:29:41 Number of Measurements : 1
+16:29:41 Calculated correction  : 0.45 mm
+16:29:41 Current on Right (A)   : 195
+16:29:41 Current on Left  (A)   : 225
+16:29:41 Control Difference     : 30
+          
+16:29:41 ======== Z-Correction negative Limit reached ========
+16:29:41 Number of Measurements  : 1
+16:29:41 Calculated correction   : -0.99 mm
+16:29:41 Limit correction to     : 0.484975 mm
+16:29:41 Z-Reference (A)         : 140
+16:29:41 Z-Measured  value      : 206
+16:29:41 Control Difference     : -66
+          
+16:29:41 ======== Y-Correction positive Limit reached ========
+16:29:41 Trap on right side
+16:29:41 Number of Measurements      : 1
+16:29:41 Calculated correction       : 0.525 mm
+16:29:41 Limit correction to         : -0.484975 mm
+16:29:41 Control Difference          : 35
+16:29:41 Current on Right (A)   : 190
+16:29:41 Current on Left  (A)   : 225
+          
+16:29:41 ======== Z-Correction negative Limit reached ========
+16:29:41 Number of Measurements  : 1
+16:29:41 Calculated correction   : -0.84 mm
+16:29:41 Limit correction to     : 0.484975 mm
+16:29:41 Z-Reference (A)         : 140
+16:29:41 Z-Measured  value      : 196
+16:29:41 Control Difference     : -56
+          
+16:29:41 =================== Y-Correction ====================
+16:29:41 Trap on left side
+16:29:41 Number of Measurements : 1
+16:29:41 Calculated correction  : 0.12 mm
+16:29:41 Current on Right (A)   : 190
+16:29:41 Current on Left  (A)   : 198
+16:29:41 Control Difference     : 8
+          
+16:29:42 ======== Z-Correction negative Limit reached ========
+16:29:42 Number of Measurements  : 1
+16:29:42 Calculated correction   : -0.96 mm
+16:29:42 Limit correction to     : 0.484975 mm
+16:29:42 Z-Reference (A)         : 140
+16:29:42 Z-Measured  value      : 204
+16:29:42 Control Difference     : -64
+          
+16:29:42 ======== Z-Correction negative Limit reached ========
+16:29:42 Number of Measurements  : 1
+16:29:42 Calculated correction   : -0.87 mm
+16:29:42 Limit correction to     : 0.484975 mm
+16:29:42 Z-Reference (A)         : 140
+16:29:42 Z-Measured  value      : 198
+16:29:42 Control Difference     : -58
+          
+16:29:42 ======== Z-Correction negative Limit reached ========
+16:29:42 Number of Measurements  : 1
+16:29:42 Calculated correction   : -0.72 mm
+16:29:42 Limit correction to     : 0.484975 mm
+16:29:42 Z-Reference (A)         : 140
+16:29:42 Z-Measured  value      : 188
+16:29:42 Control Difference     : -48
+          
+16:29:42 =================== Y-Correction ====================
+16:29:42 Trap on right side
+16:29:42 Number of Measurements : 1
+16:29:42 Calculated correction  : 0.225 mm
+16:29:42 Current on Right (A)   : 182
+16:29:42 Current on Left  (A)   : 197
+16:29:42 Control Difference     : 15
+          
+16:29:43 ======== Z-Correction negative Limit reached ========
+16:29:43 Number of Measurements  : 1
+16:29:43 Calculated correction   : -0.84 mm
+16:29:43 Limit correction to     : 0.484975 mm
+16:29:43 Z-Reference (A)         : 140
+16:29:43 Z-Measured  value      : 196
+16:29:43 Control Difference     : -56
+          
+16:29:43 =================== Y-Correction ====================
+16:29:43 Trap on left side
+16:29:43 Number of Measurements : 1
+16:29:43 Calculated correction  : 0.27 mm
+16:29:43 Current on Right (A)   : 182
+16:29:43 Current on Left  (A)   : 200
+16:29:43 Control Difference     : 18
+          
+16:29:43 ======== Z-Correction negative Limit reached ========
+16:29:43 Number of Measurements  : 1
+16:29:43 Calculated correction   : -0.735 mm
+16:29:43 Limit correction to     : 0.484975 mm
+16:29:43 Z-Reference (A)         : 140
+16:29:43 Z-Measured  value      : 189
+16:29:43 Control Difference     : -49
+          
+16:29:43 =================== Y-Correction ====================
+16:29:43 Trap on right side
+16:29:43 Number of Measurements : 1
+16:29:43 Calculated correction  : 0.21 mm
+16:29:43 Current on Right (A)   : 186
+16:29:43 Current on Left  (A)   : 200
+16:29:43 Control Difference     : 14
+          
+16:29:43 ======== Z-Correction negative Limit reached ========
+16:29:43 Number of Measurements  : 1
+16:29:43 Calculated correction   : -0.75 mm
+16:29:43 Limit correction to     : 0.484975 mm
+16:29:43 Z-Reference (A)         : 140
+16:29:43 Z-Measured  value      : 190
+16:29:43 Control Difference     : -50
+          
+16:29:43 ======== Z-Correction negative Limit reached ========
+16:29:43 Number of Measurements  : 1
+16:29:43 Calculated correction   : -0.84 mm
+16:29:43 Limit correction to     : 0.484975 mm
+16:29:43 Z-Reference (A)         : 140
+16:29:43 Z-Measured  value      : 196
+16:29:43 Control Difference     : -56
+          
+16:29:44 ======== Z-Correction negative Limit reached ========
+16:29:44 Number of Measurements  : 1
+16:29:44 Calculated correction   : -0.705 mm
+16:29:44 Limit correction to     : 0.484975 mm
+16:29:44 Z-Reference (A)         : 140
+16:29:44 Z-Measured  value      : 187
+16:29:44 Control Difference     : -47
+          
+16:29:44 ======== Z-Correction negative Limit reached ========
+16:29:44 Number of Measurements  : 1
+16:29:44 Calculated correction   : -0.78 mm
+16:29:44 Limit correction to     : 0.484975 mm
+16:29:44 Z-Reference (A)         : 140
+16:29:44 Z-Measured  value      : 192
+16:29:44 Control Difference     : -52
+          
+16:29:44 ======== Z-Correction negative Limit reached ========
+16:29:44 Number of Measurements  : 1
+16:29:44 Calculated correction   : -0.615 mm
+16:29:44 Limit correction to     : 0.484975 mm
+16:29:44 Z-Reference (A)         : 140
+16:29:44 Z-Measured  value      : 181
+16:29:44 Control Difference     : -41
+          
+16:29:45 ======== Z-Correction negative Limit reached ========
+16:29:45 Number of Measurements  : 1
+16:29:45 Calculated correction   : -0.66 mm
+16:29:45 Limit correction to     : 0.484975 mm
+16:29:45 Z-Reference (A)         : 140
+16:29:45 Z-Measured  value      : 184
+16:29:45 Control Difference     : -44
+          
+16:29:45 ======== Z-Correction negative Limit reached ========
+16:29:45 Number of Measurements  : 1
+16:29:45 Calculated correction   : -0.585 mm
+16:29:45 Limit correction to     : 0.484975 mm
+16:29:45 Z-Reference (A)         : 140
+16:29:45 Z-Measured  value      : 179
+16:29:45 Control Difference     : -39
+          
+16:29:45 =================== Y-Correction ====================
+16:29:45 Trap on left side
+16:29:45 Number of Measurements : 1
+16:29:45 Calculated correction  : 0.135 mm
+16:29:45 Current on Right (A)   : 177
+16:29:45 Current on Left  (A)   : 186
+16:29:45 Control Difference     : 9
+          
+16:29:45 ======== Z-Correction negative Limit reached ========
+16:29:45 Number of Measurements  : 1
+16:29:45 Calculated correction   : -0.6 mm
+16:29:45 Limit correction to     : 0.484975 mm
+16:29:45 Z-Reference (A)         : 140
+16:29:45 Z-Measured  value      : 180
+16:29:45 Control Difference     : -40
+          
+16:29:45 =================== Y-Correction ====================
+16:29:45 Trap on right side
+16:29:45 Number of Measurements : 1
+16:29:45 Calculated correction  : 0.105 mm
+16:29:45 Current on Right (A)   : 179
+16:29:45 Current on Left  (A)   : 186
+16:29:45 Control Difference     : 7
+          
+16:29:46 ======== Z-Correction negative Limit reached ========
+16:29:46 Number of Measurements  : 1
+16:29:46 Calculated correction   : -0.585 mm
+16:29:46 Limit correction to     : 0.484975 mm
+16:29:46 Z-Reference (A)         : 140
+16:29:46 Z-Measured  value      : 179
+16:29:46 Control Difference     : -39
+          
+16:29:46 ======== Z-Correction negative Limit reached ========
+16:29:46 Number of Measurements  : 1
+16:29:46 Calculated correction   : -0.615 mm
+16:29:46 Limit correction to     : 0.484975 mm
+16:29:46 Z-Reference (A)         : 140
+16:29:46 Z-Measured  value      : 181
+16:29:46 Control Difference     : -41
+          
+16:29:46 =================== Y-Correction ====================
+16:29:46 Trap on right side
+16:29:46 Number of Measurements : 1
+16:29:46 Calculated correction  : 0.165 mm
+16:29:46 Current on Right (A)   : 172
+16:29:46 Current on Left  (A)   : 183
+16:29:46 Control Difference     : 11
+          
+16:29:46 ======== Z-Correction negative Limit reached ========
+16:29:46 Number of Measurements  : 1
+16:29:46 Calculated correction   : -0.6 mm
+16:29:46 Limit correction to     : 0.484975 mm
+16:29:46 Z-Reference (A)         : 140
+16:29:46 Z-Measured  value      : 180
+16:29:46 Control Difference     : -40
+          
+16:29:46 ======== Z-Correction negative Limit reached ========
+16:29:46 Number of Measurements  : 1
+16:29:46 Calculated correction   : -0.615 mm
+16:29:46 Limit correction to     : 0.484975 mm
+16:29:46 Z-Reference (A)         : 140
+16:29:46 Z-Measured  value      : 181
+16:29:46 Control Difference     : -41
+          
+16:29:47 =================== Y-Correction ====================
+16:29:47 Trap on right side
+16:29:47 Number of Measurements : 1
+16:29:47 Calculated correction  : 0.12 mm
+16:29:47 Current on Right (A)   : 168
+16:29:47 Current on Left  (A)   : 176
+16:29:47 Control Difference     : 8
+          
+16:29:47 ======== Z-Correction negative Limit reached ========
+16:29:47 Number of Measurements  : 1
+16:29:47 Calculated correction   : -0.66 mm
+16:29:47 Limit correction to     : 0.484975 mm
+16:29:47 Z-Reference (A)         : 140
+16:29:47 Z-Measured  value      : 184
+16:29:47 Control Difference     : -44
+          
+16:29:47 =================== Y-Correction ====================
+16:29:47 Trap on left side
+16:29:47 Number of Measurements : 1
+16:29:47 Calculated correction  : 0.12 mm
+16:29:47 Current on Right (A)   : 168
+16:29:47 Current on Left  (A)   : 176
+16:29:47 Control Difference     : 8
+          
+16:29:47 =================== Z-Correction ====================
+16:29:47 Number of Measurements : 1
+16:29:47 Calculated  correction : -0.465 mm
+16:29:47 Z-Reference (A)         : 140
+16:29:47 Z-Measured  value      : 171
+16:29:47 Control Difference     : -31
+          
+16:29:47 ======== Z-Correction negative Limit reached ========
+16:29:47 Number of Measurements  : 1
+16:29:47 Calculated correction   : -0.525 mm
+16:29:47 Limit correction to     : 0.484975 mm
+16:29:47 Z-Reference (A)         : 140
+16:29:47 Z-Measured  value      : 175
+16:29:47 Control Difference     : -35
+          
+16:29:47 =================== Y-Correction ====================
+16:29:47 Trap on left side
+16:29:47 Number of Measurements : 1
+16:29:47 Calculated correction  : 0.165 mm
+16:29:47 Current on Right (A)   : 171
+16:29:47 Current on Left  (A)   : 182
+16:29:47 Control Difference     : 11
+          
+16:29:48 ======== Z-Correction negative Limit reached ========
+16:29:48 Number of Measurements  : 1
+16:29:48 Calculated correction   : -0.555 mm
+16:29:48 Limit correction to     : 0.484975 mm
+16:29:48 Z-Reference (A)         : 140
+16:29:48 Z-Measured  value      : 177
+16:29:48 Control Difference     : -37
+          
+16:29:48 ======== Z-Correction negative Limit reached ========
+16:29:48 Number of Measurements  : 1
+16:29:48 Calculated correction   : -0.51 mm
+16:29:48 Limit correction to     : 0.484975 mm
+16:29:48 Z-Reference (A)         : 140
+16:29:48 Z-Measured  value      : 174
+16:29:48 Control Difference     : -34
+          
+16:29:48 =================== Z-Correction ====================
+16:29:48 Number of Measurements : 1
+16:29:48 Calculated  correction : -0.465 mm
+16:29:48 Z-Reference (A)         : 140
+16:29:48 Z-Measured  value      : 171
+16:29:48 Control Difference     : -31
+          
+16:29:49 =================== Z-Correction ====================
+16:29:49 Number of Measurements : 1
+16:29:49 Calculated  correction : -0.405 mm
+16:29:49 Z-Reference (A)         : 140
+16:29:49 Z-Measured  value      : 167
+16:29:49 Control Difference     : -27
+          
+16:29:49 =================== Y-Correction ====================
+16:29:49 Trap on left side
+16:29:49 Number of Measurements : 1
+16:29:49 Calculated correction  : 0.09 mm
+16:29:49 Current on Right (A)   : 170
+16:29:49 Current on Left  (A)   : 176
+16:29:49 Control Difference     : 6
+          
+16:29:49 =================== Z-Correction ====================
+16:29:49 Number of Measurements : 1
+16:29:49 Calculated  correction : -0.435 mm
+16:29:49 Z-Reference (A)         : 140
+16:29:49 Z-Measured  value      : 169
+16:29:49 Control Difference     : -29
+          
+16:29:49 =================== Y-Correction ====================
+16:29:49 Trap on right side
+16:29:49 Number of Measurements : 1
+16:29:49 Calculated correction  : 0.09 mm
+16:29:49 Current on Right (A)   : 170
+16:29:49 Current on Left  (A)   : 176
+16:29:49 Control Difference     : 6
+          
+16:29:49 =================== Z-Correction ====================
+16:29:49 Number of Measurements : 1
+16:29:49 Calculated  correction : -0.36 mm
+16:29:49 Z-Reference (A)         : 140
+16:29:49 Z-Measured  value      : 164
+16:29:49 Control Difference     : -24
+          
+16:29:49 ======== Z-Correction negative Limit reached ========
+16:29:49 Number of Measurements  : 1
+16:29:49 Calculated correction   : -0.495 mm
+16:29:49 Limit correction to     : 0.484975 mm
+16:29:49 Z-Reference (A)         : 140
+16:29:49 Z-Measured  value      : 173
+16:29:49 Control Difference     : -33
+          
+16:29:50 =================== Z-Correction ====================
+16:29:50 Number of Measurements : 1
+16:29:50 Calculated  correction : -0.375 mm
+16:29:50 Z-Reference (A)         : 140
+16:29:50 Z-Measured  value      : 165
+16:29:50 Control Difference     : -25
+          
+          
+16:31:01 =================== Active trackdata ================
+16:31:01 Tracksystem : 2
+16:31:01 SeamName    : weldTest
+16:31:01 TrackType   : Centerline
+16:31:01 Gain_y      : 30
+16:31:01 Gain_z      : 30
+16:31:01 Bias        : 0
+16:31:01 Z-Reference   : 0
+16:31:01 Weave time  : 0.3 seconds
+          
+16:31:04 ======== Y-Correction positive Limit reached ========
+16:31:04 Trap on left side
+16:31:04 Number of Measurements      : 1
+16:31:04 Calculated correction       : 0.555 mm
+16:31:04 Limit correction to         : -0.484975 mm
+16:31:04 Control Difference          : 37
+16:31:04 Current on Right (A)   : 168
+16:31:04 Current on Left  (A)   : 205
+          
+16:31:04 ======== Z-Correction negative Limit reached ========
+16:31:04 Number of Measurements  : 1
+16:31:04 Calculated correction   : -1.32 mm
+16:31:04 Limit correction to     : 0.484975 mm
+16:31:04 Z-Reference (A)         : 155
+16:31:04 Z-Measured  value      : 243
+16:31:04 Control Difference     : -88
+          
+16:31:04 =================== Y-Correction ====================
+16:31:04 Trap on right side
+16:31:04 Number of Measurements : 1
+16:31:04 Calculated correction  : -0.33 mm
+16:31:04 Current on Right (A)   : 227
+16:31:04 Current on Left  (A)   : 205
+16:31:04 Control Difference     : -22
+          
+16:31:04 ======== Z-Correction negative Limit reached ========
+16:31:04 Number of Measurements  : 1
+16:31:04 Calculated correction   : -1.095 mm
+16:31:04 Limit correction to     : 0.484975 mm
+16:31:04 Z-Reference (A)         : 155
+16:31:04 Z-Measured  value      : 228
+16:31:04 Control Difference     : -73
+          
+16:31:04 =================== Y-Correction ====================
+16:31:04 Trap on left side
+16:31:04 Number of Measurements : 1
+16:31:04 Calculated correction  : 0.18 mm
+16:31:04 Current on Right (A)   : 227
+16:31:04 Current on Left  (A)   : 239
+16:31:04 Control Difference     : 12
+          
+16:31:04 ======== Z-Correction negative Limit reached ========
+16:31:04 Number of Measurements  : 1
+16:31:04 Calculated correction   : -1.05 mm
+16:31:04 Limit correction to     : 0.484975 mm
+16:31:04 Z-Reference (A)         : 155
+16:31:04 Z-Measured  value      : 225
+16:31:04 Control Difference     : -70
+          
+16:31:04 =================== Y-Correction ====================
+16:31:04 Trap on right side
+16:31:04 Number of Measurements : 1
+16:31:04 Calculated correction  : 0.375 mm
+16:31:04 Current on Right (A)   : 214
+16:31:04 Current on Left  (A)   : 239
+16:31:04 Control Difference     : 25
+          
+16:31:05 ======== Z-Correction negative Limit reached ========
+16:31:05 Number of Measurements  : 1
+16:31:05 Calculated correction   : -1.155 mm
+16:31:05 Limit correction to     : 0.484975 mm
+16:31:05 Z-Reference (A)         : 155
+16:31:05 Z-Measured  value      : 232
+16:31:05 Control Difference     : -77
+          
+16:31:05 =================== Y-Correction ====================
+16:31:05 Trap on left side
+16:31:05 Number of Measurements : 1
+16:31:05 Calculated correction  : 0.255 mm
+16:31:05 Current on Right (A)   : 214
+16:31:05 Current on Left  (A)   : 231
+16:31:05 Control Difference     : 17
+          
+16:31:05 ======== Z-Correction negative Limit reached ========
+16:31:05 Number of Measurements  : 1
+16:31:05 Calculated correction   : -0.87 mm
+16:31:05 Limit correction to     : 0.484975 mm
+16:31:05 Z-Reference (A)         : 155
+16:31:05 Z-Measured  value      : 213
+16:31:05 Control Difference     : -58
+          
+16:31:05 =================== Y-Correction ====================
+16:31:05 Trap on right side
+16:31:05 Number of Measurements : 1
+16:31:05 Calculated correction  : 0.09 mm
+16:31:05 Current on Right (A)   : 225
+16:31:05 Current on Left  (A)   : 231
+16:31:05 Control Difference     : 6
+          
+16:31:05 ======== Z-Correction negative Limit reached ========
+16:31:05 Number of Measurements  : 1
+16:31:05 Calculated correction   : -1.02 mm
+16:31:05 Limit correction to     : 0.484975 mm
+16:31:05 Z-Reference (A)         : 155
+16:31:05 Z-Measured  value      : 223
+16:31:05 Control Difference     : -68
+          
+16:31:06 ======== Z-Correction negative Limit reached ========
+16:31:06 Number of Measurements  : 1
+16:31:06 Calculated correction   : -1.005 mm
+16:31:06 Limit correction to     : 0.484975 mm
+16:31:06 Z-Reference (A)         : 155
+16:31:06 Z-Measured  value      : 222
+16:31:06 Control Difference     : -67
+          
+16:31:06 ======== Z-Correction negative Limit reached ========
+16:31:06 Number of Measurements  : 1
+16:31:06 Calculated correction   : -0.735 mm
+16:31:06 Limit correction to     : 0.484975 mm
+16:31:06 Z-Reference (A)         : 155
+16:31:06 Z-Measured  value      : 204
+16:31:06 Control Difference     : -49
+          
+16:31:06 =================== Y-Correction ====================
+16:31:06 Trap on left side
+16:31:06 Number of Measurements : 1
+16:31:06 Calculated correction  : -0.135 mm
+16:31:06 Current on Right (A)   : 218
+16:31:06 Current on Left  (A)   : 209
+16:31:06 Control Difference     : -9
+          
+16:31:06 ======== Z-Correction negative Limit reached ========
+16:31:06 Number of Measurements  : 1
+16:31:06 Calculated correction   : -0.9 mm
+16:31:06 Limit correction to     : 0.484975 mm
+16:31:06 Z-Reference (A)         : 155
+16:31:06 Z-Measured  value      : 215
+16:31:06 Control Difference     : -60
+          
+16:31:06 ======== Z-Correction negative Limit reached ========
+16:31:06 Number of Measurements  : 1
+16:31:06 Calculated correction   : -0.915 mm
+16:31:06 Limit correction to     : 0.484975 mm
+16:31:07 Z-Reference (A)         : 155
+16:31:07 Z-Measured  value      : 216
+16:31:07 Control Difference     : -61
+          
+16:31:07 =================== Y-Correction ====================
+16:31:07 Trap on left side
+16:31:07 Number of Measurements : 1
+16:31:07 Calculated correction  : 0.3 mm
+16:31:07 Current on Right (A)   : 208
+16:31:07 Current on Left  (A)   : 228
+16:31:07 Control Difference     : 20
+          
+16:31:07 ======== Z-Correction negative Limit reached ========
+16:31:07 Number of Measurements  : 1
+16:31:07 Calculated correction   : -0.9 mm
+16:31:07 Limit correction to     : 0.484975 mm
+16:31:07 Z-Reference (A)         : 155
+16:31:07 Z-Measured  value      : 215
+16:31:07 Control Difference     : -60
+          
+16:31:07 =================== Y-Correction ====================
+16:31:07 Trap on right side
+16:31:07 Number of Measurements : 1
+16:31:07 Calculated correction  : 0.45 mm
+16:31:07 Current on Right (A)   : 198
+16:31:07 Current on Left  (A)   : 228
+16:31:07 Control Difference     : 30
+          
+16:31:07 ======== Z-Correction negative Limit reached ========
+16:31:07 Number of Measurements  : 1
+16:31:07 Calculated correction   : -0.6 mm
+16:31:07 Limit correction to     : 0.484975 mm
+16:31:07 Z-Reference (A)         : 155
+16:31:07 Z-Measured  value      : 195
+16:31:07 Control Difference     : -40
+          
+16:31:07 =================== Y-Correction ====================
+16:31:07 Trap on left side
+16:31:07 Number of Measurements : 1
+16:31:07 Calculated correction  : 0.18 mm
+16:31:07 Current on Right (A)   : 198
+16:31:07 Current on Left  (A)   : 210
+16:31:07 Control Difference     : 12
+          
+16:31:07 ======== Z-Correction negative Limit reached ========
+16:31:07 Number of Measurements  : 1
+16:31:07 Calculated correction   : -0.72 mm
+16:31:07 Limit correction to     : 0.484975 mm
+16:31:07 Z-Reference (A)         : 155
+16:31:07 Z-Measured  value      : 203
+16:31:07 Control Difference     : -48
+          
+16:31:07 =================== Y-Correction ====================
+16:31:07 Trap on right side
+16:31:07 Number of Measurements : 1
+16:31:07 Calculated correction  : 0.15 mm
+16:31:07 Current on Right (A)   : 200
+16:31:07 Current on Left  (A)   : 210
+16:31:07 Control Difference     : 10
+          
+16:31:08 ======== Z-Correction negative Limit reached ========
+16:31:08 Number of Measurements  : 1
+16:31:08 Calculated correction   : -0.495 mm
+16:31:08 Limit correction to     : 0.484975 mm
+16:31:08 Z-Reference (A)         : 155
+16:31:08 Z-Measured  value      : 188
+16:31:08 Control Difference     : -33
+          
+16:31:08 =================== Y-Correction ====================
+16:31:08 Trap on left side
+16:31:08 Number of Measurements : 1
+16:31:08 Calculated correction  : 0.09 mm
+16:31:08 Current on Right (A)   : 200
+16:31:08 Current on Left  (A)   : 206
+16:31:08 Control Difference     : 6
+          
+16:31:08 ======== Z-Correction negative Limit reached ========
+16:31:08 Number of Measurements  : 1
+16:31:08 Calculated correction   : -0.675 mm
+16:31:08 Limit correction to     : 0.484975 mm
+16:31:08 Z-Reference (A)         : 155
+16:31:08 Z-Measured  value      : 200
+16:31:08 Control Difference     : -45
+          
+16:31:08 =================== Y-Correction ====================
+16:31:08 Trap on right side
+16:31:08 Number of Measurements : 1
+16:31:08 Calculated correction  : 0.225 mm
+16:31:08 Current on Right (A)   : 191
+16:31:08 Current on Left  (A)   : 206
+16:31:08 Control Difference     : 15
+          
+16:31:08 ======== Z-Correction negative Limit reached ========
+16:31:08 Number of Measurements  : 1
+16:31:08 Calculated correction   : -0.645 mm
+16:31:08 Limit correction to     : 0.484975 mm
+16:31:08 Z-Reference (A)         : 155
+16:31:08 Z-Measured  value      : 198
+16:31:08 Control Difference     : -43
+          
+16:31:09 ======== Z-Correction negative Limit reached ========
+16:31:09 Number of Measurements  : 1
+16:31:09 Calculated correction   : -0.645 mm
+16:31:09 Limit correction to     : 0.484975 mm
+16:31:09 Z-Reference (A)         : 155
+16:31:09 Z-Measured  value      : 198
+16:31:09 Control Difference     : -43
+          
+16:31:09 =================== Y-Correction ====================
+16:31:09 Trap on right side
+16:31:09 Number of Measurements : 1
+16:31:09 Calculated correction  : 0.15 mm
+16:31:09 Current on Right (A)   : 185
+16:31:09 Current on Left  (A)   : 195
+16:31:09 Control Difference     : 10
+          
+16:31:09 ======== Z-Correction negative Limit reached ========
+16:31:09 Number of Measurements  : 1
+16:31:09 Calculated correction   : -0.675 mm
+16:31:09 Limit correction to     : 0.484975 mm
+16:31:09 Z-Reference (A)         : 155
+16:31:09 Z-Measured  value      : 200
+16:31:09 Control Difference     : -45
+          
+16:31:09 =================== Y-Correction ====================
+16:31:09 Trap on left side
+16:31:09 Number of Measurements : 1
+16:31:09 Calculated correction  : 0.225 mm
+16:31:09 Current on Right (A)   : 185
+16:31:09 Current on Left  (A)   : 200
+16:31:09 Control Difference     : 15
+          
+16:31:09 =================== Z-Correction ====================
+16:31:09 Number of Measurements : 1
+16:31:09 Calculated  correction : -0.45 mm
+16:31:09 Z-Reference (A)         : 155
+16:31:09 Z-Measured  value      : 185
+16:31:09 Control Difference     : -30
+          
+16:31:09 =================== Y-Correction ====================
+16:31:09 Trap on right side
+16:31:09 Number of Measurements : 1
+16:31:09 Calculated correction  : 0.405 mm
+16:31:09 Current on Right (A)   : 173
+16:31:09 Current on Left  (A)   : 200
+16:31:09 Control Difference     : 27
+          
+16:31:09 ======== Z-Correction negative Limit reached ========
+16:31:09 Number of Measurements  : 1
+16:31:10 Calculated correction   : -0.54 mm
+16:31:10 Limit correction to     : 0.484975 mm
+16:31:10 Z-Reference (A)         : 155
+16:31:10 Z-Measured  value      : 191
+16:31:10 Control Difference     : -36
+          
+16:31:10 =================== Y-Correction ====================
+16:31:10 Trap on left side
+16:31:10 Number of Measurements : 1
+16:31:10 Calculated correction  : 0.135 mm
+16:31:10 Current on Right (A)   : 173
+16:31:10 Current on Left  (A)   : 182
+16:31:10 Control Difference     : 9
+          
+16:31:10 =================== Z-Correction ====================
+16:31:10 Number of Measurements : 1
+16:31:10 Calculated  correction : -0.42 mm
+16:31:10 Z-Reference (A)         : 155
+16:31:10 Z-Measured  value      : 183
+16:31:10 Control Difference     : -28
+          
+16:31:10 =================== Y-Correction ====================
+16:31:10 Trap on right side
+16:31:10 Number of Measurements : 1
+16:31:10 Calculated correction  : 0.135 mm
+16:31:10 Current on Right (A)   : 173
+16:31:10 Current on Left  (A)   : 182
+16:31:10 Control Difference     : 9
+          
+16:31:10 ======== Z-Correction negative Limit reached ========
+16:31:10 Number of Measurements  : 1
+16:31:10 Calculated correction   : -0.555 mm
+16:31:10 Limit correction to     : 0.484975 mm
+16:31:10 Z-Reference (A)         : 155
+16:31:10 Z-Measured  value      : 192
+16:31:10 Control Difference     : -37
+          
+16:31:10 ======== Z-Correction negative Limit reached ========
+16:31:10 Number of Measurements  : 1
+16:31:10 Calculated correction   : -0.525 mm
+16:31:10 Limit correction to     : 0.484975 mm
+16:31:10 Z-Reference (A)         : 155
+16:31:10 Z-Measured  value      : 190
+16:31:10 Control Difference     : -35
+          
+16:31:11 =================== Z-Correction ====================
+16:31:11 Number of Measurements : 1
+16:31:11 Calculated  correction : -0.315 mm
+16:31:11 Z-Reference (A)         : 155
+16:31:11 Z-Measured  value      : 176
+16:31:11 Control Difference     : -21
+          
+16:31:11 ======== Z-Correction negative Limit reached ========
+16:31:11 Number of Measurements  : 1
+16:31:11 Calculated correction   : -0.54 mm
+16:31:11 Limit correction to     : 0.484975 mm
+16:31:11 Z-Reference (A)         : 155
+16:31:11 Z-Measured  value      : 191
+16:31:11 Control Difference     : -36
+          
+16:31:11 =================== Y-Correction ====================
+16:31:11 Trap on right side
+16:31:11 Number of Measurements : 1
+16:31:11 Calculated correction  : 0.255 mm
+16:31:11 Current on Right (A)   : 166
+16:31:11 Current on Left  (A)   : 183
+16:31:11 Control Difference     : 17
+          
+16:31:11 ======== Z-Correction negative Limit reached ========
+16:31:11 Number of Measurements  : 1
+16:31:11 Calculated correction   : -0.54 mm
+16:31:11 Limit correction to     : 0.484975 mm
+16:31:11 Z-Reference (A)         : 155
+16:31:11 Z-Measured  value      : 191
+16:31:11 Control Difference     : -36
+          
+16:31:11 =================== Y-Correction ====================
+16:31:11 Trap on left side
+16:31:11 Number of Measurements : 1
+16:31:11 Calculated correction  : 0.33 mm
+16:31:11 Current on Right (A)   : 166
+16:31:11 Current on Left  (A)   : 188
+16:31:11 Control Difference     : 22
+          
+16:31:12 =================== Z-Correction ====================
+16:31:12 Number of Measurements : 1
+16:31:12 Calculated  correction : -0.465 mm
+16:31:12 Z-Reference (A)         : 155
+16:31:12 Z-Measured  value      : 186
+16:31:12 Control Difference     : -31
+          
+16:31:12 =================== Y-Correction ====================
+16:31:12 Trap on right side
+16:31:12 Number of Measurements : 1
+16:31:12 Calculated correction  : 0.27 mm
+16:31:12 Current on Right (A)   : 170
+16:31:12 Current on Left  (A)   : 188
+16:31:12 Control Difference     : 18
+          
+16:31:12 =================== Z-Correction ====================
+16:31:12 Number of Measurements : 1
+16:31:12 Calculated  correction : -0.405 mm
+16:31:12 Z-Reference (A)         : 155
+16:31:12 Z-Measured  value      : 182
+16:31:12 Control Difference     : -27
+          
+16:31:12 =================== Y-Correction ====================
+16:31:12 Trap on left side
+16:31:12 Number of Measurements : 1
+16:31:12 Calculated correction  : 0.135 mm
+16:31:12 Current on Right (A)   : 170
+16:31:12 Current on Left  (A)   : 179
+16:31:12 Control Difference     : 9
+          
+16:31:12 =================== Z-Correction ====================
+16:31:12 Number of Measurements : 1
+16:31:12 Calculated  correction : -0.285 mm
+16:31:12 Z-Reference (A)         : 155
+16:31:12 Z-Measured  value      : 174
+16:31:12 Control Difference     : -19
+          
+16:31:12 =================== Y-Correction ====================
+16:31:12 Trap on right side
+16:31:12 Number of Measurements : 1
+16:31:12 Calculated correction  : 0.12 mm
+16:31:12 Current on Right (A)   : 171
+16:31:12 Current on Left  (A)   : 179
+16:31:12 Control Difference     : 8
+          
+16:31:12 =================== Z-Correction ====================
+16:31:12 Number of Measurements : 1
+16:31:13 Calculated  correction : -0.405 mm
+16:31:13 Z-Reference (A)         : 155
+16:31:13 Z-Measured  value      : 182
+16:31:13 Control Difference     : -27
+          
+16:31:13 =================== Z-Correction ====================
+16:31:13 Number of Measurements : 1
+16:31:13 Calculated  correction : -0.39 mm
+16:31:13 Z-Reference (A)         : 155
+16:31:13 Z-Measured  value      : 181
+16:31:13 Control Difference     : -26
+          
+16:31:13 =================== Z-Correction ====================
+16:31:13 Number of Measurements : 1
+16:31:13 Calculated  correction : -0.3 mm
+16:31:13 Z-Reference (A)         : 155
+16:31:13 Z-Measured  value      : 175
+16:31:13 Control Difference     : -20
+          
+16:31:13 =================== Y-Correction ====================
+16:31:13 Trap on left side
+16:31:13 Number of Measurements : 1
+16:31:13 Calculated correction  : 0.135 mm
+16:31:13 Current on Right (A)   : 172
+16:31:13 Current on Left  (A)   : 181
+16:31:13 Control Difference     : 9
+          
+16:31:13 =================== Z-Correction ====================
+16:31:13 Number of Measurements : 1
+16:31:13 Calculated  correction : -0.3 mm
+16:31:13 Z-Reference (A)         : 155
+16:31:13 Z-Measured  value      : 175
+16:31:13 Control Difference     : -20
+          
+16:31:14 =================== Y-Correction ====================
+16:31:14 Trap on right side
+16:31:14 Number of Measurements : 1
+16:31:14 Calculated correction  : 0.24 mm
+16:31:14 Current on Right (A)   : 165
+16:31:14 Current on Left  (A)   : 181
+16:31:14 Control Difference     : 16
+          
+16:31:14 =================== Z-Correction ====================
+16:31:14 Number of Measurements : 1
+16:31:14 Calculated  correction : -0.375 mm
+16:31:14 Z-Reference (A)         : 155
+16:31:14 Z-Measured  value      : 180
+16:31:14 Control Difference     : -25
+          
+16:31:14 =================== Y-Correction ====================
+16:31:14 Trap on left side
+16:31:14 Number of Measurements : 1
+16:31:14 Calculated correction  : 0.255 mm
+16:31:14 Current on Right (A)   : 165
+16:31:14 Current on Left  (A)   : 182
+16:31:14 Control Difference     : 17
+          
+16:31:14 =================== Z-Correction ====================
+16:31:14 Number of Measurements : 1
+16:31:14 Calculated  correction : -0.195 mm
+16:31:14 Z-Reference (A)         : 155
+16:31:14 Z-Measured  value      : 168
+16:31:14 Control Difference     : -13
+          
+16:31:14 =================== Y-Correction ====================
+16:31:14 Trap on right side
+16:31:14 Number of Measurements : 1
+16:31:14 Calculated correction  : 0.255 mm
+16:31:14 Current on Right (A)   : 165
+16:31:14 Current on Left  (A)   : 182
+16:31:14 Control Difference     : 17
+          
+16:31:14 =================== Z-Correction ====================
+16:31:14 Number of Measurements : 1
+16:31:14 Calculated  correction : -0.285 mm
+16:31:14 Z-Reference (A)         : 155
+16:31:14 Z-Measured  value      : 174
+16:31:14 Control Difference     : -19
+          
+16:31:15 =================== Z-Correction ====================
+16:31:15 Number of Measurements : 1
+16:31:15 Calculated  correction : -0.24 mm
+16:31:15 Z-Reference (A)         : 155
+16:31:15 Z-Measured  value      : 171
+16:31:15 Control Difference     : -16
+          
+16:31:15 =================== Z-Correction ====================
+16:31:15 Number of Measurements : 1
+16:31:15 Calculated  correction : -0.36 mm
+16:31:15 Z-Reference (A)         : 155
+16:31:15 Z-Measured  value      : 179
+16:31:15 Control Difference     : -24
+          
+16:31:15 =================== Y-Correction ====================
+16:31:15 Trap on left side
+16:31:15 Number of Measurements : 1
+16:31:15 Calculated correction  : 0.18 mm
+16:31:15 Current on Right (A)   : 166
+16:31:15 Current on Left  (A)   : 178
+16:31:15 Control Difference     : 12
+          
+16:31:15 =================== Y-Correction ====================
+16:31:15 Trap on right side
+16:31:15 Number of Measurements : 1
+16:31:15 Calculated correction  : 0.285 mm
+16:31:15 Current on Right (A)   : 159
+16:31:15 Current on Left  (A)   : 178
+16:31:15 Control Difference     : 19
+          
+16:31:16 =================== Z-Correction ====================
+16:31:16 Number of Measurements : 1
+16:31:16 Calculated  correction : -0.255 mm
+16:31:16 Z-Reference (A)         : 155
+16:31:16 Z-Measured  value      : 172
+16:31:16 Control Difference     : -17
+          
+16:31:16 =================== Y-Correction ====================
+16:31:16 Trap on left side
+16:31:16 Number of Measurements : 1
+16:31:16 Calculated correction  : 0.105 mm
+16:31:16 Current on Right (A)   : 159
+16:31:16 Current on Left  (A)   : 166
+16:31:16 Control Difference     : 7
+          
+16:31:16 =================== Z-Correction ====================
+16:31:16 Number of Measurements : 1
+16:31:16 Calculated  correction : -0.12 mm
+16:31:16 Z-Reference (A)         : 155
+16:31:16 Z-Measured  value      : 163
+16:31:16 Control Difference     : -8
+          
+16:31:16 =================== Z-Correction ====================
+16:31:16 Number of Measurements : 1
+16:31:16 Calculated  correction : -0.225 mm
+16:31:16 Z-Reference (A)         : 155
+16:31:16 Z-Measured  value      : 170
+16:31:16 Control Difference     : -15
+          
+16:31:16 =================== Y-Correction ====================
+16:31:16 Trap on right side
+16:31:16 Number of Measurements : 1
+16:31:16 Calculated correction  : 0.105 mm
+16:31:17 Current on Right (A)   : 155
+16:31:17 Current on Left  (A)   : 162
+16:31:17 Control Difference     : 7
+          
+16:31:17 =================== Z-Correction ====================
+16:31:17 Number of Measurements : 1
+16:31:17 Calculated  correction : -0.27 mm
+16:31:17 Z-Reference (A)         : 155
+16:31:17 Z-Measured  value      : 173
+16:31:17 Control Difference     : -18
+          
+16:31:17 =================== Y-Correction ====================
+16:31:17 Trap on left side
+16:31:17 Number of Measurements : 1
+16:31:17 Calculated correction  : 0.405 mm
+16:31:17 Current on Right (A)   : 155
+16:31:17 Current on Left  (A)   : 182
+16:31:17 Control Difference     : 27
+          
+16:31:17 =================== Z-Correction ====================
+16:31:17 Number of Measurements : 1
+16:31:17 Calculated  correction : -0.135 mm
+16:31:17 Z-Reference (A)         : 155
+16:31:17 Z-Measured  value      : 164
+16:31:17 Control Difference     : -9
+          
+16:31:17 ======== Y-Correction positive Limit reached ========
+16:31:17 Trap on right side
+16:31:17 Number of Measurements      : 1
+16:31:17 Calculated correction       : 0.555 mm
+16:31:17 Limit correction to         : -0.484975 mm
+16:31:17 Control Difference          : 37
+16:31:17 Current on Right (A)   : 145
+16:31:17 Current on Left  (A)   : 182
+          
+16:31:17 =================== Z-Correction ====================
+16:31:17 Number of Measurements : 1
+16:31:17 Calculated  correction : -0.405 mm
+16:31:17 Z-Reference (A)         : 155
+16:31:17 Z-Measured  value      : 182
+16:31:17 Control Difference     : -27
+          
+16:31:17 =================== Y-Correction ====================
+16:31:17 Trap on left side
+16:31:17 Number of Measurements : 1
+16:31:17 Calculated correction  : 0.195 mm
+16:31:17 Current on Right (A)   : 145
+16:31:17 Current on Left  (A)   : 158
+16:31:17 Control Difference     : 13
+          
+16:31:18 =================== Z-Correction ====================
+16:31:18 Number of Measurements : 1
+16:31:18 Calculated  correction : -0.33 mm
+16:31:18 Z-Reference (A)         : 155
+16:31:18 Z-Measured  value      : 177
+16:31:18 Control Difference     : -22
+          
+16:31:18 =================== Y-Correction ====================
+16:31:18 Trap on left side
+16:31:18 Number of Measurements : 1
+16:31:18 Calculated correction  : 0.21 mm
+16:31:18 Current on Right (A)   : 160
+16:31:18 Current on Left  (A)   : 174
+16:31:18 Control Difference     : 14
+          
+16:31:18 =================== Y-Correction ====================
+16:31:18 Trap on right side
+16:31:18 Number of Measurements : 1
+16:31:18 Calculated correction  : 0.42 mm
+16:31:18 Current on Right (A)   : 146
+16:31:18 Current on Left  (A)   : 174
+16:31:18 Control Difference     : 28
+          
+16:31:19 =================== Z-Correction ====================
+16:31:19 Number of Measurements : 1
+16:31:19 Calculated  correction : 0.09 mm
+16:31:19 Z-Reference (A)         : 155
+16:31:19 Z-Measured  value      : 149
+16:31:19 Control Difference     : 6
+          

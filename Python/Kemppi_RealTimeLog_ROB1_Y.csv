@@ -1,0 +1,8 @@
+time,index,YZ,Trap,Measurements,Correction,CorrectionLimit,CurrentR,CurrentL,ZReference,ZMeasured,Difference
+16:25:33,,Accumulated
+,,TotalY,,,-22.808
+,,TotalZ,,,-29.3546
+,,CalculatedZ,,,1093.7217
+,,NumberLeft,,,116
+,,NumberRight,,,115
+,,NumberCenter,,,230

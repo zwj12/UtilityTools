@@ -3,13 +3,13 @@ MODULE MainModule
     PERS tooldata toolProcess:=[TRUE,[[0,0,0],[1,0,0,0]],[0.001,[0,0,0.001],[1,0,0,0],0,0,0]];
     PERS speeddata speedProcess:=[200,500,5000,1000];
     PERS robtarget pHome:=[[-1613.47,-251.20,4031.75],[0.0465563,-0.823272,0.56531,-0.0219248],[-1,-1,0,0],[9E+9,9E+9,9E+9,9E+9,9E+9,9E+9]];
-    PERS robtarget pNext:=[[-1248.41,-251.2,2085.35],[0.0465545,-0.823272,0.56531,-0.0219229],[-1,-1,0,0],[9E+9,9E+9,9E+9,9E+9,9E+9,9E+9]];
+    PERS robtarget pNext:=[[0.36,-8.81746E-17,-0.82],[-4.32978E-17,0.707107,0.707107,4.32978E-17],[0,-1,-2,0],[9E+9,9E+9,9E+9,9E+9,9E+9,9E+9]];
 
-    PERS num numRobotStatus:=0;
+    PERS num numRobotStatus:=1;
     PERS bool boolStart:=FALSE;
     PERS bool boolStop:=FALSE;
     PERS robtarget processTarget{1000};
-    PERS num numTargetsCount:=6;
+    PERS num numTargetsCount:=60;
 
     PERS robtarget p1:=[[-1248.41,-251.20,2085.35],[0.0465545,-0.823272,0.56531,-0.0219229],[-1,-1,0,0],[9E+9,9E+9,9E+9,9E+9,9E+9,9E+9]];
     PERS robtarget p2:=[[-1639.45,-121.81,2085.35],[0.046555,-0.823268,0.565316,-0.0219238],[-1,-1,0,0],[9E+9,9E+9,9E+9,9E+9,9E+9,9E+9]];

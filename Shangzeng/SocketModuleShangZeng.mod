@@ -28,21 +28,23 @@ MODULE SocketModuleShangZeng
     VAR num numMessageFormatError:=0;
 
     PERS string strDataTaskName:="T_ROB1";
-    PERS num numRobotStatus:=0;
+    PERS num numRobotStatus:=1;
     PERS bool boolStart:=FALSE;
     PERS bool boolStop:=FALSE;
     PERS robtarget processTarget{1000};
-    PERS num numTargetsCount:=6;
+    PERS num numTargetsCount:=60;
 
     VAR string strDataFileName:="shangzeng.txt";
     VAR iodev iodevDataFile;
 
     PROC main()
-        SetTPHandlerLogLevel\WARNING;
+        SetTPHandlerLogLevel\DEBUG;
         SetFileHandlerLogLevel\DEBUG;
         IF RobOS()=TRUE THEN
             strIPAddressServer:="192.168.0.62";
             !strIPAddressServer:="127.0.0.1";
+        ELSE
+            strIPAddressServer:="10.137.68.253";
         ENDIF
         WHILE TRUE DO
             SocketCreate socketServer;
@@ -65,6 +67,7 @@ MODULE SocketModuleShangZeng
             IF RawBytesLen(raw_data_in)>=8 THEN
                 UnpackRawBytes raw_data_in\Network?Network,1,commandIn\IntX:=UDINT;
                 UnpackRawBytes raw_data_in\Network?Network,5,numDataInLength\IntX:=UDINT;
+                Logging\INFO,\LoggerName:="SocketModule","Command="+ValToStr(commandIn)+", RawBytesLen="+ValToStr(RawBytesLen(raw_data_in));
                 IF RawBytesLen(raw_data_in)=numDataInLength+8 THEN
                     IF commandIn=0 THEN
                         ResponseSocketCommand 128;

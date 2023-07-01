@@ -1,0 +1,303 @@
+MODULE AutoCal2b(SYSMODULE)
+    !!*******************************************************************
+    !! Interface with ACAL software module from Servo-Robot 
+	!! (this module contains the user code (VISIBLE)
+    !!(Ethernet TCP/IP based on RCL APP protocol - Reduced version)
+    !!   
+    !! Requirements    Requires the PC Interface option from ABB (616-1)
+    !! Prefix:         ACAL
+    !! Version:        ABB200313.002 (based on Rel151001.139 on vision system)
+    !! Date:           March 23th 2021
+    !! Author:         SERVO-ROBOT (Cedric Demers-Roy)
+    !! Copyright:      SERVO-ROBOT INC. 2021
+    !!
+    !! NOTE:  Functions with ACALu_ prefix are to be used in user programs
+    !!*******************************************************************
+
+
+
+	!High level function to calibrate the ACAL module (6D calibration) using sequential calibration method (STD camera).
+    !IMPORTANT: 
+    !   1) The calibration target must have been defined as a wObj as indicated in the documentation
+    !   2) The angle of the laser-camera must be perpendicular to the calibration target (tool angle is irrelevant)
+    !   3) This function assumes the TCP is already in StartPosition above the target at function call
+    !
+    !INPUT:
+    !   num NbIterations      = Number of iterations of calibration sequence (min. is 1, max. is 10)
+    !   tooldata MyTool       = Tool used to move during calibration (and reference if TOOL calibration is requested)
+    !   wobjdata MyBase       = work object (base) defined on the calibration target
+    !   bool ClearLog         = if TRUE, calibration data journal on vision system will be cleared prior to calibration
+    !   bool CheckOnly        = if TRUE, only calibration check will be performed (no calibration computed)
+    !   bool SkipCheck        = if TRUE, calibration check will be skipped (only calibration is computed)
+    !   num StabDelay         = time to wait in milliseconds (ms) after a motion (minimum is 100 ms maximum is 5000 ms)
+    !   num TargetVersion     = version of the calibration target in use (1 for AUTO-CAL V1 / 2 for AUTO-CAL V2.1)
+    !OUTPUT:
+    !   caldata ACAL_CalOut  (custom record type defined in AutoCal module)
+    !      ACAL_CalOut.Status    = If negative, function terminated with an error
+    !                           1 = Calibration to FLANGE successful
+    !                           2 = Calibration to TOOL successful (FLANGE calibration also computed)
+    !                           3 = Calibration check successful
+    !      ACAL_CalOut.calerrors = accuracy check values in XYZ
+    !      ACAL_CalOut.tx/ty/tz  = tool definition in XYZ relative to FLANGE (bottom of camera FoV)
+    !      ACAL_CalOut.oa/ob/oc  = tool definition in ABC relative to FLANGE (based on camera camera FoV orientation)
+    FUNC caldata ACALu_Cal_STD(num NbIterations,tooldata MyTool,wobjdata MyBase,bool ClearLog,bool CheckOnly,bool SkipCheck,num StabDelay,num TargetVersion)
+        VAR caldata CalOutSeq;
+        VAR num SetupCheck;
+        IF TargetVersion=1 THEN
+            ACALg_Target:=4;
+        ELSE
+            IF TargetVersion=2 THEN
+                ACALg_Target:=8;
+            ELSE
+                TPWrite "Invalid Target version selected!";
+                TPWrite "Use 1 for AUTO-CAL 1 target and 2 for AUTO-CAL 2.0 target.";
+                CalOutSeq.status:=-1;
+                RETURN CalOutSeq;
+            ENDIF
+        ENDIF
+        ACALg_IsHRCalib:=FALSE;
+        
+        SetupCheck:=ACAL_CheckSetup(ACALg_SkpStChk);
+        
+        IF SetupCheck < 0 THEN
+            TPWrite "User did not confirm a proper setup.  Calibration aborted (r = " + Valtostr(SetupCheck) + ").";
+        ELSE
+            CalOutSeq:=ACAL_CalSeq(NbIterations,MyTool,MyBase,ClearLog,CheckOnly,SkipCheck,StabDelay);
+            RETURN CalOutSeq;
+        ENDIF
+    ENDFUNC
+	
+	!High level function to calibrate the ACAL module (6D calibration) using sequential calibration method (HR camera).
+    !IMPORTANT: 
+    !   1) The calibration target must have been defined as a wObj as indicated in the documentation
+    !   2) The angle of the laser-camera must be perpendicular to the calibration target (tool angle is irrelevant)
+    !   3) This function assumes the TCP is already in StartPosition above the target at function call
+    !
+    !INPUT:
+    !   num NbIterations      = Number of iterations of calibration sequence (min. is 1, max. is 10)
+    !   tooldata MyTool       = Tool used to move during calibration (and reference if TOOL calibration is requested)
+    !   wobjdata MyBase       = work object (base) defined on the calibration target
+    !   bool ClearLog         = if TRUE, calibration data journal on vision system will be cleared prior to calibration
+    !   bool CheckOnly        = if TRUE, only calibration check will be performed (no calibration computed)
+    !   bool SkipCheck        = if TRUE, calibration check will be skipped (only calibration is computed)
+    !   num StabDelay         = time to wait in milliseconds (ms) after a motion (minimum is 100 ms maximum is 5000 ms)
+    !   num TargetVersion     = version of the calibration target in use (1 for AUTO-CAL V1 / 2 for AUTO-CAL V2.1)
+    !OUTPUT:
+    !   caldata ACAL_CalOut  (custom record type defined in AutoCal module)
+    !      ACAL_CalOut.Status    = If negative, function terminated with an error
+    !                           1 = Calibration to FLANGE successful
+    !                           2 = Calibration to TOOL successful (FLANGE calibration also computed)
+    !                           3 = Calibration check successful
+    !      ACAL_CalOut.calerrors = accuracy check values in XYZ
+    !      ACAL_CalOut.tx/ty/tz  = tool definition in XYZ relative to FLANGE (bottom of camera FoV)
+    !      ACAL_CalOut.oa/ob/oc  = tool definition in ABC relative to FLANGE (based on camera camera FoV orientation)
+    FUNC caldata ACALu_Cal_HR(num NbIterations,tooldata MyTool,wobjdata MyBase,bool ClearLog,bool CheckOnly,bool SkipCheck,num StabDelay,num TargetVersion)
+        VAR caldata CalOutSeq;
+        VAR num SetupCheck;
+        IF TargetVersion=1 THEN
+            ACALg_Target:=5;
+        ELSE
+            IF TargetVersion=2 THEN
+                ACALg_Target:=9;
+            ELSE
+                TPWrite "Invalid Target version selected!";
+                TPWrite "Use 1 for AUTO-CAL 1 target and 2 for AUTO-CAL 2.0 target.";
+                CalOutSeq.status:=-1;
+                RETURN CalOutSeq;
+            ENDIF
+        ENDIF
+        ACALg_IsHRCalib:=TRUE;
+        
+        SetupCheck:=ACAL_CheckSetup(ACALg_SkpStChk);
+        
+        IF SetupCheck < 0 THEN
+            TPWrite "User did not confirm a proper setup.  Calibration aborted (r = " + Valtostr(SetupCheck) + ").";
+        ELSE
+            CalOutSeq:=ACAL_CalSeq(NbIterations,MyTool,MyBase,ClearLog,CheckOnly,SkipCheck,StabDelay);
+            RETURN CalOutSeq;
+        ENDIF
+        
+    ENDFUNC
+	
+	!High level function to perform base optimization (increases accuracy of AUTO-CAL calibration).
+    !IMPORTANT: 
+    !   1) All points specified as inputs must be taught using RefTool (also an input)
+    !   2) Resulting frame (wobjdata) is sent as an output but component ufprog acts as a status (TRUE if success; FALSE if error)
+    !
+    !INPUT:
+    !   num NbIterations      = Number of iterations for base optimization (min. is 3, max. is 10)
+    !   tooldata RefTool      = Tool used to define all points (reference tool).  MUST BE VERY ACCURATELY DEFINED!
+    !   wobjdata TargetFrame  = Frame used to define all points.  MUST BE VERY ACCURATELY DEFINED!
+    !   robtarget ApproachA   = point taught 5-8 mm above point A on calibration target (using wObj0 and RefTool)
+    !   robtarget ApproachB   = point taught 5-8 mm above point B on calibration target (using wObj0 and RefTool)
+    !   robtarget ApproachC   = point taught 5-8 mm above point C on calibration target (using wObj0 and RefTool)
+    !
+    !OUTPUT:
+    !   wobjdata FrameOut     = Value for the optimized frame (wobjdata) which can be used as the calibration target frame
+    !      FrameOut.ufprog    = If TRUE => Successful execution   / If FALSE => Error during optimization (DO NOT USE AS A VALID FRAME!)
+    !      FrameOut.uframe    = definition of the frame
+	FUNC wobjdata ACALu_Opt_Base(num NbIterations,tooldata RefTool,wobjdata TargetFrame,robtarget ApproachA,robtarget ApproachB,robtarget ApproachC)
+        VAR num LoopIndex;
+
+        VAR robtarget PointA;
+        VAR robtarget PointB;
+        VAR robtarget PointC;
+        VAR robtarget PointD;
+        VAR robtarget PointE;
+        VAR robtarget PointF;
+        VAR robtarget ApproachA_Mod;
+        VAR robtarget ApproachB_Mod;
+        VAR robtarget ApproachC_Mod;
+        VAR robtarget ApproachD_Mod;
+        VAR robtarget ApproachE_Mod;
+        VAR robtarget ApproachF_Mod;
+        VAR wobjdata FrameOut;
+        VAR num NormX;
+        VAR pos dX;
+        VAR pos dY;
+        VAR pos dZ;
+
+        FrameOut:=[FALSE,TRUE,"",[[0,0,0],[1,0,0,0]],[[0,0,0],[1,0,0,0]]];
+
+        !Store function call arguments internally
+        ACAL_RefTool:=RefTool;
+        ACAL_TargetFrame:=TargetFrame;
+        ACAL_TgtOptFrame:=TargetFrame;
+
+        !We use the "ufprog"component to define the function status (initialized to FALSE)...
+        FrameOut.ufprog:=FALSE;
+
+        !Convert all approach points to WObj0 (NULL frame) since any user-defined WObj is a relation to WObj0
+        ApproachA_Mod:=ACAL_BaseChange(ApproachA,TargetFrame);
+        ApproachB_Mod:=ACAL_BaseChange(ApproachB,TargetFrame);
+        ApproachC_Mod:=ACAL_BaseChange(ApproachC,TargetFrame);
+
+        dX:=ACAL_Vectorize(ApproachA_Mod,ApproachB_Mod);
+        dY:=ACAL_Vectorize(ApproachA_Mod,ApproachC_Mod);
+
+        ApproachD_Mod:=ApproachA_Mod;
+        ApproachD_Mod.trans:=ApproachA_Mod.trans+5*dX;
+        ApproachD_Mod.trans:=ApproachA_Mod.trans+25*dY;
+
+        ApproachE_Mod:=ApproachB_Mod;
+        ApproachE_Mod.trans:=ApproachB_Mod.trans-5*dX;
+        ApproachE_Mod.trans:=ApproachB_Mod.trans+54*dY;
+
+        ApproachF_Mod:=ApproachC_Mod;
+        ApproachF_Mod.trans:=ApproachC_Mod.trans+5*dX;
+        ApproachF_Mod.trans:=ApproachC_Mod.trans-25*dY;
+		
+		!Initialize PointA to PointF to approach points
+        PointA:=ApproachA_Mod;
+        PointB:=ApproachB_Mod;
+        PointC:=ApproachC_Mod;
+        PointD:=ApproachD_Mod;
+        PointE:=ApproachE_Mod;
+        PointF:=ApproachF_Mod;
+        
+		!Iterate the complete teaching process "N" times (based on funciton call parameter)
+        FOR LoopIndex FROM 1 TO NbIterations DO
+
+            MoveL ApproachA_Mod,v100,fine,ACAL_RefTool\WObj:=ACAL_NullWobj;
+			TPWrite "Please 1)JOG to PointA(XYZ), 2)MODIFY next point,. 3)RESUME program execution.";
+            Stop;
+            !Please JOG to PointA, MODIFY next point and then RESUME execution;
+            PointA:=[[930.80,-341.40,378.62],[0.969925,0.0118438,-0.240617,0.0347481],[-1,-2,-1,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+            WaitTime 0.1;
+            IF NOT ACAL_RecordPoint(RefTool,1,PointA) THEN
+                TPWrite "ERROR: Failed to send Point A to vision system.";
+				GOTO EndBad;
+            ENDIF
+            MoveL ApproachA_Mod,v100,fine,ACAL_RefTool\WObj:=ACAL_NullWobj;
+
+
+            MoveL ApproachB_Mod,v100,fine,ACAL_RefTool\WObj:=ACAL_NullWobj;
+            TPWrite "Please 1)JOG to PointB(XYZ), 2)MODIFY next point,. 3)RESUME program execution.";
+            Stop;
+            !Please JOG to PointB, MODIFY next point and then RESUME execution;
+            PointB:=[[1044.42,-349.13,379.23],[0.969925,0.0118506,-0.240618,0.0347596],[-1,-2,-1,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+            WaitTime 0.1;
+            IF NOT ACAL_RecordPoint(RefTool,2,PointB) THEN
+                TPWrite "ERROR: Failed to send Point B to vision system.";
+				GOTO EndBad;
+            ENDIF
+            MoveL ApproachB_Mod,v100,fine,ACAL_RefTool\WObj:=ACAL_NullWobj;
+
+            MoveL ApproachE_Mod,v100,fine,ACAL_RefTool\WObj:=ACAL_NullWobj;
+            TPWrite "Please 1)JOG to PointE(Z), 2)MODIFY next point,. 3)RESUME program execution.";
+            Stop;
+            !Please JOG to PointE, MODIFY next point and then RESUME execution;
+            PointE:=[[1047.47,-295.84,378.87],[0.969925,0.0118525,-0.240617,0.0347523],[-1,-2,-1,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+            WaitTime 0.1;
+            IF NOT ACAL_RecordPoint(RefTool,5,PointE) THEN
+                TPWrite "ERROR: Failed to send Point E to vision system.";
+				GOTO EndBad;
+            ENDIF
+            MoveL ApproachE_Mod,v100,fine,ACAL_RefTool\WObj:=ACAL_NullWobj;
+
+            MoveL ApproachC_Mod,v100,fine,ACAL_RefTool\WObj:=ACAL_NullWobj;
+            TPWrite "Please 1)JOG to PointC(XYZ), 2)MODIFY next point,. 3)RESUME program execution.";
+            Stop;
+            !Please JOG to PointC, MODIFY next point and then RESUME execution;
+            PointC:=[[938.24,-233.69,378.22],[0.969927,0.0118416,-0.240608,0.0347571],[-1,-2,-1,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+            WaitTime 0.1;
+            IF NOT ACAL_RecordPoint(RefTool,3,PointC) THEN
+                TPWrite "ERROR: Failed to send Point C to vision system.";
+				GOTO EndBad;
+            ENDIF
+            MoveL ApproachC_Mod,v100,fine,ACAL_RefTool\WObj:=ACAL_NullWobj;
+
+            MoveL ApproachF_Mod,v100,fine,ACAL_RefTool\WObj:=ACAL_NullWobj;
+            TPWrite "Please 1)JOG to PointF(Z), 2)MODIFY next point,. 3)RESUME program execution.";
+            Stop;
+            !Please JOG to PointF, MODIFY next point and then RESUME execution;
+            PointF:=[[936.65,-258.86,378.31],[0.969929,0.0118464,-0.240605,0.0347352],[-1,-2,-1,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+            WaitTime 0.1;
+            IF NOT ACAL_RecordPoint(RefTool,6,PointF) THEN
+                TPWrite "ERROR: Failed to send Point F to vision system.";
+				GOTO EndBad;
+            ENDIF
+            MoveL ApproachF_Mod,v100,fine,ACAL_RefTool\WObj:=ACAL_NullWobj;
+
+            MoveL ApproachD_Mod,v100,fine,ACAL_RefTool\WObj:=ACAL_NullWobj;
+            TPWrite "Please 1)JOG to PointD(Z), 2)MODIFY next point,. 3)RESUME program execution.";
+            Stop;
+            !Please JOG to PointD, MODIFY next point and then RESUME execution;
+            PointD:=[[932.94,-316.81,377.98],[0.969924,0.0118507,-0.240622,0.034742],[-1,-2,-1,1],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+            WaitTime 0.1;
+            IF NOT ACAL_RecordPoint(RefTool,4,PointD) THEN
+                TPWrite "ERROR: Failed to send Point D to vision system.";
+				GOTO EndBad;
+            ENDIF
+            MoveL ApproachD_Mod,v100,fine,ACAL_RefTool\WObj:=ACAL_NullWobj;
+
+            WaitTime 0.5;
+
+            IF LoopIndex<NbIterations THEN
+                !First N-1 iteration numbers are sent "as is"
+                IF NOT ACAL_ComputeBase(RefTool,LoopIndex) THEN
+                    TPWrite "ERROR: Failed to compute current iteration.";
+					GOTO EndBad;
+                ENDIF
+            ELSE
+                !Last iteration must be 10 to execute the base optimization function
+                IF NOT ACAL_ComputeBase(RefTool,10) THEN
+                    TPWrite "ERROR: Failed to compute user frame.";
+					GOTO EndBad;
+                ELSE
+                    !Copy the optimized frame
+                    FrameOut.uframe:=ACAL_TgtOptFrame.uframe;
+                ENDIF
+            ENDIF
+
+        ENDFOR
+
+        FrameOut.ufprog:=TRUE;
+
+        EndBad:
+
+        RETURN FrameOut;
+
+    ENDFUNC
+	
+ENDMODULE

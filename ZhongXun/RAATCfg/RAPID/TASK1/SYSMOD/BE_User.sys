@@ -13,23 +13,23 @@ MODULE BE_User(SYSMODULE)
     ! 2006-01-13 S?
     !   CHG: Changed name to BE_User due to restore problem with BullsEye, name conflict
     !
-    TASK PERS tooldata tWeldGun:=[TRUE,[[0,0,0],[1,0,0,0]],[1,[1,0,0],[1,0,0,0],0,0,0]];
+    TASK PERS tooldata tWeldGun:=[TRUE,[[-65.6414,-6.39276,541.928],[0.983496,0.00911769,0.180446,-0.00958638]],[1,[1,0,0],[1,0,0,0],0,0,0]];
     !
     LOCAL CONST jointtarget jtEmpty:=[[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
-    TASK PERS jointtarget jtBEApprPos:=[[0,-60,40,0,30,-6.47733E-7],[-100,100,-500,9E+9,9E+9,9E+9]];
-    TASK PERS jointtarget jtBEStartPos:=[[0,-60,40,0,30,-6.47733E-7],[-100,100,-500,9E+9,9E+9,9E+9]];
+    TASK PERS jointtarget jtBEApprPos:=[[-9.9057,40.8661,40.0198,-9.88645,-59.8333,180.408],[11663.9,-334.863,-750.413,9E+09,9E+09,9E+09]];
+    TASK PERS jointtarget jtBEStartPos:=[[-8.12958,44.331,27.2187,-8.92739,-50.5543,181.756],[11663.9,-334.862,-750.413,9E+09,9E+09,9E+09]];
     !
-    CONST be_device devUp:=["sen1",TRUE,[6,45,100,100],[40,45,100,100],0.10,FALSE,TRUE,TRUE];
-    CONST be_device devDown:=["sen1",TRUE,[6,45,100,100],[40,45,100,100],0.10,TRUE,TRUE,TRUE];
+    CONST be_device devUp:=["sen1",TRUE,[6,45,100,100],[40,45,100,100],0.3,FALSE,TRUE,TRUE];
+    CONST be_device devDown:=["sen1",TRUE,[6,45,100,100],[40,45,100,100],0.3,TRUE,TRUE,TRUE];
     CONST be_scan scanMig:=[2,8,8,45,35,25];
-    CONST be_tooldesign tdMig:=[TRUE,30,18,50,6,6,TRUE,TRUE,1.2,[150,120,100,100],[250,150,100,100]];
+    CONST be_tooldesign tdMig:=[TRUE,30,18,25,6,6,TRUE,TRUE,1.2,[150,120,100,100],[250,150,100,100]];
     !
-    TASK PERS num nTcpExtension:=15;
+    TASK PERS num nTcpExtension:=20;
     ! vars for tcp check during production
     TASK PERS num nBECheckTcpFreq:=0;
     TASK PERS num nBECheckCycle:=0;
+    TASK PERS be_fixedaxes be_fixedaxes_toolWeldGun:=[FALSE,TRUE,TRUE,FALSE,FALSE,FALSE];
 
-    PERS be_fixedaxes be_fixedaxes_toolWeldGun:=[FALSE,TRUE,TRUE,FALSE,FALSE,FALSE];
     !
     PROC BEToolSetup()
         VAR jointtarget jCurrPos;
@@ -65,7 +65,9 @@ MODULE BE_User(SYSMODULE)
 
             Stop\NoRegain;
             ! modpos robtargets jtBEApprPos and jtBEStartPos
-            BESetupToolJ jtBEApprPos,jtBEStartPos,nTcpExtension,tdMig,scanMig,devUp,v100,fine,tWeldGun\FixedAxes:=be_fixedaxes_toolWeldGun;
+            ! MoveAbsJ jtBEApprPos,speedAir,fine,toolWeldGun\WObj:=wobj0;
+            ! MoveAbsJ jtBEStartPos,speedAir,fine,toolWeldGun\WObj:=wobj0;
+            BESetupToolJ jtBEApprPos,jtBEStartPos,nTcpExtension,tdMig,scanMig,devDown,v100,fine,toolWeldGun\FixedAxes:=be_fixedaxes_toolWeldGun;
         ENDIF
     ENDPROC
 

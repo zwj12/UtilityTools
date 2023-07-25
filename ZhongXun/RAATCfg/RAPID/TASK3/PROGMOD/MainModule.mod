@@ -14,7 +14,24 @@ MODULE MainModule
     TASK PERS jointtarget jointCurrent:=[[0,-60,40,0,60,0],[0,0,-500,9E+9,9E+9,9E+9]];
     TASK PERS num numTaskIdleTime:=0.05;
 
+    PERS num numHeartBeatInterval:=0.5;
+    PERS num numHeartBeatStableTime:=0;
+    VAR intnum intHeartBeat;
+    VAR intnum intHeartBeatMonitor;
+    VAR clock clockHeartBeatMonitor;
+
     PROC main()
+        numHeartBeatStableTime:=0;
+        ClkStart clockHeartBeatMonitor;
+
+        IDelete intHeartBeat;
+        CONNECT intHeartBeat WITH TRAPHeartBeat;
+        ITimer numHeartBeatInterval,intHeartBeat;
+
+        IDelete intHeartBeatMonitor;
+        CONNECT intHeartBeatMonitor WITH TRAPHeartBeatMonitor;
+        ISignalDI diDNHeartBeat,edge,intHeartBeatMonitor;
+
         WHILE TRUE DO
             jointCurrent:=CJointT(\TaskName:="T_ROB1");
 
@@ -52,7 +69,9 @@ MODULE MainModule
                 ENDIF
             ENDIF
 
-            CollisionAvoidanceGantry;
+            IF numGantryCollisionDistance<>-1 THEN
+                CollisionAvoidanceGantry;
+            ENDIF
 
             WaitTime numTaskIdleTime;
         ENDWHILE
@@ -60,16 +79,46 @@ MODULE MainModule
     ENDPROC
 
     PROC CollisionAvoidanceGantry()
-        IF RobOS()=FALSE THEN
-            RETURN ;
-        ENDIF
+        !        IF RobOS()=FALSE THEN
+        !            RETURN ;
+        !        ENDIF
         IF IOUnitState(strDeviceName\Phys)<>IOUNIT_PHYS_STATE_RUNNING OR ValidIO(aoDNGantryX)=FALSE OR ValidIO(aiDNGantryX)=FALSE THEN
-            SetDO sdoGantryCollision,1;
+            IF sdoGantryCollision<>1 THEN
+                Logging "Gantry collision due to the signal is invalid.";
+                SetDO sdoGantryCollision,1;
+            ENDIF
         ELSEIF Abs(AOutput(aoDNGantryX)-AInput(aiDNGantryX))<numGantryCollisionDistance THEN
-            SetDO sdoGantryCollision,1;
+            IF sdoGantryCollision<>1 THEN
+                Logging "Gantry collision due to the distance is too close.";
+                SetDO sdoGantryCollision,1;
+            ENDIF
         ELSE
-            SetDO sdoGantryCollision,0;
+            numHeartBeatStableTime:=ClkRead(clockHeartBeatMonitor);
+            IF numHeartBeatStableTime>numHeartBeatInterval*4 THEN
+                IF sdoGantryCollision<>1 THEN
+                    Logging "Gantry collision due to miss heart beat.";
+                    SetDO sdoGantryCollision,1;
+                ENDIF
+            ELSE
+                IF sdoGantryCollision<>0 THEN
+                    SetDO sdoGantryCollision,0;
+                ENDIF
+            ENDIF
         ENDIF
 
     ENDPROC
+
+    TRAP TRAPHeartBeat
+        IF IOUnitState(strDeviceName\Phys)=IOUNIT_PHYS_STATE_RUNNING OR ValidIO(doDNHeartBeat)=TRUE THEN
+            InvertDO doDNHeartBeat;
+        ENDIF
+        !        IF RobOS()=FALSE THEN
+        !            ClkReset clockHeartBeatMonitor;
+        !        ENDIF
+    ENDTRAP
+
+    TRAP TRAPHeartBeatMonitor
+        ClkReset clockHeartBeatMonitor;
+    ENDTRAP
+
 ENDMODULE

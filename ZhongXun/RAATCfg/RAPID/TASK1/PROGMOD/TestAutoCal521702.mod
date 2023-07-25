@@ -30,7 +30,7 @@ MODULE TestAutoCal
     
     PERS num ACAL_LoopCount:=3;
     
-    PERS string Laser_IP_Add:="192.168.1.5";
+    PERS string Laser_IP_Add:="192.168.1.6";
     
     PROC Test_AUTOCAL()
         VAR bool MainClearLog;           !!Variable to control the calibration function

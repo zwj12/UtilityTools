@@ -11,6 +11,7 @@ itemB = {'Name': 'Item_2', 'Id': '9552BEFB-480E-42B3-96D1-9EA297506540'}
 logFilePath = r'C:\ProgramData\ABB\PickMaster Twin 2\PickMaster Twin Host 2\PickMaster Runtime\Log\PMTWUserScript.log'
 PyInitializeCounter = 0
 PyAdjusterCounter = 0
+PyDistributionCounter = 0
 
 
 def get_logging():
@@ -128,6 +129,75 @@ def PyAdjuster(items):
     return items
 
 
+def PyDistribution(WaId, items):
+    """PyDistribution
+
+    Keyword arguments:
+    WaId -- Workarea ID, exaple: '3F8AE17B-C16C-4FE9-9DF5-C2D14ED1BC07'
+    items -- Item information, example:
+        {'Time': 1702301071.989,
+         '0': {'X': -72.5999984741211,
+               'Y': -125.0,
+               'Z': 5.0,
+               'q1': 0.0,
+               'q2': 1.0,
+               'q3': 0.0,
+               'q4': 0.0,
+               'Tag': 0,
+               'Val1': 0.0,
+               'Val2': 0.0,
+               'Val3': 0.0,
+               'Val4': 0.0,
+               'Val5': 0.0,
+               'Index': 26,
+               'Type': 0,
+               'Container': 0,
+               'Layer': 0,
+               'Group': 0,
+               'State': 0,
+               'Id': '346563A7-F607-4D65-8DFD-D53AB615EDA8'
+               }
+         }
+    """
+    kwargs = locals()
+    logger = get_logging()
+    logger.debug(f"Call {sys._getframe().f_code.co_name}")
+    logger.debug(f'kwargs = {kwargs}')
+
+    global PyDistributionCounter
+    global RTType
+    global itemA
+    global itemB
+    PyDistributionCounter += 1
+    logger.debug(f'PyDistributionCounter = {PyDistributionCounter}')
+
+    logger.debug(f'WaId = {WaId}')
+
+    keys = items.keys()
+    for key in keys:
+        if key == 'Time':
+            logger.debug(f'Time = {items[key]}')
+        else:
+            logger.debug(f'Input: {key} = {items[key]}')
+
+            if RTType == 0:
+                if items[key]['Id'] == itemA['Id']:
+                    items[key]['X'] = items[key]['X'] + 25
+                    items[key]['Y'] = items[key]['Y'] + 25
+                    # items[key]['Z'] = items[key]['Z'] + 25
+                    logger.debug(f'Adjust: {itemA}')
+            else:
+                if items[key]['Id'] == itemB['Id']:
+                    items[key]['X'] = items[key]['X'] + 25
+                    items[key]['Y'] = items[key]['Y'] + 25
+                    # items[key]['Z'] = items[key]['Z'] + 25
+                    logger.debug(f'Adjust: {itemB}')
+
+            logger.debug(f'Output: {key} = {items[key]}')
+
+    return items
+
+
 def main(argv):
     """main
 
@@ -161,6 +231,32 @@ def main(argv):
                        }
                  }
         PyAdjuster(items)
+
+        WaId = '3F8AE17B-C16C-4FE9-9DF5-C2D14ED1BC07'
+        itemsDistribution = {'Time': 1702301071.989,
+                             '0': {'X': -72.5999984741211,
+                                   'Y': -125.0,
+                                   'Z': 5.0,
+                                   'q1': 0.0,
+                                   'q2': 1.0,
+                                   'q3': 0.0,
+                                   'q4': 0.0,
+                                   'Tag': 0,
+                                   'Val1': 0.0,
+                                   'Val2': 0.0,
+                                   'Val3': 0.0,
+                                   'Val4': 0.0,
+                                   'Val5': 0.0,
+                                   'Index': 26,
+                                   'Type': 0,
+                                   'Container': 0,
+                                   'Layer': 0,
+                                   'Group': 0,
+                                   'State': 0,
+                                   'Id': '346563A7-F607-4D65-8DFD-D53AB615EDA8'
+                                   }
+                             }
+        PyDistribution(WaId, itemsDistribution)
 
     except Exception:
         pass

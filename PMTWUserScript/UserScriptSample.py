@@ -198,11 +198,19 @@ def PyDistribution(WaId, items):
     return items
 
 
+def multiply(a,b):
+    print("Will compute", a, "times", b)
+    c = 0
+    for i in range(0, a):
+        c = c + b
+    return c
+
+
 def main(argv):
     """main
 
     """
-    print(argv)
+    print("Run from main: ", argv)
     try:
         logger = get_logging()
         logger.debug(argv)

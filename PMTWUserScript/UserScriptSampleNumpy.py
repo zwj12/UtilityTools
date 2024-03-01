@@ -4,12 +4,13 @@
 import os
 import sys
 import logging
+import numpy
 
 
 RTType = 1
 itemA = {'Name': 'Item_1', 'Id': '325D3EB5-B563-4F90-B0C5-2F1E770D5C04'}
 itemB = {'Name': 'Item_2', 'Id': '9552BEFB-480E-42B3-96D1-9EA297506540'}
-logFilePath = r'C:\ProgramData\ABB\PickMaster Twin 2\PickMaster Twin Runtime 2\PickMaster Runtime\Log\PMTWUserScript.log'
+logFilePath = r'C:\ProgramData\ABB\PickMaster Twin 2\PickMaster Twin Host 2\PickMaster Runtime\Log\PMTWUserScript.log'
 PyInitializeCounter = 0
 PyAdjusterCounter = 0
 PyDistributionCounter = 0
@@ -29,8 +30,7 @@ def get_logging():
         os.makedirs(os.path.dirname(logFilePath), exist_ok=True)
     logger = logging.getLogger('PickMasterTwin')
     if logger.hasHandlers() == False:
-        # logger.setLevel(logging.DEBUG)
-        logger.setLevel(logging.INFO)
+        logger.setLevel(logging.DEBUG)
         formatter = logging.Formatter(
             '%(asctime)s:%(name)s:%(levelname)s:%(message)s')
         filehandler = logging.FileHandler(logFilePath)
@@ -54,6 +54,7 @@ def PyInitialize(type, itemInfo):
     logger = get_logging()
     logger.debug(f"Call {sys._getframe().f_code.co_name}")
     logger.debug(f'kwargs = {kwargs}')
+    NumPyTest()
 
     global PyInitializeCounter
     global RTType
@@ -99,6 +100,7 @@ def PyAdjuster(items):
     logger = get_logging()
     logger.debug(f"Call {sys._getframe().f_code.co_name}")
     logger.debug(f'kwargs = {kwargs}')
+    NumPyTest()
 
     global PyAdjusterCounter
     global RTType
@@ -165,6 +167,7 @@ def PyDistribution(WaId, items):
     logger = get_logging()
     logger.debug(f"Call {sys._getframe().f_code.co_name}")
     logger.debug(f'kwargs = {kwargs}')
+    NumPyTest()
 
     global PyDistributionCounter
     global RTType
@@ -202,10 +205,19 @@ def PyDistribution(WaId, items):
 
 def multiply(a,b):
     print("Will compute", a, "times", b)
+    NumPyTest()
     c = 0
     for i in range(0, a):
         c = c + b
-    return c + 6
+    return c + 8
+
+
+def NumPyTest():
+    a = numpy.array([[1,1],[0,1]])
+    b = numpy.array([[2,0],[3,4]])
+    c = a * b
+    logger = get_logging()
+    logger.debug(f'a * b = {c}')
 
 
 def main(argv):

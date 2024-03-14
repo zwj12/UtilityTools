@@ -209,7 +209,7 @@ def multiply(a,b):
     c = 0
     for i in range(0, a):
         c = c + b
-    return c + 8
+    return c
 
 
 def NumPyTest():
@@ -217,7 +217,7 @@ def NumPyTest():
     b = numpy.array([[2,0],[3,4]])
     c = a * b
     logger = get_logging()
-    logger.debug(f'a * b = {c}')
+    logger.debug(f'Call numpy: a * b = {c}')
 
 
 def main(argv):

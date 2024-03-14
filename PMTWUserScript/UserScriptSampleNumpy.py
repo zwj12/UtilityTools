@@ -1,4 +1,4 @@
-"""PickMaster Twin User Script Sample: UserScriptSample.py
+"""PickMaster Twin User Script Sample: UserScriptSampleNumpy.py
 """
 
 import os
@@ -10,7 +10,7 @@ import numpy
 RTType = 1
 itemA = {'Name': 'Item_1', 'Id': '325D3EB5-B563-4F90-B0C5-2F1E770D5C04'}
 itemB = {'Name': 'Item_2', 'Id': '9552BEFB-480E-42B3-96D1-9EA297506540'}
-logFilePath = r'C:\ProgramData\ABB\PickMaster Twin 2\PickMaster Twin Runtime 2\PickMaster Runtime\Log\PMTWUserScript.log'
+logFilePath = r'C:\ProgramData\ABB\PickMaster Twin\PickMaster Twin Runtime\PickMaster Runtime\Log\PMTWUserScript.log'
 PyInitializeCounter = 0
 PyAdjusterCounter = 0
 PyDistributionCounter = 0

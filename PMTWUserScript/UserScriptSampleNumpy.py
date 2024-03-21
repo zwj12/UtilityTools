@@ -5,6 +5,7 @@ import os
 import sys
 import logging
 import numpy
+import cv2
 
 
 RTType = 1
@@ -218,6 +219,7 @@ def NumPyTest():
     c = a * b
     logger = get_logging()
     logger.debug(f'Call numpy: a * b = {c}')
+    logger.debug(cv2.__name__)
 
 
 def main(argv):

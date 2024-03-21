@@ -4,7 +4,7 @@
 import os
 import sys
 import logging
-
+import time
 
 RTType = 1
 itemA = {'Name': 'Item_1', 'Id': '325D3EB5-B563-4F90-B0C5-2F1E770D5C04'}
@@ -14,6 +14,15 @@ PyInitializeCounter = 0
 PyAdjusterCounter = 0
 PyDistributionCounter = 0
 PyVisionCounter = 0
+logInitializeCSVFilePath = r'C:\ProgramData\ABB\PickMaster Twin\PickMaster Twin Runtime\PickMaster Runtime\Log\PMTWUserScriptInitialize.csv'
+logAdjusterCSVFilePath = r'C:\ProgramData\ABB\PickMaster Twin\PickMaster Twin Runtime\PickMaster Runtime\Log\PMTWUserScriptAdjuster.csv'
+logDistributionCSVFilePath = r'C:\ProgramData\ABB\PickMaster Twin\PickMaster Twin Runtime\PickMaster Runtime\Log\PMTWUserScriptDistribution.csv'
+logVisionCSVFilePath = r'C:\ProgramData\ABB\PickMaster Twin\PickMaster Twin Runtime\PickMaster Runtime\Log\PMTWUserScriptDistribution.csv'
+headerInitializeList = ['Name', 'Id']
+headerAdjusterList = ['X', 'Y', 'Z', 'RX', 'RY', 'RZ', 'Tag', 'Val1', 'Val2', 'Val3', 'Val4', 'Val5', 'Level', 'Id']
+headerDistributionList = ['X', 'Y', 'Z', 'q1', 'q2', 'q3', 'q4', 'Tag', 'Val1', 'Val2', 'Val3', 'Val4', 'Val5'
+                          , 'Index', 'Type', 'Container', 'Layer', 'Group', 'State', 'Id']
+strTab = ','
 
 def get_logging():
     """get_logging
@@ -38,6 +47,22 @@ def get_logging():
         logger.addHandler(filehandler)
     return logger
 
+def WriteCSVLog(filePath, index, values):
+    strLine = ''
+    for value in values:
+        strLine += str(value) + strTab
+    strLine += time.strftime("%Y-%m-%dT%H:%M:%S", time.localtime()) + strTab + str(index)
+    f = open(filePath, 'a')
+    f.write(strLine + '\n')
+    f.close()
+
+def WriteCVSLogHeader(filePath, headerList):
+    strLine = ''
+    for key in headerList:
+        strLine += key + strTab
+    f = open(filePath,'a')
+    f.write(strLine + 'Time,Index' + '\n')
+    f.close()
 
 def PyInitialize(type, itemInfo):
     """PyInitialize
@@ -55,6 +80,13 @@ def PyInitialize(type, itemInfo):
     logger.debug(f"Call {sys._getframe().f_code.co_name}")
     logger.debug(f'kwargs = {kwargs}')
 
+    if (os.path.exists(logInitializeCSVFilePath) == False):
+        WriteCVSLogHeader(logInitializeCSVFilePath, headerInitializeList)
+    if (os.path.exists(logAdjusterCSVFilePath) == False):
+        WriteCVSLogHeader(logAdjusterCSVFilePath, headerAdjusterList)
+    if (os.path.exists(logDistributionCSVFilePath) == False):
+        WriteCVSLogHeader(logDistributionCSVFilePath, headerDistributionList)
+
     global PyInitializeCounter
     global RTType
     global itemA
@@ -70,7 +102,11 @@ def PyInitialize(type, itemInfo):
     if len(items_list) > 1:
         itemB = items_list[1][1]
         logger.debug(f'itemB = {itemB}')    
-
+    index = 0
+    for item in itemInfo.values():
+        values = item.values()
+        index = index + 1
+        WriteCSVLog(logInitializeCSVFilePath, index, values)
 
 def PyAdjuster(items):
     """PyAdjuster
@@ -107,6 +143,7 @@ def PyAdjuster(items):
     PyAdjusterCounter += 1
     logger.debug(f'PyAdjusterCounter = {PyAdjusterCounter}')
 
+    index = 0
     for key in items.keys():
         if key == 'Time':
             logger.debug(f'Time = {items[key]}')
@@ -127,6 +164,10 @@ def PyAdjuster(items):
                     logger.debug(f'Adjust: {itemB}')
 
             logger.debug(f'Output: {key} = {items[key]}')
+
+            values = items[key].values()
+            index = index + 1
+            WriteCSVLog(logAdjusterCSVFilePath, index, values)
 
     return items
 
@@ -322,6 +363,7 @@ def PyDistribution(WaId, items):
 
     logger.debug(f'WaId = {WaId}')
 
+    index = 0
     keys = items.keys()
     for key in keys:
         if key == 'Time':
@@ -343,6 +385,10 @@ def PyDistribution(WaId, items):
                     logger.debug(f'Adjust: {itemB}')
 
             logger.debug(f'Output: {key} = {items[key]}')
+
+            values = items[key].values()
+            index = index + 1
+            WriteCSVLog(logDistributionCSVFilePath, index, values)
 
     return items
 
@@ -514,8 +560,10 @@ def main(argv):
         PyDistribution(WaId, itemsDistribution)
 
     except Exception:
+        print("Error: ", sys.exc_info()[0])
         pass
     finally:
+        print("Finally")
         pass
 
 

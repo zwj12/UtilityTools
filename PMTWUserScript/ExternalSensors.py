@@ -9,43 +9,99 @@ import operator as op
 import time
 import CognexFunctions
 import SickFunctions
+import logging
+import os
+import sys
 
+logFilePath = r'C:\ProgramData\ABB\PickMaster Twin\PickMaster Twin Runtime\PickMaster Runtime\Log\PMTWExternalSensor.log'
+configureSensorCounter = 0
+
+def get_logging():
+    """get_logging
+
+    """
+    archiveAboveSize = 1024 * 1024 * 10
+    if os.path.exists(logFilePath):
+        if os.path.getsize(logFilePath) > 1024 * 1024 * 10:
+            if os.path.exists(logFilePath + '.1'):
+                os.remove(logFilePath + '.1')
+            os.rename(logFilePath, logFilePath + '.1')
+    else:
+        os.makedirs(os.path.dirname(logFilePath), exist_ok=True)
+    logger = logging.getLogger('PickMasterTwin')
+    if logger.hasHandlers() == False:
+        logger.setLevel(logging.DEBUG)
+        # logger.setLevel(logging.INFO)
+        formatter = logging.Formatter(
+            '%(asctime)s:%(name)s:%(levelname)s:%(message)s')
+        filehandler = logging.FileHandler(logFilePath)
+        filehandler.setFormatter(formatter)
+        logger.addHandler(filehandler)
+    return logger
 
 class ExternalSensors(SensorRuntime, PositionGenerator, SensorConfig, SensorInfo):
-    name = "Example: external sensor"
-    description = "Example: external sensor description"
-    author = "Example: PMTW developer"
-    version = "Example: 1.0"
+    """ExternalSensors
 
-    allThreads=[]
-    allSensors=[]
+    """
+
+    def __init__(self):
+        """__init__
+
+        """
+        self.name = "Example: external sensor"
+        self.description = "Example: external sensor description"
+        self.author = "Example: PMTW developer"
+        self.version = "Example: 1.0"
+        self.allThreads=[]
+        self.allSensors=[] 
 
     def configureSensor(self, sensorId):
-        self.name = "ExternalSensors"
-        if self.sensorIdNameMapDict[sensorId] == 'ExternalSensor_1':
-            inputTitle: str = "ExternalSensor_1 configuration"
-            sensor1 = SickFunctions.SickFunctions()
-            if sensorId in self.sensorConfigurationDict.keys():
-                configurationInfo = sensor1.showSensorConfigDialogSICK(inputTitle,
-                                                                             self.sensorConfigurationDict[sensorId])
-            else:
-                configurationInfo = sensor1.showSensorConfigDialogSICK(inputTitle, "0")
+        """configureSensor
 
-            log = {'LogLevel': 0,
-                   'Log': configurationInfo}
-            self.fLogCallback.ShowPythonLog(log)
-        elif self.sensorIdNameMapDict[sensorId] == 'ExternalSensor_2':
+        Keyword arguments:
+        sensorId -- sensor id
+        """
+        kwargs = locals()
+        logger = get_logging()
+        logger.debug(f"Call {sys._getframe().f_code.co_name}")
+        logger.debug(f'kwargs = {kwargs}')
+
+        global configureSensorCounter
+        configureSensorCounter += 1
+        logger.debug(f'configureSensorCounter = {configureSensorCounter}')
+
+        logger.debug(f'sensorIdNameMapDict = {self.sensorIdNameMapDict}')
+        if(self.sensorIdNameMapDict.get(sensorId) == None):
+            logger.error(f'{sensorId} is not in sensorIdNameMapDict');
+            return               
+                
+        logger.debug(f'sensorIdNameMapDict = {self.sensorConfigurationDict}')
+        if self.sensorIdNameMapDict[sensorId] == 'ExternalSensor_1':
+            inputTitle: str = "ExternalSensor_1 configuration"            
+            sensor1 = SickFunctions.SickFunctions()            
+            if sensorId in self.sensorConfigurationDict.keys():
+                logger.debug(f'SensorConfigDialog: {sensorId} {self.sensorConfigurationDict[sensorId]}')
+                configurationInfo = sensor1.showSensorConfigDialogSICK(inputTitle, self.sensorConfigurationDict[sensorId])
+            else:
+                logger.debug(f'SensorConfigDialog: {sensorId} "0"')
+                configurationInfo = sensor1.showSensorConfigDialogSICK(inputTitle, "0")            
+            log = {'LogLevel': 0, 'Log': configurationInfo}
+            logger.debug(f'log = {log}')
+            if(hasattr(self, 'fLogCallback')):
+                self.fLogCallback.ShowPythonLog(log)
+        else:
             inputTitle: str = "ExternalSensor_2 configuration"
             sensor2 = CognexFunctions.CognexFunctions()
             if sensorId in self.sensorConfigurationDict.keys():
-                configurationInfo = sensor2.showSensorConfigDialogCognex(inputTitle,
-                                                                                 self.sensorConfigurationDict[sensorId])
+                logger.debug(f'SensorConfigDialog: {sensorId} {self.sensorConfigurationDict[sensorId]}')
+                configurationInfo = sensor2.showSensorConfigDialogCognex(inputTitle, self.sensorConfigurationDict[sensorId])
             else:
+                logger.debug(f'SensorConfigDialog: {sensorId} "0"')
                 configurationInfo = sensor2.showSensorConfigDialogCognex(inputTitle, "0")
-
-            log = {'LogLevel': 0,
-                   'Log': configurationInfo}
-            self.fLogCallback.ShowPythonLog(log)
+            log = {'LogLevel': 0, 'Log': configurationInfo}
+            logger.debug(f'log = {log}')
+            if(hasattr(self, 'fLogCallback')):
+                self.fLogCallback.ShowPythonLog(log)
         self.sensorConfigurationDict[sensorId] = configurationInfo
 
     def configurePosGen(self, posGenId):
@@ -121,3 +177,30 @@ class ExternalSensors(SensorRuntime, PositionGenerator, SensorConfig, SensorInfo
         log = {'LogLevel': 0,
                'Log': "Python info: stop sensor"}
         self.fLogCallback.ShowPythonLog(log)
+
+
+def main(argv):
+    """main
+
+    """
+    print("Run from main: ", argv)
+    try:
+        logger = get_logging()
+        logger.debug(argv)
+        es = ExternalSensors()
+        es.initializeSensorMap('325D3EB5-B563-4F90-B0C5-2F1E770D5C04', 'ExternalSensor_1')
+        es.initializeSensorMap('325D3EB5-B563-4F90-B0C5-2F1E770D5C05', 'ExternalSensor_2')
+        es.configureSensor('325D3EB5-B563-4F90-B0C5-2F1E770D5C05')
+
+    except Exception:
+        print("Error: ", sys.exc_info()[0])
+        pass
+    finally:
+        print("Finally")
+        pass
+
+
+if __name__ == "__main__":
+    main(sys.argv)
+else:
+    pass

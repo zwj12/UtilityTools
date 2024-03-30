@@ -3,12 +3,70 @@ import operator as op
 import threading
 import socket
 import time
+import logging
+import os
+import sys
+
+logFilePath = r'C:\ProgramData\ABB\PickMaster Twin\PickMaster Twin Runtime\PickMaster Runtime\Log\PMTWSickFunctions.log'
+showSensorConfigDialogSICKCounter = 0
+showPosGenConfigDialogSICKCounter = 0
+showStartDialogSICKCounter = 0
+
+def get_logging():
+    """get_logging
+
+    """
+    archiveAboveSize = 1024 * 1024 * 10
+    if os.path.exists(logFilePath):
+        if os.path.getsize(logFilePath) > 1024 * 1024 * 10:
+            if os.path.exists(logFilePath + '.1'):
+                os.remove(logFilePath + '.1')
+            os.rename(logFilePath, logFilePath + '.1')
+    else:
+        os.makedirs(os.path.dirname(logFilePath), exist_ok=True)
+    logger = logging.getLogger('PMTWSickFunctions')
+    if logger.hasHandlers() == False:
+        logger.setLevel(logging.DEBUG)
+        # logger.setLevel(logging.INFO)
+        formatter = logging.Formatter(
+            '%(asctime)s:%(name)s:%(levelname)s:%(message)s')
+        filehandler = logging.FileHandler(logFilePath)
+        filehandler.setFormatter(formatter)
+        logger.addHandler(filehandler)
+    return logger
+
 
 class SickFunctions:
-    position = []
+    """SickFunctions
+
+    """
+
+    def __init__(self):
+        """__init__
+
+        """
+        self.position = []
+        self.host = '' #INADDR_ANY               
+        self.port = 8887    
+        self.server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 
     def showSensorConfigDialogSICK(self, inputTitle: str, configInfo: str):
+        """showSensorConfigDialogSICK
+
+        Keyword arguments:
+        inputTitle -- ''
+        configInfo -- ''
+        """
+        kwargs = locals()
+        logger = get_logging()
+        logger.debug(f"Call {sys._getframe().f_code.co_name}")
+        logger.debug(f'kwargs = {kwargs}')
+
+        global showSensorConfigDialogSICKCounter
+        showSensorConfigDialogSICKCounter += 1
+        logger.debug(f'showSensorConfigDialogSICKCounter = {showSensorConfigDialogSICKCounter}')
+
         sensorConfigWindow = tk.Tk()
         sensorConfigWindow.title("SICK: " + inputTitle)
         sensorConfigWindow.geometry("500x250")
@@ -42,10 +100,27 @@ class SickFunctions:
 
         sensorConfigWindow.protocol('WM_DELETE_WINDOW', closeWindow)
         sensorConfigWindow.mainloop()
+
+        logger.debug(f'configureSensorValue = {configureSensorValue}')
         return configureSensorValue
 
 
     def showPosGenConfigDialogSICK(self, inputTitle: str, configInfo: str):
+        """showPosGenConfigDialogSICK
+
+        Keyword arguments:
+        inputTitle -- ''
+        configInfo -- ''
+        """
+        kwargs = locals()
+        logger = get_logging()
+        logger.debug(f"Call {sys._getframe().f_code.co_name}")
+        logger.debug(f'kwargs = {kwargs}')
+
+        global showPosGenConfigDialogSICKCounter
+        showPosGenConfigDialogSICKCounter += 1
+        logger.debug(f'showPosGenConfigDialogSICKCounter = {showPosGenConfigDialogSICKCounter}')
+
         posGenConfigWindow = tk.Tk()
         posGenConfigWindow.title("SICK PosGens: " + inputTitle)
         posGenConfigWindow.geometry("500x1800")
@@ -252,15 +327,35 @@ class SickFunctions:
 
         posGenConfigWindow.protocol('WM_DELETE_WINDOW', closeWindow)
         posGenConfigWindow.mainloop()
+
+        logger.debug(f'configurePosGenValue = {configurePosGenValue}')
         return configurePosGenValue
 
 
     def showStartDialogSICK(self, callback, sensorId, posGenId, posGenConfigInfo, inputTitle):
-        def sendNewPosition():
-            f = open(r'C:\PMScriptsLog\PickInfo.txt', 'a')
-            f.write(self.position[0].split(';')[0]+'\t'+self.position[0].split(';')[1]+'\n')
-            f.close()
+        """showStartDialogSICK
+
+        Keyword arguments:
+        callback -- 
+        sensorId -- ''
+        posGenId -- ''
+        posGenConfigInfo -- ''
+        inputTitle -- ''
+        """
+        kwargs = locals()
+        logger = get_logging()
+        logger.debug(f"Call {sys._getframe().f_code.co_name}")
+        logger.debug(f'kwargs = {kwargs}')
+
+        global showStartDialogSICKCounter
+        showStartDialogSICKCounter += 1
+        logger.debug(f'showStartDialogSICKCounter = {showStartDialogSICKCounter}')
+
+        def sendNewPosition():         
+            logger.debug(f'call sendNewPosition')     
             objects = {'SensorId': sensorId}
+            logger.debug(f'self.position = {self.position}')
+            logger.debug(f'objects = {objects}')
             for index in range(0, len(self.position)):
                 receivedTime = callback.GetStrobeTime()
                 objects.update({'Time': receivedTime})
@@ -281,22 +376,26 @@ class SickFunctions:
                                 'Level': 2,
                                 'PosGenId': posGenId}}
                 objects.update(newPos)
+            logger.debug(f'objects = {objects}')
             callback.NewPosition(objects)
 
         def portRecvUDP():
-            self.server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-            self.server.bind(("192.168.10.52", 8887))
+            logger.debug(f'trying to bind {self.host}:{self.port}')          
+            self.server.bind((self.host, self.port))
+            logger.debug(f'{self.host}:{self.port} is listening...')   
             while True:
                 data, addr = self.server.recvfrom(1024)
-                recv_str = data.decode("ascii")
+                logger.debug(f'received from {addr}: {data}')  
+                recv_str = data.decode("ascii")                        
                 self.position = recv_str.split('|')
                 sendNewPosition()
                 time.sleep(0.5)
-            connection.close()
 
         # 启动线程
         threadPortUDP = threading.Thread(target=portRecvUDP)
         threadPortUDP.setDaemon(True)
+        logger.debug(f'trying to start threadPortUDP')
         threadPortUDP.start()
         threadPortUDP.join()
+        logger.debug(f'threadPortUDP joined')
 

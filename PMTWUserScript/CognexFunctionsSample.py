@@ -3,12 +3,69 @@ import operator as op
 import socket
 import time
 import threading
+import logging
+import os
+import sys
+
+logFilePath = r'C:\ProgramData\ABB\PickMaster Twin\PickMaster Twin Runtime\PickMaster Runtime\Log\PMTWCognexFunctions.log'
+showSensorConfigDialogCognexCounter = 0
+showPosGenConfigDialogCognexCounter = 0
+showStartDialogCognexCounter = 0
+
+def get_logging():
+    """get_logging
+
+    """
+    archiveAboveSize = 1024 * 1024 * 10
+    if os.path.exists(logFilePath):
+        if os.path.getsize(logFilePath) > 1024 * 1024 * 10:
+            if os.path.exists(logFilePath + '.1'):
+                os.remove(logFilePath + '.1')
+            os.rename(logFilePath, logFilePath + '.1')
+    else:
+        os.makedirs(os.path.dirname(logFilePath), exist_ok=True)
+    logger = logging.getLogger('PMTWCognexFunctions')
+    if logger.hasHandlers() == False:
+        logger.setLevel(logging.DEBUG)
+        # logger.setLevel(logging.INFO)
+        formatter = logging.Formatter(
+            '%(asctime)s:%(name)s:%(levelname)s:%(message)s')
+        filehandler = logging.FileHandler(logFilePath)
+        filehandler.setFormatter(formatter)
+        logger.addHandler(filehandler)
+    return logger
+
 
 class CognexFunctions:
-    position = []
+    """CognexFunctions
 
+    """
+
+    def __init__(self):
+        """__init__
+
+        """
+        self.position = []
+        self.host = '' #INADDR_ANY               
+        self.port = 8888    
+        self.server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
     def showSensorConfigDialogCognex(self, inputTitle: str, configInfo: str):
+        """showSensorConfigDialogCognex
+
+        Keyword arguments:
+        inputTitle -- ''
+        configInfo -- ''
+        """
+        kwargs = locals()
+        logger = get_logging()
+        logger.debug(f"Call {sys._getframe().f_code.co_name}")
+        logger.debug(f'kwargs = {kwargs}')
+
+        global showSensorConfigDialogCognexCounter
+        showSensorConfigDialogCognexCounter += 1
+        logger.debug(f'showSensorConfigDialogCognexCounter = {showSensorConfigDialogCognexCounter}')
+        
         sensorConfigWindow = tk.Tk()
         sensorConfigWindow.title("Cognex: " + inputTitle)
         sensorConfigWindow.geometry("500x250")
@@ -50,10 +107,27 @@ class CognexFunctions:
 
         sensorConfigWindow.protocol('WM_DELETE_WINDOW', closeWindow)
         sensorConfigWindow.mainloop()
+
+        logger.debug(f'sensorConfigWindow = {sensorConfigWindow}')
         return configureSensorValue
 
 
     def showPosGenConfigDialogCognex(self, inputTitle: str, configInfo: str):
+        """showPosGenConfigDialogCognex
+
+        Keyword arguments:
+        inputTitle -- ''
+        configInfo -- ''
+        """
+        kwargs = locals()
+        logger = get_logging()
+        logger.debug(f"Call {sys._getframe().f_code.co_name}")
+        logger.debug(f'kwargs = {kwargs}')
+
+        global showPosGenConfigDialogCognexCounter
+        showPosGenConfigDialogCognexCounter += 1
+        logger.debug(f'showPosGenConfigDialogCognexCounter = {showPosGenConfigDialogCognexCounter}')
+
         posGenConfigWindow = tk.Tk()
         posGenConfigWindow.title("Cognex PosGens: " + inputTitle)
         posGenConfigWindow.geometry("500x800")
@@ -128,15 +202,34 @@ class CognexFunctions:
 
         posGenConfigWindow.protocol('WM_DELETE_WINDOW', closeWindow)
         posGenConfigWindow.mainloop()
+
+        logger.debug(f'configurePosGenValue = {configurePosGenValue}')
         return configurePosGenValue
 
 
     def showStartDialogCognex(self, callback, sensorId, posGenId, posGenConfigInfo, inputTitle):
+        """showStartDialogSICK
+
+        Keyword arguments:
+        callback -- 
+        sensorId -- ''
+        posGenId -- ''
+        posGenConfigInfo -- ''
+        inputTitle -- ''
+        """
+        kwargs = locals()
+        logger = get_logging()
+        logger.debug(f"Call {sys._getframe().f_code.co_name}")
+        logger.debug(f'kwargs = {kwargs}')
+
+        global showStartDialogCognexCounter
+        showStartDialogCognexCounter += 1
+        logger.debug(f'showStartDialogCognexCounter = {showStartDialogCognexCounter}')
+
         def sendNewPosition():
-            f = open(r'C:\PMScriptsLog\PlaceInfo.txt', 'a')
-            f.write(self.position[0].split(';')[0]+'\t'+self.position[0].split(';')[1]+'\n')
-            f.close()
             objects = {'SensorId': sensorId}
+            logger.debug(f'self.position = {self.position}')
+            logger.debug(f'objects = {objects}')
             for index in range(0, len(self.position)):
                 receivedTime = callback.GetStrobeTime()
                 objects.update({'Time': receivedTime})
@@ -157,24 +250,25 @@ class CognexFunctions:
                                 'Level': 2,
                                 'PosGenId': posGenId}}
                 objects.update(newPos)
+            logger.debug(f'objects = {objects}')
             callback.NewPosition(objects)
 
         def portRecvUDP():
-            self.server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-            self.server.bind(("127.0.0.1", 8888))
+            logger.debug(f'trying to bind {self.host}:{self.port}')          
+            self.server.bind((self.host, self.port))
+            logger.debug(f'{self.host}:{self.port} is listening...')   
             while True:
                 data, addr = self.server.recvfrom(1024)
-                recv_str = data.decode("ascii")
+                logger.debug(f'received from {addr}: {data}')  
+                recv_str = data.decode("ascii")                        
                 self.position = recv_str.split('|')
-                # txt1.insert(0, position[0].split(':')[1])
-                # txt2.insert(1, position[1].split(':')[1])
                 sendNewPosition()
                 time.sleep(0.5)
-            connection.close()
 
         # 启动线程
         threadPortUDP = threading.Thread(target=portRecvUDP)
         threadPortUDP.setDaemon(True)
+        logger.debug(f'trying to start threadPortUDP')
         threadPortUDP.start()
         threadPortUDP.join()
-
+        logger.debug(f'threadPortUDP joined')

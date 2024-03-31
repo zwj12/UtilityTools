@@ -1,9 +1,9 @@
 # ExternalSensorSamples
-from ExternalSensorInterface import StoppableThread
-from ExternalSensorInterface import SensorInfo
-from ExternalSensorInterface import SensorConfig
-from ExternalSensorInterface import PositionGenerator
-from ExternalSensorInterface import SensorRuntime
+from ExternalSensorInterfaceSample import StoppableThread
+from ExternalSensorInterfaceSample import SensorInfo
+from ExternalSensorInterfaceSample import SensorConfig
+from ExternalSensorInterfaceSample import PositionGenerator
+from ExternalSensorInterfaceSample import SensorRuntime
 import tkinter as tk
 import operator as op
 import time
@@ -51,6 +51,7 @@ class ExternalSensorsSample(SensorRuntime, PositionGenerator, SensorConfig, Sens
         """__init__
 
         """
+        super().__init__()
         self.name = "Example: external sensor"
         self.description = "Example: external sensor description"
         self.author = "Example: PMTW developer"

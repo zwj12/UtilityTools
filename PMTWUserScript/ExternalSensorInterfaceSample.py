@@ -14,6 +14,15 @@ monitorRecipeStatusCounter = 0
 checkRecipeStatusCounter = 0
 waitForRecipeStopCounter = 0
 stopThreadCounter = 0
+getSensorInfoCounter = 0
+loadSensorCounter = 0
+saveSensorCounter = 0
+initializePosGenRelatedMapCounter = 0
+configurePosGenCounter = 0
+loadPosGenCounter = 0
+savePosGenCounter = 0
+startSensorCounter = 0
+stopSensorCounter = 0
 
 def get_logging():
     """get_logging
@@ -38,11 +47,13 @@ def get_logging():
         logger.addHandler(filehandler)
     return logger
 
+
 class SensorInfo:
     def __init__(self):
         """__init__
 
         """
+        super().__init__()
         self.name = "External sensor"
         self.description = "External sensor interfaces description"
         self.author = "PMTW developer"
@@ -78,6 +89,7 @@ class SensorInfo:
     def initializeSensorMap(self, sensorId, sensorName):
         self.sensorIdNameMapDict[sensorId] = sensorName
 
+
 class SensorConfig(SensorInfo):
     def __init__(self):
         """__init__
@@ -89,12 +101,54 @@ class SensorConfig(SensorInfo):
         pass
 
     def getSensorInfo(self):
+        """getSensorInfo
+
+        Keyword arguments:
+        """
+        kwargs = locals()
+        logger = get_logging()
+        logger.debug(f"Call {sys._getframe().f_code.co_name}")
+        logger.debug(f'kwargs = {kwargs}')
+
+        global getSensorInfoCounter
+        getSensorInfoCounter += 1
+        logger.debug(f'getSensorInfoCounter = {getSensorInfoCounter}')
+
         return self.name, self.author, self.version, self.description
 
     def loadSensor(self, sensorId, configurationInfo):
+        """loadSensor
+
+        Keyword arguments:
+        sensorId -- 
+        configurationInfo -- 
+        """
+        kwargs = locals()
+        logger = get_logging()
+        logger.debug(f"Call {sys._getframe().f_code.co_name}")
+        logger.debug(f'kwargs = {kwargs}')
+
+        global loadSensorCounter
+        loadSensorCounter += 1
+        logger.debug(f'loadSensorCounter = {loadSensorCounter}')
+
         self.sensorConfigurationDict[sensorId] = configurationInfo
 
     def saveSensor(self, sensorId):
+        """saveSensor
+
+        Keyword arguments:
+        sensorId -- 
+        """
+        kwargs = locals()
+        logger = get_logging()
+        logger.debug(f"Call {sys._getframe().f_code.co_name}")
+        logger.debug(f'kwargs = {kwargs}')
+
+        global saveSensorCounter
+        saveSensorCounter += 1
+        logger.debug(f'saveSensorCounter = {saveSensorCounter}')
+
         return self.sensorConfigurationDict[sensorId]
 
 
@@ -106,16 +160,75 @@ class PositionGenerator(SensorConfig, SensorInfo):
         super().__init__()   
         
     def initializePosGenRelatedMap(self, sensorId, posGenId, objectName):
+        """initializePosGenRelatedMap
+
+        Keyword arguments:
+        sensorId -- 
+        posGenId -- 
+        objectName -- 
+        """
+        kwargs = locals()
+        logger = get_logging()
+        logger.debug(f"Call {sys._getframe().f_code.co_name}")
+        logger.debug(f'kwargs = {kwargs}')
+
+        global initializePosGenRelatedMapCounter
+        initializePosGenRelatedMapCounter += 1
+        logger.debug(f'initializePosGenRelatedMapCounter = {initializePosGenRelatedMapCounter}')
+
         self.posGenSensorMapDict[posGenId] = sensorId
         self.posGenObjectMapDict[posGenId] = objectName
     
     def configurePosGen(self, posGenId):
+        """initializePosGenRelatedMap
+
+        Keyword arguments:
+        posGenId -- 
+        """
+        kwargs = locals()
+        logger = get_logging()
+        logger.debug(f"Call {sys._getframe().f_code.co_name}")
+        logger.debug(f'kwargs = {kwargs}')
+
+        global configurePosGenCounter
+        configurePosGenCounter += 1
+        logger.debug(f'configurePosGenCounter = {configurePosGenCounter}')
+        
         pass
         
     def loadPosGen(self, posGenId, positionGeneratorInfo):
+        """loadPosGen
+
+        Keyword arguments:
+        posGenId -- 
+        positionGeneratorInfo --
+        """
+        kwargs = locals()
+        logger = get_logging()
+        logger.debug(f"Call {sys._getframe().f_code.co_name}")
+        logger.debug(f'kwargs = {kwargs}')
+
+        global loadPosGenCounter
+        loadPosGenCounter += 1
+        logger.debug(f'loadPosGenCounter = {loadPosGenCounter}')
+
         self.posGenConfigurationDict[posGenId] = positionGeneratorInfo
         
     def savePosGen(self, posGenId):
+        """savePosGen
+
+        Keyword arguments:
+        posGenId -- 
+        """
+        kwargs = locals()
+        logger = get_logging()
+        logger.debug(f"Call {sys._getframe().f_code.co_name}")
+        logger.debug(f'kwargs = {kwargs}')
+
+        global savePosGenCounter
+        savePosGenCounter += 1
+        logger.debug(f'savePosGenCounter = {savePosGenCounter}')
+
         return self.posGenConfigurationDict[posGenId]
 
 
@@ -129,9 +242,36 @@ class SensorRuntime(PositionGenerator, SensorConfig, SensorInfo):
         self.monitorThread = 0
 
     def startSensor(self, callBackFunc):
+        """startSensor
+
+        Keyword arguments:
+        callBackFunc -- 
+        """
+        kwargs = locals()
+        logger = get_logging()
+        logger.debug(f"Call {sys._getframe().f_code.co_name}")
+        logger.debug(f'kwargs = {kwargs}')
+
+        global startSensorCounter
+        startSensorCounter += 1
+        logger.debug(f'startSensorCounter = {startSensorCounter}')
+
         pass
 
     def stopSensor(self):
+        """startSensor
+
+        Keyword arguments:
+        """
+        kwargs = locals()
+        logger = get_logging()
+        logger.debug(f"Call {sys._getframe().f_code.co_name}")
+        logger.debug(f'kwargs = {kwargs}')
+
+        global stopSensorCounter
+        stopSensorCounter += 1
+        logger.debug(f'stopSensorCounter = {stopSensorCounter}')
+        
         pass
         
     def monitorRecipeStatus(self, callBackFunc):
@@ -192,8 +332,7 @@ class SensorRuntime(PositionGenerator, SensorConfig, SensorInfo):
             if self.recipeStatus == 0:
                 break
         self.monitorThread.stop()
-            
-
+           
 
 class StoppableThread(threading.Thread):
     def __init__(self, target=None, args=(), kwargs=None, daemon=True):

@@ -41,48 +41,61 @@ import socket
 
 class A:
     def __init__(self):
-        print("A")
+        print("A enter")
         super().__init__()
-        self.n = 2
-
-    def add(self, m):
-        print('self is {0} @A.add'.format(self))
-        self.n += m
+        print("A exit")
+        
+    def add(self):
+        print('A add enter')
+        super().add()
+        print('A add exit')
 
 class B(A):
     def __init__(self):
-        print("B")
-        # super().__init__()
-        self.n = 3
+        print("B enter")
+        super().__init__()
+        print("B exit")
+        
+    def add(self):
+        print('B add enter')
+        super().add()
+        print('B add exit')
+        
 
-    def add(self, m):
-        print('self is {0} @B.add'.format(self))
-        super().add(m)
-        self.n += 3
-
-class C(A):
+class C:
     def __init__(self):
-        print("C")
-        # super().__init__()
-        self.n = 4
+        print("C enter")
+        super().__init__()
+        print("C exit")
+        
+    def add(self):
+        print('C add enter')
+        super().add()
+        print('C add exit')
 
-    def add(self, m):
-        print('self is {0} @C.add'.format(self))
-        super().add(m)
-        self.n += 4
+class E(A):
+    def __init__(self):
+        print("E enter")
+        super().__init__()
+        print("E exit")
+        
+    def add(self):
+        print('E add enter')
+        super().add()
+        print('E add exit')
 
 class D(B, C):
     def __init__(self):
-        print("D")
+        print("D enter")
         super().__init__()
-        self.n = 5
+        print("D exit")
+        
+    def add(self):
+        print('D add enter')
+        super().add()
+        print('D add exit')
 
-    def add(self, m):
-        print('self is {0} @D.add'.format(self))
-        super().add(m)
-        self.n += 5
-
+print(D.__mro__)  
 d = D()
-d.add(2)
-print(d.n)
-print(D.__mro__)    
+d.add()
+

@@ -45,6 +45,7 @@ class SickFunctions:
         """__init__
 
         """
+        super().__init__()
         self.position = []
         self.host = '' #INADDR_ANY               
         self.port = 8887    

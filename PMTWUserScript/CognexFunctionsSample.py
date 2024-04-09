@@ -11,6 +11,7 @@ logFilePath = r'C:\ProgramData\ABB\PickMaster Twin\PickMaster Twin Runtime\PickM
 showSensorConfigDialogCognexCounter = 0
 showPosGenConfigDialogCognexCounter = 0
 showStartDialogCognexCounter = 0
+sendNewPositionCounter =0 
 
 def get_logging():
     """get_logging
@@ -228,6 +229,19 @@ class CognexFunctions:
         logger.debug(f'showStartDialogCognexCounter = {showStartDialogCognexCounter}')
 
         def sendNewPosition():
+            """sendNewPosition
+
+            Keyword arguments:
+            """
+            kwargs = locals()
+            logger = get_logging()
+            logger.debug(f"Call {sys._getframe().f_code.co_name}")
+            logger.debug(f'kwargs = {kwargs}')
+
+            global sendNewPositionCounter
+            sendNewPositionCounter += 1
+            logger.debug(f'sendNewPositionCounter = {sendNewPositionCounter}')
+
             objects = {'SensorId': sensorId}
             logger.debug(f'self.position = {self.position}')
             logger.debug(f'objects = {objects}')

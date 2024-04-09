@@ -84,7 +84,7 @@ class ExternalSensorsSample(SensorRuntime, PositionGenerator, SensorConfig, Sens
             logger.error(f'{sensorId} is not in sensorIdNameMapDict');
             return               
                 
-        logger.debug(f'sensorConfigurationDict = {self.sensorConfigurationDict}')
+        configurationInfo = "0"
         if self.sensorIdNameMapDict[sensorId] == 'ExternalSensor_1':
             inputTitle: str = "ExternalSensor_1 configuration"            
             sensor1 = SickFunctionsSample.SickFunctions()            
@@ -94,10 +94,6 @@ class ExternalSensorsSample(SensorRuntime, PositionGenerator, SensorConfig, Sens
             else:
                 logger.debug(f'ShowSensorConfigDialog: {sensorId} "0"')
                 configurationInfo = sensor1.showSensorConfigDialogSICK(inputTitle, "0")            
-            log = {'LogLevel': 0, 'Log': configurationInfo}
-            logger.debug(f'log = {log}')
-            if(hasattr(self, 'fLogCallback')):
-                self.fLogCallback.ShowPythonLog(log)
         else:
             inputTitle: str = "ExternalSensor_2 configuration"
             sensor2 = CognexFunctionsSample.CognexFunctions()
@@ -107,10 +103,11 @@ class ExternalSensorsSample(SensorRuntime, PositionGenerator, SensorConfig, Sens
             else:
                 logger.debug(f'ShowSensorConfigDialog: {sensorId} "0"')
                 configurationInfo = sensor2.showSensorConfigDialogCognex(inputTitle, "0")
-            log = {'LogLevel': 0, 'Log': configurationInfo}
-            logger.debug(f'log = {log}')
-            if(hasattr(self, 'fLogCallback')):
-                self.fLogCallback.ShowPythonLog(log)
+
+        log = {'LogLevel': 0, 'Log': configurationInfo}
+        logger.debug(f'log = {log}')
+        if(hasattr(self, 'fLogCallback')):
+            self.fLogCallback.ShowPythonLog(log)
         self.sensorConfigurationDict[sensorId] = configurationInfo
 
         logger.debug(f'sensorIdNameMapDict = {self.sensorIdNameMapDict}')
@@ -144,11 +141,11 @@ class ExternalSensorsSample(SensorRuntime, PositionGenerator, SensorConfig, Sens
             logger.error(f'{posGenId} is not in posGenSensorMapDict');
             return   
 
-        logger.debug(f'sensorIdNameMapDict = {self.sensorIdNameMapDict}')
         if(self.sensorIdNameMapDict.get(self.posGenSensorMapDict[posGenId]) == None):
             logger.error(f'{self.posGenSensorMapDict[posGenId]} is not in sensorIdNameMapDict');
             return   
-                
+        
+        positionGeneratorInfo = "0"
         if self.sensorIdNameMapDict[self.posGenSensorMapDict[posGenId]] == 'ExternalSensor_1':
             inputTitle: str = "ExternalSensor_1 PosGen configuration"
             sensor1 = SickFunctionsSample.SickFunctions()
@@ -158,23 +155,21 @@ class ExternalSensorsSample(SensorRuntime, PositionGenerator, SensorConfig, Sens
             else:
                 logger.debug(f'ShowPosGenConfigDialog: {posGenId} “0”')
                 positionGeneratorInfo = sensor1.showPosGenConfigDialogSICK(inputTitle, "0")
-
-            log = {'LogLevel': 0, 'Log': positionGeneratorInfo}
-            logger.debug(f'log = {log}')
-            if(hasattr(self, 'fLogCallback')):
-                self.fLogCallback.ShowPythonLog(log)
         else:
             inputTitle: str = "ExternalSensor_2 PosGen configuration"
             sensor2 = CognexFunctionsSample.CognexFunctions()
             if posGenId in self.posGenConfigurationDict.keys():
+                logger.debug(f'ShowPosGenConfigDialog: {posGenId} {self.posGenConfigurationDict[posGenId]}')
                 positionGeneratorInfo = sensor2.showPosGenConfigDialogCognex(inputTitle, self.posGenConfigurationDict[posGenId])
             else:
+                logger.debug(f'ShowPosGenConfigDialog: {posGenId} “0”')
                 positionGeneratorInfo = sensor2.showPosGenConfigDialogCognex(inputTitle, "0")
 
-            log = {'LogLevel': 0, 'Log': positionGeneratorInfo}
-            logger.debug(f'log = {log}')
-            if(hasattr(self, 'fLogCallback')):
-                self.fLogCallback.ShowPythonLog(log)
+        log = {'LogLevel': 0, 'Log': positionGeneratorInfo}
+        logger.debug(f'log = {log}')
+        if(hasattr(self, 'fLogCallback')):
+            self.fLogCallback.ShowPythonLog(log)
+
         self.posGenConfigurationDict[posGenId] = positionGeneratorInfo
 
         logger.debug(f'sensorIdNameMapDict = {self.sensorIdNameMapDict}')

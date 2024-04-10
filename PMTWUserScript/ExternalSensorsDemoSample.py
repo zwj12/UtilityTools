@@ -11,6 +11,7 @@ import logging
 import os
 import sys
 import traceback
+import ExternalSensorsTriggerUDPSample
 
 logFilePath = r'C:\ProgramData\ABB\PickMaster Twin\PickMaster Twin Runtime\PickMaster Runtime\Log\PMTWExternalSensor.log'
 configureSensorCounter = 0
@@ -430,6 +431,12 @@ class ExternalSensorsDemoSample(SensorRuntime, PositionGenerator, SensorConfig, 
         showStartDialogCounter += 1
         logger.debug(f'showStartDialogCounter = {showStartDialogCounter}')
 
+        logger.debug(f'sensorIdNameMapDict = {self.sensorIdNameMapDict}')
+        logger.debug(f'sensorConfigurationDict = {self.sensorConfigurationDict}')
+        logger.debug(f'posGenConfigurationDict = {self.posGenConfigurationDict}')     
+        logger.debug(f'posGenSensorMapDict = {self.posGenSensorMapDict}')
+        logger.debug(f'posGenObjectMapDict = {self.posGenObjectMapDict}')
+
         startWindow = tk.Tk()
         startWindow.title("Sensor production: " + inputTitle)
         startWindow.geometry("400x400")
@@ -511,6 +518,14 @@ class ExternalSensorsDemoSample(SensorRuntime, PositionGenerator, SensorConfig, 
                 objects.update(newPos)
             logger.debug(f'objects = {objects}')
             callback.NewPosition(objects)
+            logger.debug(f'sensorIdNameMapDict: {self.sensorIdNameMapDict}')
+            logger.debug(f'sensor name: {self.sensorIdNameMapDict[sensorId]}')
+            if self.sensorIdNameMapDict[sensorId] == "ExternalSensor_1":
+                logger.debug('Trying to pulse doManSync1')
+                ExternalSensorsTriggerUDPSample.TrigWorkArea("doManSync1")
+            else:
+                logger.debug('Trying to pulse doManSync2')
+                ExternalSensorsTriggerUDPSample.TrigWorkArea("doManSync2")
 
         btnGenerate = tk.Button(startWindow, text='Generate position', bd=1, width=20, command=sendNewPosition)
         btnGenerate.grid(column=1,columnspan=2, row=rowCount)

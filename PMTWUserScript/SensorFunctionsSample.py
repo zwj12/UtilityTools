@@ -392,15 +392,19 @@ class SensorFunctions:
                                 'Level': int(position[index]['Level']) if 'Level' in position[index] else 1}}
                 if 'Valid' in position[index] and int(position[index]['Valid']) == 1:
                     objects.update(newPos)   
+
+                if index == 0:
+                    logger.debug(f'position[{index}][PosGen] = {position[index]["PosGen"]}')
+                    if position[index]['PosGen'] == '3':
+                        logger.debug('Trying to pulse doManSync1')
+                        ExternalSensorsTriggerUDPSample.TrigWorkArea("doManSync1", '192.168.56.1')
+                    else:
+                        logger.debug('Trying to pulse doManSync2')
+                        ExternalSensorsTriggerUDPSample.TrigWorkArea("doManSync2", '192.168.56.1')    
+
             # Use this function to record the item position. The logPath should be created before using this function.
             logger.debug(f'objects = {objects}')
-            callback.NewPosition(objects)
-            if positionGeneratorIndexList == '3':
-                logger.debug('Trying to pulse doManSync1')
-                ExternalSensorsTriggerUDPSample.TrigWorkArea("doManSync1", '192.168.56.1')
-            else:
-                logger.debug('Trying to pulse doManSync2')
-                ExternalSensorsTriggerUDPSample.TrigWorkArea("doManSync2", '192.168.56.1')      
+            callback.NewPosition(objects)  
 
         def portRecvUDP(): 
             try:

@@ -20,4 +20,6 @@ class ExternalSensorsUtility:
     def NewPosition(self, objects):
         pass
 
+    def ShowPythonLog(self, log):
+        print("ShowPythonLog: {log}")
         

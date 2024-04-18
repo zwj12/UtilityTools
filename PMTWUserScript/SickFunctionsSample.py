@@ -400,7 +400,8 @@ class SickFunctions:
             while True:
                 data, addr = self.server.recvfrom(1024)
                 logger.debug(f'received from {addr}: {data}')  
-                recv_str = data.decode("ascii")                        
+                recv_str = data.decode("ascii")                   
+                logger.debug(f'recv_str: {recv_str}')     
                 self.position = recv_str.split('|')
                 sendNewPosition()
                 time.sleep(0.5)

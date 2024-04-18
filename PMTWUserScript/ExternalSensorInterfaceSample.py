@@ -360,7 +360,7 @@ class SensorRuntime(PositionGenerator, SensorConfig, SensorInfo):
 
         while True:
             self.recipeStatus = callBackFunc.GetRecipeStatus()
-            logger.debug(f'checkRecipeStatus: recipeStatus = {self.recipeStatus}')
+            # logger.debug(f'checkRecipeStatus: recipeStatus = {self.recipeStatus}')
             time.sleep(1)
             if self.recipeStatus == 0:
                 break
@@ -380,7 +380,7 @@ class SensorRuntime(PositionGenerator, SensorConfig, SensorInfo):
         logger.debug(f'waitForRecipeStopCounter = {waitForRecipeStopCounter}')
 
         while True:
-            logger.debug(f'waitForRecipeStop: recipeStatus = {self.recipeStatus}')
+            # logger.debug(f'waitForRecipeStop: recipeStatus = {self.recipeStatus}')
             time.sleep(1)
             if self.recipeStatus == 0:
                 break

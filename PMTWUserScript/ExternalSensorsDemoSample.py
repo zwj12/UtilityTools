@@ -495,37 +495,44 @@ class ExternalSensorsDemoSample(SensorRuntime, PositionGenerator, SensorConfig, 
             logger.debug(f'sendNewPositionCounter = {sendNewPositionCounter}')
 
             objects = {'SensorId': sensorId}
-            logger.debug(f'objects = {objects}')
-            for index in range(0,len(txtXList)):
-                receivedTime = callback.GetStrobeTime()
-                objects.update({'Time': receivedTime})            
-                key = "'" + str(index) + "'"
-                newPos ={key: {'X': float(txtXList[index].get()),
-                               'Y': float(txtYList[index].get()),
-                               'Z': float(txtZList[index].get()),
-                               'RX': 0.0,
-                               'RY': 0.0,
-                               'RZ': 0.0,
-                               'Tag': 0,
-                               'Score': 1.0,
-                               'Val1': 0.0,
-                               'Val2': 0.0,
-                               'Val3': 0.0,
-                               'Val4': 0.0,
-                               'Val5': 0.0,
-                               'Level': 2,
-                               'PosGenId': posGenId}}
-                objects.update(newPos)
-            logger.debug(f'objects = {objects}')
-            callback.NewPosition(objects)
-            logger.debug(f'sensorIdNameMapDict: {self.sensorIdNameMapDict}')
-            logger.debug(f'sensor name: {self.sensorIdNameMapDict[sensorId]}')
-            if self.sensorIdNameMapDict[sensorId] == "ExternalSensor_1":
-                logger.debug('Trying to pulse doManSync1')
-                ExternalSensorsTriggerUDPSample.TrigWorkArea("doManSync1")
-            else:
-                logger.debug('Trying to pulse doManSync2')
-                ExternalSensorsTriggerUDPSample.TrigWorkArea("doManSync2")
+            logger.debug(f'objects = {objects}')    
+            if(len(txtXList) == 0):
+               logger.debug(f'len(txtXList) = {len(txtXList)}') 
+               return
+            
+            try:
+                for index in range(0,len(txtXList)):
+                    receivedTime = callback.GetStrobeTime()
+                    objects.update({'Time': receivedTime})            
+                    key = "'" + str(index) + "'"
+                    newPos ={key: {'X': float(txtXList[index].get()),
+                                'Y': float(txtYList[index].get()),
+                                'Z': float(txtZList[index].get()),
+                                'RX': 0.0,
+                                'RY': 0.0,
+                                'RZ': 0.0,
+                                'Tag': 0,
+                                'Score': 1.0,
+                                'Val1': 0.0,
+                                'Val2': 0.0,
+                                'Val3': 0.0,
+                                'Val4': 0.0,
+                                'Val5': 0.0,
+                                'Level': 2,
+                                'PosGenId': posGenId}}
+                    objects.update(newPos)
+                logger.debug(f'objects = {objects}')
+                callback.NewPosition(objects)
+                logger.debug(f'sensorIdNameMapDict: {self.sensorIdNameMapDict}')
+                logger.debug(f'sensor name: {self.sensorIdNameMapDict[sensorId]}')
+                if self.sensorIdNameMapDict[sensorId] == "ExternalSensor_1":
+                    logger.debug('Trying to pulse doManSync1')
+                    ExternalSensorsTriggerUDPSample.TrigWorkArea("doManSync1")
+                else:
+                    logger.debug('Trying to pulse doManSync2')
+                    ExternalSensorsTriggerUDPSample.TrigWorkArea("doManSync2")
+            except Exception as ex:
+                logger.debug(f"Unexpected {ex=}, {type(ex)=}")                
 
         btnGenerate = tk.Button(startWindow, text='Generate position', bd=1, width=20, command=sendNewPosition)
         btnGenerate.grid(column=1,columnspan=2, row=rowCount)

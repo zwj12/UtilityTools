@@ -50,7 +50,10 @@ def get_logging():
 def WriteCSVLog(filePath, index, values):
     strLine = ''
     for value in values:
-        strLine += str(value) + strTab
+        if type(value) == float:
+            strLine += f"{value:.1f}" + strTab
+        else:
+            strLine += str(value) + strTab
     strLine += time.strftime("%Y-%m-%dT%H:%M:%S", time.localtime()) + strTab + str(index)
     f = open(filePath, 'a')
     f.write(strLine + '\n')

@@ -2,8 +2,8 @@ import matplotlib.pyplot as plt
 import numpy as np
  
 
-try:
-    a = float("3.15a")
-    print(a)
-except Exception as ex:
-    print(f"Unexpected {ex=}, {type(ex)=}")
+a = 2
+b = '23'
+print(isinstance(b, (int, float, complex)))
+print(type(a) in (int, float, complex))
+print (type(a) == int)

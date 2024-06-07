@@ -1,32 +1,10 @@
-import os
- 
-languageCodes=["cn", "ko", "ja", "de", "it", "fr", "es", "en"]
+import xml.etree.ElementTree as ET
 
-folder_path = r"C:\Users\CNMIZHU7\Downloads\MultiLanguageRename"
-file_names = []
-for file_name in os.listdir(folder_path):
-    if os.path.isfile(os.path.join(folder_path, file_name)):
-        file_names.append(file_name)
+tree = ET.parse(r'C:\Users\CNMIZHU7\Downloads\Test.XML')
+elements = tree.findall("Apartment/Picture/*[@NODE='zenOn(R) embedded object']")
+for el in elements:
+    if el.find("GestureTapAndHoldFunction") != None and (el.attrib["TYPE"] == "2" or el.attrib["TYPE"] == "10"):
+        print(el.tag, el.attrib["TYPE"], el.find("Name").text, el.find("GestureTapAndHoldFunction").text)
+        el.find("GestureTapAndHoldFunction").text = ""
 
-# for languageCode in languageCodes:
-#     for file_name in file_names:
-#         if(file_name.lower().endswith(f"{languageCode}.png") and len(file_name)<=22):
-#             key = file_name[0:12]
-#             for file_name_second in file_names:
-#                 if(file_name_second.startswith(key) and file_name_second.lower().endswith(f"{languageCode}.png") and file_name_second!=file_name):
-#                     os.remove(os.path.join(folder_path, file_name_second))
-#                     os.rename(os.path.join(folder_path, file_name), os.path.join(folder_path, file_name_second))
-
-for file_name in file_names:
-    if(len(file_name)>22):
-        newfilenameprefix = file_name[:-7]
-        newfilenamepostfix = file_name[-4:]
-        key = file_name[0:12]
-        os.remove(os.path.join(folder_path, file_name))
-        for file_name_second in file_names:
-            if(file_name_second.startswith(key) and file_name_second!=file_name):        
-                newfilename = file_name_second.replace(key,newfilenameprefix)[:-4]
-                newfilename = newfilename + newfilenamepostfix
-                if newfilename[-6:-4] == "cn":
-                    newfilename = newfilename[:-6] + "zh-cn" + newfilenamepostfix
-                os.rename(os.path.join(folder_path, file_name_second), os.path.join(folder_path, newfilename))
+tree.write(r'C:\Users\CNMIZHU7\Downloads\Test_New.XML')

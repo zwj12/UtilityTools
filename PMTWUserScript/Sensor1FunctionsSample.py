@@ -1,3 +1,6 @@
+"""Sensor1FunctionsSample
+"""
+
 import tkinter as tk
 import operator as op
 import threading

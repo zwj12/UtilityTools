@@ -1,3 +1,6 @@
+"""Sensor2FunctionsSample
+"""
+
 import tkinter as tk
 import operator as op
 import socket

@@ -1,3 +1,6 @@
+"""SensorFunctionsSample
+"""
+
 # This software is provided 'as-is', without any express or
 # implied warranty. In no event will ABB be held liable for 
 # any damages arising from the use of this software.
@@ -397,10 +400,10 @@ class SensorFunctions:
                     logger.debug(f'position[{index}][PosGen] = {position[index]["PosGen"]}')
                     if position[index]['PosGen'] == '3':
                         logger.debug('Trying to pulse doManSync1')
-                        ExternalSensorsTriggerUDPSample.TrigWorkArea("doManSync1", '192.168.56.1')
+                        # ExternalSensorsTriggerUDPSample.TrigWorkArea("doManSync1", '192.168.56.1')
                     else:
                         logger.debug('Trying to pulse doManSync2')
-                        ExternalSensorsTriggerUDPSample.TrigWorkArea("doManSync2", '192.168.56.1')    
+                        # ExternalSensorsTriggerUDPSample.TrigWorkArea("doManSync2", '192.168.56.1')    
 
             # Use this function to record the item position. The logPath should be created before using this function.
             logger.debug(f'objects = {objects}')

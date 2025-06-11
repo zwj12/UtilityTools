@@ -9,6 +9,7 @@ import time
 import threading
 import math
 import random
+import ExternalSensorsTriggerUDPSample
 
 AcqNo = 0
 
@@ -206,7 +207,7 @@ def showPositionGeneratorDialog():
     selectLevel = ttk.Combobox(positionGeneratorWindow, width=12,textvariable=levelStr)
     selectLevel.grid(column=2, row=16, padx=[0,10], sticky="we")
     selectLevel["value"] = ("Accepted", "Rejected", "Discarded")
-    selectLevel.current(1)
+    selectLevel.current(0)
     
     lbScore = tk.Label(positionGeneratorWindow, text="Score: ")
     lbScore.grid(column=1, row=17, padx=10, pady=5)
@@ -384,6 +385,15 @@ def showPositionGeneratorDialog():
         t = threading.Thread(target=sendPos, args=(lock,))
         t.setDaemon(True)
         t.start()
+        index = txtPosGenIndex.get()
+        if index == "0":
+            print("doManSync1")
+            ExternalSensorsTriggerUDPSample.TrigWorkArea("doManSync1", '192.168.56.1')  
+            # ExternalSensorsTriggerUDPSample.TrigWorkArea("doManSync2", '192.168.56.1')
+        elif index == "1":
+            print("doManSync2") 
+            ExternalSensorsTriggerUDPSample.TrigWorkArea("doManSync2", '192.168.56.1')
+
             
     btnSend = tk.Button(positionGeneratorWindow, text='Generate & Send', bd=1, width=20, command=sendPosition)
     btnSend.grid(column=1, columnspan=2, row=25, padx=40, pady=[5,10], sticky="we")

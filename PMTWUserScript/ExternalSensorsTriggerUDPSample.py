@@ -1,3 +1,6 @@
+"""ExternalSensorsTriggerUDPSample
+""" 
+
 import socket
 import struct
 import logging
@@ -50,7 +53,10 @@ def main(argv):
         logger = get_logging()
         logger.debug(argv)
 
-        TrigWorkArea("doManSync1", "192.168.10.13")
+        host = "192.168.56.1"
+        port = 3003
+        print(f"Connecting to UDP server at {host}:{port}")
+        TrigWorkArea("doManSync1", host, port)
 
     except Exception:
         print("Error: ", sys.exc_info()[0])

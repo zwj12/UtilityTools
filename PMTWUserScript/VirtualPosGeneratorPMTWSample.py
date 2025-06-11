@@ -10,6 +10,7 @@ import threading
 import math
 import random
 import ExternalSensorsTriggerUDPSample
+import ExternalSensorsTriggerRWSSample
 
 AcqNo = 0
 
@@ -388,10 +389,12 @@ def showPositionGeneratorDialog():
         index = txtPosGenIndex.get()
         if index == "0":
             print("doManSync1")
+            # ExternalSensorsTriggerRWSSample.TrigWorkArea("doManSync1", '192.168.56.1', 6788)  
             ExternalSensorsTriggerUDPSample.TrigWorkArea("doManSync1", '192.168.56.1')  
             # ExternalSensorsTriggerUDPSample.TrigWorkArea("doManSync2", '192.168.56.1')
         elif index == "1":
             print("doManSync2") 
+            # ExternalSensorsTriggerRWSSample.TrigWorkArea("doManSync2", '192.168.56.1', 6788)
             ExternalSensorsTriggerUDPSample.TrigWorkArea("doManSync2", '192.168.56.1')
 
             

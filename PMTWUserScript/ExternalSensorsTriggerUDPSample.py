@@ -32,7 +32,7 @@ def get_logging():
         logger.addHandler(filehandler)
     return logger
 
-def TrigWorkArea(signalName='doManSync1', host='192.168.56.1', port=3003 ):
+def TrigWorkArea(signalName='doManSync1', host='192.168.56.1', port=3003):
     """TriggerWorkArea
 
     """

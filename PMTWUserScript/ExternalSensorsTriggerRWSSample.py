@@ -33,18 +33,24 @@ def get_logging():
         logger.addHandler(filehandler)
     return logger
 
-def TrigWorkArea(signalName, host='192.168.56.1', port=80):
+def TrigWorkArea(signalName, host='192.168.56.1', port=80, RWSVersion='1.0'):
     """TriggerWorkArea
 
     """
     username = "Default User"
     password = "robotics"
-    web_service_connection = WebServiceConnection(host, port, username, password)
+    web_service_connection = WebServiceConnection(host, port, username, password, RWSVersion)
+    
+    if RWSVersion == '1.0':    
+        url = f"{WebServiceConnection.get_server()}/rw/iosystem/signals/EtherNetIP/PPABOARD/{signalName}?action=set"
+    else:
+        url = f"{WebServiceConnection.get_server()}/rw/iosystem/signals/EtherNetIP/PPABOARD/{signalName}/set-value"
 
-    url = f"http://{WebServiceConnection.get_host()}:{WebServiceConnection.get_port()}/rw/iosystem/signals/EtherNetIP/PPABOARD/{signalName}?action=set"
     payload = {"lvalue": 1, "mode": "pulse", "Pulses":1, "ActivePulse": 200, "PassivePulse": 200, "userlog": "true"}
-    # payload = {"lvalue": 0}
-    resp = WebServiceConnection.get_session().post(url, cookies=WebServiceConnection.get_cookies(), data=payload)
+    # payload = {"lvalue": 1}
+
+    resp = WebServiceConnection.get_session().post(url, cookies=WebServiceConnection.get_cookies(), headers=WebServiceConnection.get_headerContentType(), verify=False, data=payload)
+
     print(resp)
 
 def main(argv):
@@ -56,10 +62,10 @@ def main(argv):
         logger = get_logging()
         logger.debug(argv)
 
-        host = "192.168.56.1"
-        port = 6788
+        host = "127.0.0.1"
+        port = 5466
         print(f"Connecting to RWS server at {host}:{port}")
-        TrigWorkArea("doManSync1", host, port)
+        TrigWorkArea("doManSync1", host, port, '2.0')
 
     except Exception:
         print("Error: ", sys.exc_info()[0])

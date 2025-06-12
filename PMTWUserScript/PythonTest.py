@@ -1,7 +1,23 @@
-import socket
-import time
+from requests.auth import HTTPBasicAuth, HTTPDigestAuth
+import requests
+import logging
 
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.connect(('192.168.10.52', 6001))
-time.sleep(10)
-s.close()
+basic_auth = HTTPBasicAuth("Default User", "robotics")
+header = {'Accept': 'application/hal+json;v=2.0'}
+FORMAT = '%(asctime)-15s%(message)s'
+
+def get_request(conn, uri, proto='https://', host='localhost:5466'):
+    try:
+        resp = conn.get(proto + host, auth=basic_auth, headers=header, verify=False)
+        str1 = proto + host + uri
+        print(str1)
+        resp = conn.get(str1, headers=header, verify=False)
+        print("Micael")
+        print(resp.text)
+    except Exception as e:
+        print('Error:{}'.format(e))
+
+if __name__ == '__main__':
+    conn = requests.Session()
+    get_request(conn, "/rw/iosystem/signals")
+    conn.close()

@@ -7,8 +7,16 @@ import logging
 import time
 
 RTType = 1
-itemA = {'Name': 'Item_1', 'Id': '325D3EB5-B563-4F90-B0C5-2F1E770D5C04'}
-itemB = {'Name': 'Item_2', 'Id': '9552BEFB-480E-42B3-96D1-9EA297506540'}
+Item_1 = {'Name': 'Item_1', 'Id': '325D3EB5-B563-4F90-B0C5-2F1E770D5C04'}
+Item_2 = {'Name': 'Item_2', 'Id': '9552BEFB-480E-42B3-96D1-9EA297506540'}
+Container_1 = {'Name': 'Item_2', 'Id': '9552BEFB-480E-42B3-96D1-9EA297506540'}
+Container_2 = {'Name': 'Item_2', 'Id': '9552BEFB-480E-42B3-96D1-9EA297506540'}
+ConveyorWorkArea_1 = {'Name': 'Item_2', 'Id': '9552BEFB-480E-42B3-96D1-9EA297506540'}
+ConveyorWorkArea_2 = {'Name': 'Item_2', 'Id': '9552BEFB-480E-42B3-96D1-9EA297506540'}
+IndexedWorkArea_1 = {'Name': 'Item_2', 'Id': '9552BEFB-480E-42B3-96D1-9EA297506540'}
+IndexedWorkArea_2 = {'Name': 'Item_2', 'Id': '9552BEFB-480E-42B3-96D1-9EA297506540'}
+
+
 logFilePath = r'C:\ProgramData\ABB\PickMaster Twin\PickMaster Twin Runtime\PickMaster Runtime\Log\PMTWUserScript.log'
 PyInitializeCounter = 0
 PyAdjusterCounter = 0
@@ -92,21 +100,51 @@ def PyInitialize(type, itemInfo):
 
     global PyInitializeCounter
     global RTType
-    global itemA
-    global itemB
+    global Item_1
+    global Item_2
+    global Container_1
+    global Container_2
+    global ConveyorWorkArea_1
+    global ConveyorWorkArea_2
+    global IndexedWorkArea_1
+    global IndexedWorkArea_2
     PyInitializeCounter += 1
     logger.debug(f'PyInitializeCounter = {PyInitializeCounter}')
     RTType = type
     logger.debug(f'RTType = {RTType}')
-    items_list = list(itemInfo.items())
-    if len(items_list) > 0:
-        itemA = items_list[0][1]
-        logger.debug(f'itemA = {itemA}')
-    if len(items_list) > 1:
-        itemB = items_list[1][1]
-        logger.debug(f'itemB = {itemB}')    
+    # items_list = list(itemInfo.items())
+    # if len(items_list) > 0:
+    #     Item_1 = items_list[0][1]
+    #     logger.debug(f'Item_1 = {Item_1}')
+    # if len(items_list) > 1:
+    #     Item_2 = items_list[1][1]
+    #     logger.debug(f'Item_2 = {Item_2}')    
     index = 0
     for item in itemInfo.values():
+        if item["Name"] == 'Item_1':
+            Item_1 = item
+            logger.debug(f'Item_1 updated = {item}')
+        if item["Name"] == 'Item_2':
+            Item_2 = item
+            logger.debug(f'Item_2 updated = {item}')
+        elif item["Name"] == 'Container_1':
+            Container_1 = item
+            logger.debug(f'Container_1 updated = {item}')
+        elif item["Name"] == 'Container_2':
+            Container_2 = item
+            logger.debug(f'Container_2 updated = {item}')
+        elif item["Name"] == 'ConveyorWorkArea_1':
+            ConveyorWorkArea_1 = item
+            logger.debug(f'ConveyorWorkArea_1 updated = {item}')
+        elif item["Name"] == 'ConveyorWorkArea_2':
+            ConveyorWorkArea_2 = item
+            logger.debug(f'ConveyorWorkArea_2 updated = {item}')
+        elif item["Name"] == 'IndexedWorkArea_1':
+            IndexedWorkArea_1 = item
+            logger.debug(f'IndexedWorkArea_1 updated = {item}')
+        elif item["Name"] == 'IndexedWorkArea_2':
+            IndexedWorkArea_2 = item
+            logger.debug(f'IndexedWorkArea_2 updated = {item}')
         values = item.values()
         index = index + 1
         WriteCSVLog(logInitializeCSVFilePath, index, values)
@@ -141,8 +179,8 @@ def PyAdjuster(items):
 
     global PyAdjusterCounter
     global RTType
-    global itemA
-    global itemB
+    global Item_1
+    global Item_2
     PyAdjusterCounter += 1
     logger.debug(f'PyAdjusterCounter = {PyAdjusterCounter}')
 
@@ -154,17 +192,17 @@ def PyAdjuster(items):
             logger.debug(f'Input: {key} = {items[key]}')
 
             if RTType == 0:
-                if items[key]['Id'] == itemA['Id']:
+                if items[key]['Id'] == Item_1['Id']:
                     items[key]['X'] = items[key]['X'] + 25
                     items[key]['Y'] = items[key]['Y'] + 25
                     # items[key]['Z'] = items[key]['Z'] + 25
-                    logger.debug(f'Adjust: {itemA}')
+                    logger.debug(f'Adjust: {Item_1}')
             else:
-                if items[key]['Id'] == itemB['Id']:
+                if items[key]['Id'] == Item_2['Id']:
                     items[key]['X'] = items[key]['X'] + 25
                     items[key]['Y'] = items[key]['Y'] + 25
                     # items[key]['Z'] = items[key]['Z'] + 25
-                    logger.debug(f'Adjust: {itemB}')
+                    logger.debug(f'Adjust: {Item_2}')
 
             logger.debug(f'Output: {key} = {items[key]}')
 
@@ -284,8 +322,8 @@ def PyVision(imageData, calibData, items):
 
     global PyVisionCounter
     global RTType
-    global itemA
-    global itemB
+    global Item_1
+    global Item_2
     PyVisionCounter += 1
     logger.debug(f'PyVisionCounter = {PyVisionCounter}')
 
@@ -300,23 +338,23 @@ def PyVision(imageData, calibData, items):
             logger.debug(f'Input: {key} = {items[key]}')
 
             if items[key]['ModelType'] == 1:
-                if items[key]['Id'] == itemA['Id']:
+                if items[key]['Id'] == Item_1['Id']:
                     items[key]['X'] = items[key]['X'] + 25
                     items[key]['Y'] = items[key]['Y'] + 25
                     # items[key]['Z'] = items[key]['Z'] + 25
-                    logger.debug(f'Adjust: {itemA}')
+                    logger.debug(f'Adjust: {Item_1}')
             elif items[key]['ModelType'] == 2:
-                if items[key]['Id'] == itemB['Id']:
+                if items[key]['Id'] == Item_2['Id']:
                     items[key]['X'] = items[key]['X'] + 25
                     items[key]['Y'] = items[key]['Y'] + 25
                     # items[key]['Z'] = items[key]['Z'] + 25
-                    logger.debug(f'Adjust: {itemB}')
+                    logger.debug(f'Adjust: {Item_2}')
             else:
-                if items[key]['Id'] == itemA['Id']:
+                if items[key]['Id'] == Item_1['Id']:
                     items[key]['X'] = items[key]['X'] + 25
                     items[key]['Y'] = items[key]['Y'] + 25
                     # items[key]['Z'] = items[key]['Z'] + 25
-                    logger.debug(f'Adjust: {itemA}')
+                    logger.debug(f'Adjust: {Item_1}')
 
             logger.debug(f'Output: {key} = {items[key]}')
 
@@ -359,8 +397,8 @@ def PyDistribution(WaId, items):
 
     global PyDistributionCounter
     global RTType
-    global itemA
-    global itemB
+    global Item_1
+    global Item_2
     PyDistributionCounter += 1
     logger.debug(f'PyDistributionCounter = {PyDistributionCounter}')
 
@@ -375,17 +413,17 @@ def PyDistribution(WaId, items):
             logger.debug(f'Input: {key} = {items[key]}')
 
             if RTType == 0:
-                if items[key]['Id'] == itemA['Id']:
+                if items[key]['Id'] == Item_1['Id']:
                     items[key]['X'] = items[key]['X'] + 25
                     items[key]['Y'] = items[key]['Y'] + 25
                     # items[key]['Z'] = items[key]['Z'] + 25
-                    logger.debug(f'Adjust: {itemA}')
+                    logger.debug(f'Adjust: {Item_1}')
             else:
-                if items[key]['Id'] == itemB['Id']:
+                if items[key]['Id'] == Item_2['Id']:
                     items[key]['X'] = items[key]['X'] + 25
                     items[key]['Y'] = items[key]['Y'] + 25
                     # items[key]['Z'] = items[key]['Z'] + 25
-                    logger.debug(f'Adjust: {itemB}')
+                    logger.debug(f'Adjust: {Item_2}')
 
             logger.debug(f'Output: {key} = {items[key]}')
 

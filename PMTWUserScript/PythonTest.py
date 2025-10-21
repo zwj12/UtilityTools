@@ -1,23 +1,15 @@
-from requests.auth import HTTPBasicAuth, HTTPDigestAuth
-import requests
-import logging
+"""PythonTest.py
+"""
 
-basic_auth = HTTPBasicAuth("Default User", "robotics")
-header = {'Accept': 'application/hal+json;v=2.0'}
-FORMAT = '%(asctime)-15s%(message)s'
-
-def get_request(conn, uri, proto='https://', host='localhost:5466'):
-    try:
-        resp = conn.get(proto + host, auth=basic_auth, headers=header, verify=False)
-        str1 = proto + host + uri
-        print(str1)
-        resp = conn.get(str1, headers=header, verify=False)
-        print("Micael")
-        print(resp.text)
-    except Exception as e:
-        print('Error:{}'.format(e))
+def multiply(a,b):
+    print("Will compute", a, " * ", b)
+    c = a * b
+    return c
+    
 
 if __name__ == '__main__':
-    conn = requests.Session()
-    get_request(conn, "/rw/iosystem/signals")
-    conn.close()
+    # 获取用户输入
+    a = int(input("请输入 a 的值: "))
+    b = int(input("请输入 b 的值: "))    
+    c = multiply(a, b)
+    print(f"{a} multiply {b} is {c}")

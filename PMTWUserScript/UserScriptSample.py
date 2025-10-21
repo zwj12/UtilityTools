@@ -5,6 +5,7 @@ import os
 import sys
 import logging
 import time
+import copy
 
 RTType = 1
 Item_1 = {'Name': 'Item_1', 'Id': '325D3EB5-B563-4F90-B0C5-2F1E770D5C04'}
@@ -112,13 +113,6 @@ def PyInitialize(type, itemInfo):
     logger.debug(f'PyInitializeCounter = {PyInitializeCounter}')
     RTType = type
     logger.debug(f'RTType = {RTType}')
-    # items_list = list(itemInfo.items())
-    # if len(items_list) > 0:
-    #     Item_1 = items_list[0][1]
-    #     logger.debug(f'Item_1 = {Item_1}')
-    # if len(items_list) > 1:
-    #     Item_2 = items_list[1][1]
-    #     logger.debug(f'Item_2 = {Item_2}')    
     index = 0
     for item in itemInfo.values():
         if item["Name"] == 'Item_1':
@@ -181,6 +175,12 @@ def PyAdjuster(items):
     global RTType
     global Item_1
     global Item_2
+    global Container_1
+    global Container_2
+    global ConveyorWorkArea_1
+    global ConveyorWorkArea_2
+    global IndexedWorkArea_1
+    global IndexedWorkArea_2
     PyAdjusterCounter += 1
     logger.debug(f'PyAdjusterCounter = {PyAdjusterCounter}')
 
@@ -196,7 +196,7 @@ def PyAdjuster(items):
                     items[key]['X'] = items[key]['X'] + 25
                     items[key]['Y'] = items[key]['Y'] + 25
                     # items[key]['Z'] = items[key]['Z'] + 25
-                    logger.debug(f'Adjust: {Item_1}')
+                    logger.debug(f'Adjust: {Item_1}')           
             else:
                 if items[key]['Id'] == Item_2['Id']:
                     items[key]['X'] = items[key]['X'] + 25
@@ -209,6 +209,17 @@ def PyAdjuster(items):
             values = items[key].values()
             index = index + 1
             WriteCSVLog(logAdjusterCSVFilePath, index, values)
+
+    # Add a new item for test
+    for key in items.keys():
+        if key != 'Time' and items[key]['Id'] == Item_1['Id']:     
+            newItem = copy.deepcopy(items[key])
+            newItem['X'] = newItem['X'] + 100
+            newItem['Y'] = newItem['Y'] - 100
+            new_key = str(len(items) - 1)
+            items[new_key] = newItem
+            logger.debug(f'items = {items}')    
+            break              
 
     return items
 
@@ -324,6 +335,12 @@ def PyVision(imageData, calibData, items):
     global RTType
     global Item_1
     global Item_2
+    global Container_1
+    global Container_2
+    global ConveyorWorkArea_1
+    global ConveyorWorkArea_2
+    global IndexedWorkArea_1
+    global IndexedWorkArea_2
     PyVisionCounter += 1
     logger.debug(f'PyVisionCounter = {PyVisionCounter}')
 
@@ -399,6 +416,12 @@ def PyDistribution(WaId, items):
     global RTType
     global Item_1
     global Item_2
+    global Container_1
+    global Container_2
+    global ConveyorWorkArea_1
+    global ConveyorWorkArea_2
+    global IndexedWorkArea_1
+    global IndexedWorkArea_2
     PyDistributionCounter += 1
     logger.debug(f'PyDistributionCounter = {PyDistributionCounter}')
 

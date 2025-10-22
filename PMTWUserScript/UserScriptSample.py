@@ -184,25 +184,37 @@ def PyAdjuster(items):
     PyAdjusterCounter += 1
     logger.debug(f'PyAdjusterCounter = {PyAdjusterCounter}')
 
+    # Modify item positions for test, can be ccommented out
     index = 0
     for key in items.keys():
         if key == 'Time':
             logger.debug(f'Time = {items[key]}')
         else:
             logger.debug(f'Input: {key} = {items[key]}')
-
+            
             if RTType == 0:
-                if items[key]['Id'] == Item_1['Id']:
-                    items[key]['X'] = items[key]['X'] + 25
-                    items[key]['Y'] = items[key]['Y'] + 25
-                    # items[key]['Z'] = items[key]['Z'] + 25
-                    logger.debug(f'Adjust: {Item_1}')           
+                items[key]['Val1'] = 1
+                items[key]['Val2'] = 2
+                items[key]['Val3'] = 3
+                items[key]['Val4'] = 4
+                items[key]['Val5'] = 5
             else:
-                if items[key]['Id'] == Item_2['Id']:
-                    items[key]['X'] = items[key]['X'] + 25
-                    items[key]['Y'] = items[key]['Y'] + 25
-                    # items[key]['Z'] = items[key]['Z'] + 25
-                    logger.debug(f'Adjust: {Item_2}')
+                items[key]['Val1'] = 5
+                items[key]['Val2'] = 4
+                items[key]['Val3'] = 3
+                items[key]['Val4'] = 2
+                items[key]['Val5'] = 1   
+
+            if items[key]['Id'] == Item_1['Id']:
+                items[key]['X'] = items[key]['X'] + 25
+                items[key]['Y'] = items[key]['Y'] + 25
+                # items[key]['Z'] = items[key]['Z'] + 25
+                logger.debug(f'Adjust: {Item_1}') 
+            elif items[key]['Id'] == Item_2['Id']:
+                items[key]['X'] = items[key]['X'] + 25
+                items[key]['Y'] = items[key]['Y'] + 25
+                # items[key]['Z'] = items[key]['Z'] + 25
+                logger.debug(f'Adjust: {Item_2}')
 
             logger.debug(f'Output: {key} = {items[key]}')
 
@@ -210,7 +222,7 @@ def PyAdjuster(items):
             index = index + 1
             WriteCSVLog(logAdjusterCSVFilePath, index, values)
 
-    # Add a new item for test
+    # Add a new item for test, can be commented out
     for key in items.keys():
         if key != 'Time' and items[key]['Id'] == Item_1['Id']:     
             newItem = copy.deepcopy(items[key])
@@ -220,6 +232,13 @@ def PyAdjuster(items):
             items[new_key] = newItem
             logger.debug(f'items = {items}')    
             break              
+
+    # delete the first container for test, can be commented out
+    # for key in items.keys():
+    #     if key != 'Time' and items[key]['Id'] == Container_1['Id']:   
+    #         del items[key]
+    #         logger.debug(f'items = {items}')    
+    #         break    
 
     return items
 

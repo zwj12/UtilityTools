@@ -374,23 +374,22 @@ def PyVision(imageData, calibData, items):
             logger.debug(f'Input: {key} = {items[key]}')
 
             if items[key]['ModelType'] == 1:
-                if items[key]['Id'] == Item_1['Id']:
-                    items[key]['X'] = items[key]['X'] + 25
-                    items[key]['Y'] = items[key]['Y'] + 25
-                    # items[key]['Z'] = items[key]['Z'] + 25
-                    logger.debug(f'Adjust: {Item_1}')
+                # Geometric model
+                if items[key]["Score"] < 0.7 :
+                    items[key]['Level'] = 0
+                    logger.debug(f'Adjust: {items[key]}')
             elif items[key]['ModelType'] == 2:
-                if items[key]['Id'] == Item_2['Id']:
-                    items[key]['X'] = items[key]['X'] + 25
-                    items[key]['Y'] = items[key]['Y'] + 25
-                    # items[key]['Z'] = items[key]['Z'] + 25
-                    logger.debug(f'Adjust: {Item_2}')
+                # Blob model
+                if items[key]["Perimeter"] < 1000:
+                    items[key]['Level'] = 0
+                    logger.debug(f'Adjust: {items[key]}')
             else:
+                # Inspection model
                 if items[key]['Id'] == Item_1['Id']:
                     items[key]['X'] = items[key]['X'] + 25
                     items[key]['Y'] = items[key]['Y'] + 25
                     # items[key]['Z'] = items[key]['Z'] + 25
-                    logger.debug(f'Adjust: {Item_1}')
+                    logger.debug(f'Adjust: {items[key]}')
 
             logger.debug(f'Output: {key} = {items[key]}')
 

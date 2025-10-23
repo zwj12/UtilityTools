@@ -1,0 +1,144 @@
+MODULE PickMasterUtility(SYSMODULE)
+
+    PROC SetCTMSourceType()
+        VAR listitem listSourceType{6}:=[["","Distance(CNV1)+Distance(CNV2)"],["","IOSensor(CNV1)+IOSensor(CNV2)"],["","Distance(CNV1)+IOSensor(CNV2)"],["","IOSensor(CNV1)+Distance(CNV2)"],["","IOSensor Trigger Vision"],["","Advanced"]];       
+        VAR num list_item;
+        VAR btnres button_answer;
+        list_item:=UIListView(\Result:=button_answer\Header:="Choose Source Type:",listSourceType\Buttons:=btnOKCancel\Icon:=iconInfo\DefaultIndex:=1);
+        SetDO c1TrigAutoMode,0;
+        SetDO c2TrigAutoMode,0;
+        SetDO c3TrigAutoMode,0;
+        SetDO c4TrigAutoMode,0;
+        SetDO c5TrigAutoMode,0;
+        SetDO c6TrigAutoMode,0;
+        IF button_answer=resOK THEN
+            TPWrite "Trying to set source type of '"+listSourceType{list_item}.text+"'...";
+            TEST list_item
+            CASE 1:
+                SetConveyorSensor 1,1;
+                SetConveyorSensor 2,2;
+                RestartController;
+            CASE 2:
+                SetConveyorSensor 1,5;
+                SetConveyorSensor 2,6;
+                RestartController;
+            CASE 3:
+                SetConveyorSensor 1,1;
+                SetConveyorSensor 2,6;
+                RestartController;
+            CASE 4:
+                SetConveyorSensor 1,5;
+                SetConveyorSensor 2,2;
+                RestartController;
+            CASE 5:
+                TPWrite "Unsupported now.";
+            CASE 6:
+                SetCTMSourceTypeAdvanced;
+            DEFAULT:
+
+            ENDTEST
+        ELSE
+            TPWrite "Operation is canceled.";
+        ENDIF
+    ENDPROC
+
+    PROC SetCTMSourceTypeAdvanced()
+        VAR num list_item;
+        VAR btnres button_answer;
+        VAR num numConveyorIndex;
+        VAR num numSensorIndex;
+        numConveyorIndex:=UINumEntry(\Header:="Conveyor"\Message:="Enter the conveyor index:"\MinValue:=1\MaxValue:=6\AsInteger);
+        numSensorIndex:=UINumEntry(\Header:="Camera/IO Sensor"\Message:="Enter the camera or IO sensor index:"\InitValue:=numConveyorIndex\MinValue:=1\MaxValue:=8\AsInteger);
+        SetConveyorSensor numConveyorIndex,numSensorIndex;
+        RestartController;
+    ENDPROC
+
+    LOCAL PROC SetConveyorSensor(num numConveyor,num numSensor)
+        WriteCfgData "/EIO/EIO_SIGNAL/c"+ValToStr(numConveyor)+"Counts","DeviceMap","Enc"+ValToStr(numConveyor)+":position";
+        WriteCfgData "/EIO/EIO_SIGNAL/c"+ValToStr(numConveyor)+"CountsPerSec","DeviceMap","Enc"+ValToStr(numConveyor)+":velocity";
+
+        WriteCfgData "/EIO/EIO_SIGNAL/c"+ValToStr(numConveyor)+"TrigVis","DeviceMap","Digout"+ValToStr(numSensor)+":Setpoint";
+        WriteCfgData "/EIO/EIO_SIGNAL/c"+ValToStr(numConveyor)+"TrigVis","Label","Trig X2"+ValToStr(numSensor)+" pin 6";
+        WriteCfgData "/EIO/EIO_SIGNAL/c"+ValToStr(numConveyor)+"TrigAutoMode","DeviceMap","Cam"+ValToStr(numSensor)+":Connect";
+        WriteCfgData "/EIO/EIO_SIGNAL/c"+ValToStr(numConveyor)+"TrigAutoDist","DeviceMap","Cam"+ValToStr(numSensor)+":Interval";
+        WriteCfgData "/EIO/EIO_SIGNAL/c"+ValToStr(numConveyor)+"TrigAutoEncNo","DeviceMap","Cam"+ValToStr(numSensor)+"Enc:DeviceNo";
+        WriteCfgData "/EIO/EIO_SIGNAL/c"+ValToStr(numConveyor)+"CntFromEnc","DeviceMap","Sync"+ValToStr(numSensor)+"Enc"+ValToStr(numConveyor)+":Value";
+        WriteCfgData "/EIO/EIO_SIGNAL/c"+ValToStr(numConveyor)+"SoftSync","DeviceMap","Sync"+ValToStr(numSensor)+"Enc"+ValToStr(numConveyor)+":SyncTrig";
+
+        WriteCfgData "/EIO/EIO_SIGNAL/c"+ValToStr(numConveyor)+"SpeedBandWidth","DeviceMap","e"+ValToStr(numConveyor)+"_SpeedBandWidth:SetPoint";
+    ENDPROC
+
+    LOCAL PROC RestartController()
+        VAR num nAnswer;
+        UIMsgBox\Header:="Restart","The changes will not take effect until the controller is restarted."\MsgLine3:="Do you want to restart now?"\Buttons:=btnYesNo\Icon:=iconWarning\Result:=nAnswer;
+        IF (nAnswer=resYes) THEN
+            TPWrite "Warm start the system";
+            WarmStart;
+        ENDIF
+    ENDPROC
+
+    PROC SetTriggerByConveyorDistance()
+        VAR listitem listSourceType{3}:=[["","CNV1"],["","CNV2"],["","Cancel All"]];
+        VAR num list_item;
+        VAR btnres button_answer;
+
+        list_item:=UIListView(\Result:=button_answer\Header:="Choose CNV:",listSourceType\Buttons:=btnOKCancel\Icon:=iconInfo\DefaultIndex:=1);
+        IF button_answer=resOK THEN
+            TPWrite "Trying to set source type of '"+listSourceType{list_item}.text+"'...";
+            TEST list_item
+            CASE 1:
+                SetAutoTriggerSignal 1;
+            CASE 2:
+                SetAutoTriggerSignal 2;
+            DEFAULT:
+                SetDO c1TrigAutoMode,0;
+                SetDO sdoStartCnv1,0;
+                SetDO c2TrigAutoMode,0;
+                SetDO sdoStartCnv2,0;
+            ENDTEST
+        ELSE
+            TPWrite "Operation is canceled.";
+        ENDIF
+
+    ENDPROC
+
+    LOCAL PROC SetAutoTriggerSignal(num numConveyor)
+        VAR string stMsgArray{2};
+        VAR num numCountsPerMeter;
+        VAR num numTriggerDistance:=300;
+        VAR num numTriggerCounterInterval;
+        VAR num nAnswer;
+        VAR string stButtons{2}:=["Yes","No"];
+
+        ReadCfgData "/PROC/CONVEYOR_ICI_SENSOR/ICI"+ValToStr(numConveyor),"CountsPerMeter",numCountsPerMeter;
+        stMsgArray{1}:="The conveyor "+ValToStr(numConveyor)+"'s CountsPerMeter is "+ValToStr(numCountsPerMeter);
+        stMsgArray{2}:="Please input the trigger distance (mm)";
+        numTriggerDistance:=UINumEntry(\Header:="Trigger Distance"\MsgArray:=stMsgArray\Icon:=iconInfo\InitValue:=numTriggerDistance\MinValue:=1\MaxValue:=10000);
+        numTriggerCounterInterval:=Round(numTriggerDistance/1000*numCountsPerMeter);
+        SetGOSignalValueByName "c"+ValToStr(numConveyor)+"TrigAutoDist",numTriggerCounterInterval;
+        SetDoSignalValueByName "c"+ValToStr(numConveyor)+"TrigAutoMode",1;
+        TPWrite "c"+ValToStr(numConveyor)+"TrigAutoDist="+ValToStr(c1TrigAutoDist);
+
+        nAnswer:=UIMessageBox(\Header:="Start Conveyor"\Message:="Do you want to start conveyor?"\BtnArray:=stButtons\Icon:=iconQuestion);
+        IF nAnswer=1 THEN
+            SetDOSignalValueByName "sdoStartCnv"+ValToStr(numConveyor),1;
+            TPWrite "Start conveyor "+ValToStr(numConveyor);
+        ENDIF
+
+        Stop;
+    ENDPROC
+
+    LOCAL PROC SetDOSignalValueByName(string strSignalName,num value)
+        VAR signaldo sdoSignal;
+        AliasIO strSignalName,sdoSignal;
+        SetDO sdoSignal,value;
+    ENDPROC
+
+
+    LOCAL PROC SetGOSignalValueByName(string strSignalName,num value)
+        VAR signalgo sgoSignal;
+        AliasIO strSignalName,sgoSignal;
+        SetGO sgoSignal,value;
+    ENDPROC
+
+ENDMODULE

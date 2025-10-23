@@ -26,11 +26,16 @@ PyVisionCounter = 0
 logInitializeCSVFilePath = r'C:\ProgramData\ABB\PickMaster Twin\PickMaster Twin Runtime\PickMaster Runtime\Log\PMTWUserScriptInitialize.csv'
 logAdjusterCSVFilePath = r'C:\ProgramData\ABB\PickMaster Twin\PickMaster Twin Runtime\PickMaster Runtime\Log\PMTWUserScriptAdjuster.csv'
 logDistributionCSVFilePath = r'C:\ProgramData\ABB\PickMaster Twin\PickMaster Twin Runtime\PickMaster Runtime\Log\PMTWUserScriptDistribution.csv'
-logVisionCSVFilePath = r'C:\ProgramData\ABB\PickMaster Twin\PickMaster Twin Runtime\PickMaster Runtime\Log\PMTWUserScriptDistribution.csv'
+logGeomatricCSVFilePath = r'C:\ProgramData\ABB\PickMaster Twin\PickMaster Twin Runtime\PickMaster Runtime\Log\PMTWUserScriptGeomatric.csv'
+logBlobCSVFilePath = r'C:\ProgramData\ABB\PickMaster Twin\PickMaster Twin Runtime\PickMaster Runtime\Log\PMTWUserScriptBlob.csv'
+logInspectionCSVFilePath = r'C:\ProgramData\ABB\PickMaster Twin\PickMaster Twin Runtime\PickMaster Runtime\Log\PMTWUserScriptInspection.csv'
 headerInitializeList = ['Name', 'Id']
 headerAdjusterList = ['X', 'Y', 'Z', 'RX', 'RY', 'RZ', 'Tag', 'Val1', 'Val2', 'Val3', 'Val4', 'Val5', 'Level', 'Id']
-headerDistributionList = ['X', 'Y', 'Z', 'q1', 'q2', 'q3', 'q4', 'Tag', 'Val1', 'Val2', 'Val3', 'Val4', 'Val5'
-                          , 'Index', 'Type', 'Container', 'Layer', 'Group', 'State', 'Id']
+headerDistributionList = ['X', 'Y', 'Z', 'q1', 'q2', 'q3', 'q4', 'Tag', 'Val1', 'Val2', 'Val3', 'Val4', 'Val5', 'Index', 'Type', 'Container', 'Layer', 'Group', 'State', 'Id']
+headerGeomatricList = ['X', 'Y', 'Z', 'RZ', 'SortValue', 'ZValid', 'XImgPos', 'YImgPos', 'Val1', 'Val2', 'Val3', 'Val4', 'Val5', 'Level', 'Id', 'ModelType', 'Score', 'XScale', 'YScale', 'Contrast', 'FitError', 'Coverage', 'Clutter']
+headerBlobList = ['X', 'Y', 'Z', 'RZ', 'SortValue', 'ZValid', 'XImgPos', 'YImgPos', 'Val1', 'Val2', 'Val3', 'Val4', 'Val5', 'Level', 'Id', 'ModelType', 'Area', 'Perimeter', 'Elongation', 'Circularity']
+headerInspectionList = ['X', 'Y', 'Z', 'RZ', 'SortValue', 'ZValid', 'XImgPos', 'YImgPos', 'Val1', 'Val2', 'Val3', 'Val4', 'Val5', 'Level', 'Id', 'ModelType']
+
 strTab = ','
 
 def get_logging():
@@ -98,6 +103,12 @@ def PyInitialize(type, itemInfo):
         WriteCVSLogHeader(logAdjusterCSVFilePath, headerAdjusterList)
     if (os.path.exists(logDistributionCSVFilePath) == False):
         WriteCVSLogHeader(logDistributionCSVFilePath, headerDistributionList)
+    if (os.path.exists(headerGeomatricList) == False):
+        WriteCVSLogHeader(logGeomatricCSVFilePath, headerGeomatricList)
+    if (os.path.exists(headerGeomatricList) == False):
+        WriteCVSLogHeader(logBlobCSVFilePath, headerBlobList)
+    if (os.path.exists(headerGeomatricList) == False):
+        WriteCVSLogHeader(logInspectionCSVFilePath, headerInspectionList)
 
     global PyInitializeCounter
     global RTType
@@ -348,7 +359,7 @@ def PyVision(imageData, calibData, items):
     kwargs = locals()
     logger = get_logging()
     logger.debug(f"Call {sys._getframe().f_code.co_name}")
-    logger.debug(f'kwargs = {kwargs}')
+    # logger.debug(f'kwargs = {kwargs}')
 
     global PyVisionCounter
     global RTType
@@ -363,9 +374,18 @@ def PyVision(imageData, calibData, items):
     PyVisionCounter += 1
     logger.debug(f'PyVisionCounter = {PyVisionCounter}')
 
-    logger.debug(f'imageData = {imageData}')
+    imageDataTemp = copy.deepcopy(imageData)
+    if imageDataTemp['IsColor'] == 0:
+         imageDataTemp['Grey'] = len(imageData['Grey'])
+    else:   
+        imageDataTemp['Blue'] = len(imageData['Blue'])
+        imageDataTemp['Green'] = len(imageData['Green'])  
+        imageDataTemp['Red'] = len(imageData['Red'])
+
+    logger.debug(f'imageData = {imageDataTemp}')
     logger.debug(f'calibData = {calibData}')
 
+    index = 0
     keys = items.keys()
     for key in keys:
         if key == 'Time':
@@ -392,6 +412,15 @@ def PyVision(imageData, calibData, items):
                     logger.debug(f'Adjust: {items[key]}')
 
             logger.debug(f'Output: {key} = {items[key]}')
+
+            values = items[key].values()
+            index = index + 1
+            if items[key]['ModelType'] == 1:
+                WriteCSVLog(logGeomatricCSVFilePath, index, values)
+            elif items[key]['ModelType'] == 2:
+                WriteCSVLog(logBlobCSVFilePath, index, values)
+            elif items[key]['ModelType'] == 3:
+                WriteCSVLog(logInspectionCSVFilePath, index, values)
 
     return items
 

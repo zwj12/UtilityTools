@@ -6,6 +6,7 @@ import sys
 import logging
 import time
 import copy
+import traceback
 
 RTType = 1
 Item_1 = {'Name': 'Item_1', 'Id': '325D3EB5-B563-4F90-B0C5-2F1E770D5C04'}
@@ -103,11 +104,11 @@ def PyInitialize(type, itemInfo):
         WriteCVSLogHeader(logAdjusterCSVFilePath, headerAdjusterList)
     if (os.path.exists(logDistributionCSVFilePath) == False):
         WriteCVSLogHeader(logDistributionCSVFilePath, headerDistributionList)
-    if (os.path.exists(headerGeomatricList) == False):
+    if (os.path.exists(logGeomatricCSVFilePath) == False):
         WriteCVSLogHeader(logGeomatricCSVFilePath, headerGeomatricList)
-    if (os.path.exists(headerGeomatricList) == False):
+    if (os.path.exists(logBlobCSVFilePath) == False):
         WriteCVSLogHeader(logBlobCSVFilePath, headerBlobList)
-    if (os.path.exists(headerGeomatricList) == False):
+    if (os.path.exists(logInspectionCSVFilePath) == False):
         WriteCVSLogHeader(logInspectionCSVFilePath, headerInspectionList)
 
     global PyInitializeCounter
@@ -672,6 +673,7 @@ def main(argv):
 
     except Exception:
         print("Error: ", sys.exc_info()[0])
+        traceback.print_exc()
         pass
     finally:
         print("Finally")

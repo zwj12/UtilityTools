@@ -1,0 +1,39 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            //Arc_Megmeet_20251204
+            //Arc_Megmeet_MultiMove_20260506
+            "label": "RemoveTestTpuWebApp",
+            "type": "shell",
+            "command": "Remove-Item -Path '${env:USERPROFILE}/Documents/RobotStudio/Virtual Controllers/Arc_Megmeet_MultiMove_20260506/HOME/WebApps/${workspaceFolderBasename}' -Recurse -Force -ErrorAction Ignore; exit 0",
+            "problemMatcher": []
+        },
+        {
+            "label": "CopyTestTpuWebApp",
+            "type": "shell",
+            "command": "robocopy '${workspaceFolder}' '${env:USERPROFILE}/Documents/RobotStudio/Virtual Controllers/Arc_Megmeet_MultiMove_20260506/HOME/WebApps/${workspaceFolderBasename}' /E /XF package.json package-lock.json /XD node_modules test .vscode; exit 0",
+            "problemMatcher": []
+        },
+        {
+            "label": "PrintTime",
+            "type": "shell",
+            "command": "Get-Date",
+            "args": [
+                "-Format",
+                "prin\\t \\da\\te: yyyy-MM-dd HH:mm:ss",
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "PublishWebApp",
+            "dependsOn": [
+                "RemoveTestTpuWebApp",
+                "CopyTestTpuWebApp",
+                "PrintTime",
+            ],
+            "dependsOrder": "sequence",
+            "problemMatcher": []
+        }
+    ]
+}

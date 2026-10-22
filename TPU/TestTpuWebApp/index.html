@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test TPU Web App</title>
+    <link rel="stylesheet" href="app.css">
+
+    <script src="fp-components/fp-components-common.js"></script>
+    <script src="fp-components/fp-components-button-a.js"></script>
+    <script src="fp-components/fp-components-checkbox-a.js"></script>
+    <script src="fp-components/fp-components-dropdown-a.js"></script>
+    <script src="fp-components/fp-components-input-a.js"></script>
+    <script src="fp-components/fp-components-radio-a.js"></script>
+    <script src="fp-components/fp-components-switch-a.js"></script>
+    <script src="fp-components/fp-components-toggle-a.js"></script>
+    <script src="fp-components/fp-components-slider-a.js"></script>
+    <script src="fp-components/fp-components-contextmenu-a.js"></script>
+    <script src="fp-components/fp-components-digital-a.js"></script>
+    <script src="fp-components/fp-components-levelmeter-a.js"></script>
+    <script src="fp-components/fp-components-linechart-a.js"></script>
+    <script src="fp-components/fp-components-piechart-a.js"></script>
+    <script src="fp-components/fp-components-menu-a.js"></script>
+    <script src="fp-components/fp-components-foldin-a.js"></script>
+    <script src="fp-components/fp-components-popup-a.js"></script>
+    <script src="fp-components/fp-components-filesystemdialog-a.js"></script>
+    <script src="fp-components/fp-components-tabcontainer-a.js"></script>
+    <script src="fp-components/fp-components-hamburgermenu-a.js"></script>
+
+    <script src="rws-api/omnicore-rws.js"></script>
+    <script src="rws-api/omnicore-app.js"></script>
+
+    <link rel="icon" href="data:,">
+
+    <script type="module" src="js/app.js"></script>
+
+</head>
+
+<body>
+    <div class="task-bar" role="group" aria-label="RAPID task selection">
+        <div class="task-bar__label">Rapid Task:</div>
+        <div id="labelTask" class="task-bar__value" aria-live="polite">T_ROB1</div>
+        <div id="btnSwitchTask" class="task-bar__action"></div>
+    </div>
+    
+    <div id="btnSensorOn"></div> 
+    <div id="btnSetJobNo"></div> 
+    <div id="btnMeasurement"></div> 
+</body>
+
+</html>

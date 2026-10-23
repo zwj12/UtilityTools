@@ -1,4 +1,5 @@
-import { Instance_OT, Variable_WebApp, Variable_Controller, Signal_Controller } from './global-data.js';
+import { Constants, Instance_OT, Variable_WebApp, Variable_Controller, Signal_Controller } from './global-data.js';
+import { toNumberOrDefault } from './data-type-helper.js';
 
 export async function init() {
     await initControllerSignals();
@@ -33,11 +34,12 @@ export async function initControllerSignals() {
 
 export async function initControllerVariables() {
     Variable_Controller.ActiveWeldIRB = await RWS.Rapid.getSharedData('ActiveWeldIRB');
-    Variable_Controller.ActiveWeldIRB.addCallbackOnChanged((newValue) => {
-        Variable_WebApp.activeTask = newValue;
+    Variable_Controller.ActiveWeldIRB.addCallbackOnChanged(async (newValue) => {
+        Variable_WebApp.activeTask = await Variable_Controller.ActiveWeldIRB.getValue();
         Instance_OT.labelTask.innerText = Variable_WebApp.activeTask;
     });
 
+    Variable_Controller.SensJoint = await RWS.Rapid.getSharedData('SensJoint');
 }
 
 export async function initSubscriptions() {
@@ -61,21 +63,25 @@ export async function InitUI() {
 
 
     Instance_OT.switchSensorOn = new FPComponents.Switch_A();
-    Instance_OT.switchSensorOn.desc = "Sensor On"
+    Instance_OT.switchSensorOn.desc = ""
     let sensorValue = await Signal_Controller.soAwSensor.getValue();
     Instance_OT.switchSensorOn.active = sensorValue == 1;
     Instance_OT.switchSensorOn.onchange = async function (active) {
+        await Variable_Controller.ActiveWeldIRB.setValue(Variable_WebApp.activeTask);
         await Signal_Controller.soAwSensor.setValue(active ? 1 : 0);
 
     }
     Instance_OT.switchSensorOn.attachToId("switchSensorOn");
 
-    Instance_OT.btnSetJobNo = new FPComponents.Button_A();
-    Instance_OT.btnSetJobNo.text = "Set Job No";
-    Instance_OT.btnSetJobNo.onclick = function () {
-        // This function will execute when the button is clicked.
-    };
-    Instance_OT.btnSetJobNo.attachToId("btnSetJobNo");
+    Instance_OT.inputJointNumber = new FPComponents.Input_A();
+    Instance_OT.inputJointNumber.text = await Variable_Controller.SensJoint.getValue();
+    Instance_OT.inputJointNumber.regex = Constants.RegExpNonNegativeInteger;
+    Instance_OT.inputJointNumber.onchange = async function (text) {
+        await Variable_Controller.ActiveWeldIRB.setValue(Variable_WebApp.activeTask);
+        let jointNumber = await Variable_Controller.SensJoint.getValue();
+        Variable_Controller.SensJoint.setValue(toNumberOrDefault(text, jointNumber));
+    }
+    Instance_OT.inputJointNumber.attachToId("inputJointNumber");
 
     Instance_OT.btnMeasurement = new FPComponents.Button_A();
     Instance_OT.btnMeasurement.text = "Measurement";

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -38,15 +38,36 @@
 </head>
 
 <body>
-    <div class="task-bar" role="group" aria-label="RAPID task selection">
-        <div class="task-bar__label">Rapid Task:</div>
-        <div id="labelTask" class="task-bar__value" aria-live="polite">T_ROB1</div>
-        <div id="btnSelectTask" class="task-bar__action"></div>
-    </div>
-    
-    <div id="switchSensorOn"></div> 
-    <div id="btnSetJobNo"></div> 
-    <div id="btnMeasurement"></div> 
+    <main class="measurement-app">
+        <header class="app-header">
+            <div class="app-header__mark" aria-hidden="true"></div>
+            <h1>Sensor Measurement</h1>
+        </header>
+
+        <section class="measurement-settings" aria-label="Measurement settings">
+            <div class="task-bar" role="group" aria-labelledby="taskLabel">
+                <div id="taskLabel" class="setting-label">RAPID task</div>
+                <div class="task-bar__controls">
+                    <div id="labelTask" class="task-bar__value" aria-live="polite">T_ROB1</div>
+                    <div id="btnSelectTask" class="task-bar__action"></div>
+                </div>
+            </div>
+
+            <div class="setting-row" role="group" aria-labelledby="sensorLabel">
+                <div id="sensorLabel" class="setting-label">Sensor on</div>
+                <div id="switchSensorOn" class="sensor-control"></div>
+            </div>
+
+            <div class="setting-row" role="group" aria-labelledby="jointLabel">
+                <div id="jointLabel" class="setting-label">Joint number</div>
+                <div id="inputJointNumber" class="joint-control"></div>
+            </div>
+        </section>
+
+        <footer class="measurement-actions">
+            <div id="btnMeasurement"></div>
+        </footer>
+    </main>
 </body>
 
 </html>
